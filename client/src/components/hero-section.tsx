@@ -20,15 +20,13 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           />
         </div>
         
-        {/* Hero image - smaller with rounded borders */}
+        {/* Hero image - large with rounded borders */}
         <div className="mb-10">
-          <div className="w-64 h-48 mx-auto bg-white/10 rounded-3xl p-3 backdrop-blur-sm border border-white/20 shadow-2xl">
-            <img 
-              src={heroImage} 
-              alt="35 Livros de Colorir Cristãos"
-              className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105"
-            />
-          </div>
+          <img 
+            src={heroImage} 
+            alt="35 Livros de Colorir Cristãos"
+            className="w-full max-w-sm mx-auto object-contain rounded-3xl transition-transform duration-300 hover:scale-105"
+          />
         </div>
         
         {/* Main Headline */}
