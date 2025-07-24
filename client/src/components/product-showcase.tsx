@@ -79,15 +79,13 @@ export function ProductShowcase() {
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
-                <div key={index} className="flex-[0_0_100%] min-w-0 px-2">
-                  <div className="bg-white rounded-3xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer">
-                    <div className="relative w-full h-80 rounded-2xl overflow-hidden">
-                      <img 
-                        src={book.image} 
-                        alt={book.title}
-                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                      />
-                    </div>
+                <div key={index} className="flex-[0_0_100%] min-w-0 px-1">
+                  <div className="relative w-full h-96">
+                    <img 
+                      src={book.image} 
+                      alt={book.title}
+                      className="w-full h-full object-contain transition-transform duration-300 hover:scale-102 cursor-pointer"
+                    />
                   </div>
                 </div>
               ))}
