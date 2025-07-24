@@ -66,9 +66,9 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
         {/* Hero CTA */}
         <Button 
           onClick={onScrollToOffer}
-          className="w-full bg-accent-yellow hover:bg-yellow-500 text-text-dark font-bold py-4 px-6 rounded-2xl text-lg shadow-xl transition-all transform hover:scale-105 mb-4 h-auto"
+          className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-gray-800 font-bold py-6 px-8 rounded-3xl text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-6 h-auto"
         >
-          <Gift className="mr-2 h-5 w-5" />
+          <Gift className="mr-3 h-6 w-6" />
           QUERO AGORA - R$ 10,00
         </Button>
         

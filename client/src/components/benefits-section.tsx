@@ -30,23 +30,31 @@ export function BenefitsSection() {
   ];
 
   return (
-    <section className="px-4 py-12 bg-white">
+    <section className="px-4 py-16 bg-gradient-to-br from-white to-gray-50">
       <div className="max-w-sm mx-auto">
-        <h3 className="font-heading text-2xl font-bold text-center text-text-dark mb-6">
-          ⭐ Por que escolher nossos livros?
-        </h3>
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl mb-4 shadow-lg">
+            <span className="text-2xl">⭐</span>
+          </div>
+          <h3 className="font-heading text-3xl font-bold text-gray-800 mb-3">
+            Por que escolher nossos livros?
+          </h3>
+          <p className="text-gray-600 text-base leading-relaxed">
+            Benefícios únicos para o desenvolvimento das crianças
+          </p>
+        </div>
         
-        <div className="space-y-4">
+        <div className="space-y-6">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
-              <Card key={index} className="bg-white rounded-xl p-5 flex items-start space-x-4 shadow-lg border-0 hover:shadow-xl transition-all duration-300">
-                <div className={`w-10 h-10 ${benefit.bgColor} rounded-full flex items-center justify-center flex-shrink-0`}>
-                  <IconComponent className="text-white h-4 w-4" />
+              <Card key={index} className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 flex items-start space-x-5 shadow-xl border-0 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 hover:scale-105 group">
+                <div className={`w-14 h-14 ${benefit.bgColor} rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}>
+                  <IconComponent className="text-white h-6 w-6" />
                 </div>
-                <div>
-                  <h4 className="font-bold text-text-dark text-sm mb-1">{benefit.title}</h4>
-                  <p className="text-xs text-text-medium leading-relaxed">{benefit.description}</p>
+                <div className="flex-1">
+                  <h4 className="font-bold text-gray-800 text-lg mb-2 group-hover:text-blue-600 transition-colors">{benefit.title}</h4>
+                  <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
                 </div>
               </Card>
             );
