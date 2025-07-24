@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
-import { useExitIntent } from "@/hooks/use-exit-intent";
+
 import { apiRequest } from "@/lib/queryClient";
 import { HeroSection } from "@/components/hero-section";
 import { ProductShowcase } from "@/components/product-showcase";
@@ -12,14 +12,14 @@ import { OfferSection } from "@/components/offer-section";
 import { GuaranteeSection } from "@/components/guarantee-section";
 import { WhatsAppSection } from "@/components/whatsapp-section";
 import { FooterSection } from "@/components/footer-section";
-import { ExitIntentModal } from "@/components/exit-intent-modal";
+
 import { FloatingCTA } from "@/components/floating-cta";
 
 export default function Home() {
   const [currentPrice, setCurrentPrice] = useState("R$ 10,00");
   const [discountCode, setDiscountCode] = useState<string | null>(null);
   const { toast } = useToast();
-  const { showExitModal, closeExitModal } = useExitIntent();
+
 
   // Create lead mutation
   const createLeadMutation = useMutation({
@@ -116,18 +116,7 @@ export default function Home() {
     });
   };
 
-  const handleExitOffer = () => {
-    setDiscountCode("VOLTA50");
-    // Update current price with discount
-    setCurrentPrice("R$ 5,00"); // 10 * 0.5
-    
-    toast({
-      title: "Desconto aplicado!",
-      description: "Cupom VOLTA50 ativo - 50% de desconto!",
-    });
-    
-    handlePurchase();
-  };
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -141,11 +130,7 @@ export default function Home() {
       <WhatsAppSection />
       <FooterSection />
       
-      <ExitIntentModal 
-        open={showExitModal}
-        onOpenChange={closeExitModal}
-        onAcceptOffer={handleExitOffer}
-      />
+
       
       <FloatingCTA onPurchase={handlePurchase} price={currentPrice} />
     </div>

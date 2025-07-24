@@ -23,6 +23,7 @@ Preferred communication style: Simple, everyday language.
 - Replaced Fredoka font with professional Inter and Poppins fonts for better readability
 - Improved spacing, shadows, and hover effects throughout the site for a more polished professional look
 - Enhanced card layouts with better padding and subtle animations
+- Removed exit-intent modal offering 50% discount to simplify user experience
 
 ## System Architecture
 
