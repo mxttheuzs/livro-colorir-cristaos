@@ -105,19 +105,19 @@ export function ProductShowcase() {
           </p>
         </div>
         
-        {/* Carousel container - larger images without text overlay */}
+        {/* Carousel container - 2 larger images side by side */}
         <div className="relative mb-8">
           <div className="overflow-hidden rounded-xl" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
-                <div key={index} className="flex-[0_0_33.333%] min-w-0 px-1">
+                <div key={index} className="flex-[0_0_50%] min-w-0 px-2">
                   <div className="relative group">
-                    {/* Book image with rounded corners - larger size */}
-                    <div className="relative w-full h-48 sm:h-56 bg-white rounded-xl overflow-hidden shadow-lg">
+                    {/* Book image with rounded corners - much larger size */}
+                    <div className="relative w-full h-56 sm:h-64 bg-white rounded-xl overflow-hidden shadow-lg">
                       <img 
                         src={book.image} 
                         alt={book.title}
-                        className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
+                        className="w-full h-full object-contain transition-all duration-300 group-hover:scale-105"
                       />
                     </div>
                   </div>
