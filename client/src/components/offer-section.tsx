@@ -20,67 +20,67 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
   };
 
   return (
-    <section id="offer" className="px-4 py-16 bg-gray-50">
-      <div className="max-w-sm mx-auto">
+    <section id="offer" className="px-3 py-12 bg-gray-50">
+      <div className="w-full max-w-xs mx-auto">
         {/* Limited offer badge */}
-        <div className="bg-red-500 text-white rounded-full px-6 py-3 text-center mb-6 shadow-lg">
+        <div className="bg-red-500 text-white rounded-full px-4 py-2 text-center mb-6 shadow-lg">
           <div className="flex items-center justify-center space-x-2">
             <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-            <span className="font-bold text-sm">OFERTA LIMITADA - Apenas no dia {getCurrentDate()}</span>
+            <span className="font-bold text-xs sm:text-sm">OFERTA LIMITADA - Apenas no dia {getCurrentDate()}</span>
           </div>
         </div>
         
         {/* Main title */}
-        <div className="text-center mb-8">
-          <h3 className="font-heading text-3xl font-bold text-gray-800 mb-3">
+        <div className="text-center mb-6">
+          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
             Escolha Sua Oferta Especial
           </h3>
-          <p className="text-gray-600 text-base leading-relaxed">
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
             Livros de qualidade profissional para enriquecer seus momentos de fé
           </p>
         </div>
         
         {/* Basic Package */}
-        <Card className="bg-gray-100 rounded-3xl p-8 mb-8 border-0 text-center relative overflow-hidden">
+        <Card className="bg-gray-100 rounded-2xl p-6 mb-6 border-0 text-center relative overflow-hidden">
           {/* Star icon */}
-          <div className="inline-flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-2xl mb-4 shadow-lg">
-            <span className="text-xl">⭐</span>
+          <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-yellow-400 rounded-2xl mb-4 shadow-lg">
+            <span className="text-lg sm:text-xl">⭐</span>
           </div>
           
-          <h4 className="font-bold text-gray-800 text-xl mb-4">Pacote Básico</h4>
+          <h4 className="font-bold text-gray-800 text-lg sm:text-xl mb-4">Pacote Básico</h4>
           
           {/* Original price */}
-          <p className="text-gray-500 line-through text-lg mb-2">R$ 47,00</p>
+          <p className="text-gray-500 line-through text-base sm:text-lg mb-2">R$ 47,00</p>
           
           {/* Discount badge */}
-          <div className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-4">
+          <div className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold mb-4">
             -79%
           </div>
           
           {/* Current price */}
           <div className="mb-4">
-            <span className="text-5xl font-bold text-green-600">R$ 10</span>
-            <span className="text-2xl text-green-600">,00</span>
+            <span className="text-4xl sm:text-5xl font-bold text-green-600">R$ 10</span>
+            <span className="text-xl sm:text-2xl text-green-600">,00</span>
           </div>
           
           {/* Savings */}
-          <p className="text-gray-600 text-sm mb-6">Você economiza R$ 37,00</p>
+          <p className="text-gray-600 text-xs sm:text-sm mb-4">Você economiza R$ 37,00</p>
           
           {/* Features */}
-          <div className="space-y-2 mb-6 text-left">
-            <p className="text-gray-700 flex items-center">
+          <div className="space-y-2 mb-4 text-left">
+            <p className="text-gray-700 flex items-center text-sm sm:text-base">
               <span className="text-green-500 mr-2">✓</span>
               35 Livros de Colorir Completos
             </p>
-            <p className="text-gray-700 flex items-center">
+            <p className="text-gray-700 flex items-center text-sm sm:text-base">
               <span className="text-green-500 mr-2">✓</span>
               Download Imediato
             </p>
-            <p className="text-gray-700 flex items-center">
+            <p className="text-gray-700 flex items-center text-sm sm:text-base">
               <span className="text-green-500 mr-2">✓</span>
               Acesso Vitalício
             </p>
-            <p className="text-gray-700 flex items-center">
+            <p className="text-gray-700 flex items-center text-sm sm:text-base">
               <span className="text-green-500 mr-2">✓</span>
               Garantia de 7 dias
             </p>
@@ -89,7 +89,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Basic CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-3xl text-lg shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
+            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-2xl text-sm sm:text-base shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
           >
             QUERO O PACOTE BÁSICO
           </Button>

@@ -120,21 +120,16 @@ export default function Home() {
 
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <HeroSection onScrollToOffer={scrollToOffer} />
       <ProductShowcase />
       <UsageCategories />
       <BenefitsSection />
       <TestimonialsSection />
       <OfferSection onPurchase={handlePurchase} />
-
       <GuaranteeSection />
       <WhatsAppSection />
       <FooterSection />
-      
-
-      
-
     </div>
   );
 }
