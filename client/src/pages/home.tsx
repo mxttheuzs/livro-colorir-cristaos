@@ -6,7 +6,6 @@ import { apiRequest } from "@/lib/queryClient";
 import { HeroSection } from "@/components/hero-section";
 import { ProductShowcase } from "@/components/product-showcase";
 import { UsageCategories } from "@/components/usage-categories";
-import { ColorPaletteSelector } from "@/components/color-palette-selector";
 import { BenefitsSection } from "@/components/benefits-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { OfferSection } from "@/components/offer-section";
@@ -124,7 +123,6 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <HeroSection onScrollToOffer={scrollToOffer} />
       <ProductShowcase />
-      <ColorPaletteSelector />
       <UsageCategories />
       <BenefitsSection />
       <TestimonialsSection />
