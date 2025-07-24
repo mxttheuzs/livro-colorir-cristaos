@@ -105,52 +105,41 @@ export function ProductShowcase() {
           </p>
         </div>
         
-        {/* Carousel container - 2 larger images side by side */}
-        <div className="relative mb-8">
-          <div className="overflow-hidden rounded-xl" ref={emblaRef}>
+        {/* Carousel container - mobile optimized */}
+        <div className="relative mb-6">
+          <div className="overflow-hidden rounded-2xl shadow-2xl bg-white/50 backdrop-blur-sm p-2 sm:p-3" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
-                <div key={index} className="flex-[0_0_50%] min-w-0 px-2">
-                  <div className="relative group">
-                    {/* Book image with rounded corners - much larger size */}
-                    <div className="relative w-full h-56 sm:h-64 bg-white rounded-xl overflow-hidden shadow-lg">
-                      <img 
-                        src={book.image} 
-                        alt={book.title}
-                        className="w-full h-full object-contain transition-all duration-300 group-hover:scale-105"
-                      />
-                    </div>
+                <div key={index} className="flex-[0_0_100%] min-w-0 px-1">
+                  <div className="relative w-full h-60 sm:h-72 bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <img 
+                      src={book.image} 
+                      alt={book.title}
+                      className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer rounded-xl"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
           
-          {/* Navigation buttons - positioned like reference */}
+          {/* Navigation buttons - mobile optimized */}
           <Button
             variant="outline"
             size="sm"
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white/90 hover:bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300"
+            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
             onClick={scrollPrev}
           >
-            <ChevronLeft className="h-4 w-4 text-gray-700" />
+            <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
           </Button>
           <Button
             variant="outline"
             size="sm"
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white/90 hover:bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300"
+            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
             onClick={scrollNext}
           >
-            <ChevronRight className="h-4 w-4 text-gray-700" />
-          </Button>
-        </div>
-        
-        {/* CTA Button below carousel - like reference design */}
-        <div className="text-center">
-          <Button 
-            className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-sm shadow-lg transition-all duration-300 hover:scale-105"
-          >
-            QUERO VER AS OFERTAS
+            <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
           </Button>
         </div>
         
