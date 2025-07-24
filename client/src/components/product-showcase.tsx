@@ -79,7 +79,7 @@ export function ProductShowcase() {
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-2">
-                  <Card className="bg-gradient-to-br from-primary-light-blue to-accent-yellow rounded-xl p-4 text-center border-0 shadow-lg">
+                  <Card className="bg-white rounded-2xl p-4 text-center border-0 shadow-xl">
                     <div className="relative w-full h-48 mb-3 rounded-lg overflow-hidden">
                       <img 
                         src={book.image} 
@@ -115,9 +115,9 @@ export function ProductShowcase() {
         </div>
         
         {/* Total count */}
-        <div className="bg-offer-gradient text-white rounded-xl p-4 text-center">
-          <p className="font-fredoka text-xl">+ 28 Livros Adicionais!</p>
-          <p className="text-sm opacity-90">Total: 35 Livros Completos</p>
+        <div className="bg-main-gradient text-white rounded-2xl p-6 text-center shadow-xl">
+          <p className="font-fredoka text-2xl mb-2">+ 28 Livros Adicionais!</p>
+          <p className="text-lg font-semibold">Total: 35 Livros Completos</p>
         </div>
       </div>
     </section>

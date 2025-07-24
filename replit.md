@@ -17,6 +17,9 @@ Preferred communication style: Simple, everyday language.
 - Updated exit intent modal pricing to reflect new base price (50% discount now R$ 5,00)
 - Redesigned with child-friendly and professional color palette: primary blue, light blue, purple, green, yellow, orange, and pink accents
 - Updated all components to use new color scheme for a more appealing look to children and parents
+- Transformed hero section with vibrant blue gradient background, full-screen layout, and real book cover images
+- Updated all CTA buttons to use bright yellow color for better conversion
+- Enhanced visual hierarchy with modern card designs and improved shadows
 
 ## System Architecture
 

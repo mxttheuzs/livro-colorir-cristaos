@@ -24,17 +24,18 @@
   --ring: hsl(222, 84%, 4.9%);
   --radius: 0.5rem;
   
-  /* Custom colors for Christian coloring book theme - Child-friendly and professional */
-  --primary-blue: hsl(213, 90%, 65%);
-  --primary-light-blue: hsl(213, 100%, 85%);
-  --secondary-purple: hsl(262, 83%, 75%);
-  --secondary-green: hsl(142, 69%, 58%);
-  --accent-yellow: hsl(48, 100%, 82%);
-  --accent-orange: hsl(25, 95%, 70%);
+  /* Custom colors for Christian coloring book theme - Vibrant and child-friendly */
+  --primary-blue: hsl(216, 100%, 62%);
+  --primary-light-blue: hsl(216, 100%, 75%);
+  --secondary-blue: hsl(216, 100%, 85%);
+  --accent-yellow: hsl(45, 100%, 65%);
+  --accent-orange: hsl(25, 100%, 65%);
+  --accent-green: hsl(142, 69%, 58%);
   --accent-pink: hsl(340, 82%, 80%);
-  --background-cream: hsl(48, 60%, 97%);
+  --text-white: hsl(0, 0%, 100%);
+  --text-light: hsl(216, 50%, 85%);
   --text-dark: hsl(220, 26%, 25%);
-  --text-medium: hsl(220, 15%, 45%);
+  --background-gradient: linear-gradient(135deg, hsl(216, 100%, 62%) 0%, hsl(216, 100%, 75%) 100%);
 }
 
 .dark {
@@ -136,11 +137,15 @@
 
 /* Custom gradient backgrounds */
 .bg-hero-gradient {
-  background: linear-gradient(135deg, var(--primary-light-blue) 0%, var(--accent-yellow) 50%, var(--background-cream) 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light-blue) 100%);
 }
 
 .bg-offer-gradient {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-purple) 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light-blue) 100%);
+}
+
+.bg-main-gradient {
+  background: var(--background-gradient);
 }
 
 /* Fredoka font fallback */

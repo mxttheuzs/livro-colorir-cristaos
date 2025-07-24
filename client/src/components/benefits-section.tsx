@@ -7,30 +7,30 @@ export function BenefitsSection() {
       icon: Heart,
       title: "Valores Cristãos",
       description: "Ensina amor, fé e bondade através de histórias bíblicas adaptadas para crianças",
-      bgColor: "bg-secondary-purple"
+      bgColor: "bg-accent-yellow"
     },
     {
       icon: Brain,
       title: "Desenvolvimento Cognitivo", 
       description: "Estimula criatividade, coordenação motora e concentração das crianças",
-      bgColor: "bg-secondary-green"
+      bgColor: "bg-accent-orange"
     },
     {
       icon: Clock,
       title: "Tempo de Qualidade",
       description: "Momentos especiais em família longe das telas e dispositivos eletrônicos",
-      bgColor: "bg-accent-pink"
+      bgColor: "bg-accent-green"
     },
     {
       icon: Download,
       title: "Acesso Imediato",
       description: "Download instantâneo após compra, imprima quantas vezes quiser",
-      bgColor: "bg-accent-orange"
+      bgColor: "bg-accent-pink"
     }
   ];
 
   return (
-    <section className="px-4 py-8 bg-background-cream">
+    <section className="px-4 py-8 bg-white">
       <div className="max-w-sm mx-auto">
         <h3 className="font-fredoka text-2xl text-center text-text-dark mb-6">
           ⭐ Por que escolher nossos livros?
