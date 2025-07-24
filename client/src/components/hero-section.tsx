@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Gift, Download, Smartphone } from "lucide-react";
-import arcaDeNoe from "@assets/CAPA_1753356882910.png";
-import vidaDeJesus from "@assets/image_1753356866387.png";
+import heroImage from "@assets/Ekudb9tLyf6p1rSpCtDzYLG20DMvZ0kVSu1DFct7_1753357726479.png";
 
 interface HeroSectionProps {
   onScrollToOffer: () => void;
@@ -11,24 +10,14 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
   return (
     <section className="bg-main-gradient px-4 py-12 text-center text-white min-h-screen flex items-center">
       <div className="max-w-sm mx-auto">
-        {/* Book illustration */}
-        <div className="mb-10 relative">
+        {/* Hero image */}
+        <div className="mb-10">
           <div className="w-52 h-44 mx-auto bg-white/25 rounded-3xl p-4 backdrop-blur-md border border-white/40 flex items-center justify-center overflow-hidden shadow-2xl">
-            <div className="flex space-x-3">
-              <img 
-                src={arcaDeNoe} 
-                alt="Livro A Arca de Noé"
-                className="w-18 h-24 object-cover rounded-xl shadow-xl transform -rotate-12 hover:rotate-0 transition-all duration-300 hover:scale-105"
-              />
-              <img 
-                src={vidaDeJesus} 
-                alt="Livro A Vida de Jesus"
-                className="w-18 h-24 object-cover rounded-xl shadow-xl transform rotate-12 hover:rotate-0 transition-all duration-300 hover:scale-105"
-              />
-            </div>
-          </div>
-          <div className="absolute -top-3 -right-3 bg-accent-yellow text-text-dark px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-            @gulemcnoel
+            <img 
+              src={heroImage} 
+              alt="35 Livros de Colorir Cristãos"
+              className="w-full h-full object-cover rounded-xl shadow-xl transition-all duration-300 hover:scale-105"
+            />
           </div>
         </div>
         
