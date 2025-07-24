@@ -8,6 +8,14 @@ This is a mobile-first landing page for selling Christian coloring books to chil
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+### January 24, 2025
+- Updated pricing: 35 Christian coloring books now priced at R$ 10,00 (down from R$ 27,00)
+- Removed order bump functionality completely from the landing page
+- Changed product showcase title from "O que você vai receber" to "Conheça Nossos Livros Cristãos"
+- Updated exit intent modal pricing to reflect new base price (50% discount now R$ 5,00)
+
 ## System Architecture
 
 The application follows a monorepo structure with clear separation between client, server, and shared code:

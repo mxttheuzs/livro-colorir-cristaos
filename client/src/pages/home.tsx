@@ -8,7 +8,7 @@ import { ProductShowcase } from "@/components/product-showcase";
 import { BenefitsSection } from "@/components/benefits-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { OfferSection } from "@/components/offer-section";
-import { OrderBumpSection } from "@/components/order-bump-section";
+
 import { GuaranteeSection } from "@/components/guarantee-section";
 import { WhatsAppSection } from "@/components/whatsapp-section";
 import { FooterSection } from "@/components/footer-section";
@@ -16,8 +16,7 @@ import { ExitIntentModal } from "@/components/exit-intent-modal";
 import { FloatingCTA } from "@/components/floating-cta";
 
 export default function Home() {
-  const [hasOrderBump, setHasOrderBump] = useState(false);
-  const [currentPrice, setCurrentPrice] = useState("R$ 27,00");
+  const [currentPrice, setCurrentPrice] = useState("R$ 10,00");
   const [discountCode, setDiscountCode] = useState<string | null>(null);
   const { toast } = useToast();
   const { showExitModal, closeExitModal } = useExitIntent();
@@ -85,23 +84,7 @@ export default function Home() {
     }
   };
 
-  const handleOrderBumpToggle = (checked: boolean) => {
-    setHasOrderBump(checked);
-    // Update price based on order bump
-    if (checked) {
-      if (discountCode === "VOLTA50") {
-        setCurrentPrice("R$ 18,45"); // (27 + 9.90) * 0.5
-      } else {
-        setCurrentPrice("R$ 36,90"); // 27 + 9.90
-      }
-    } else {
-      if (discountCode === "VOLTA50") {
-        setCurrentPrice("R$ 13,50"); // 27 * 0.5
-      } else {
-        setCurrentPrice("R$ 27,00");
-      }
-    }
-  };
+
 
   const handlePurchase = () => {
     // Create lead first
@@ -112,9 +95,8 @@ export default function Home() {
     });
 
     // Calculate pricing
-    const basePrice = 2700; // R$ 27.00 in cents
-    const orderBumpPrice = hasOrderBump ? 990 : 0; // R$ 9.90 in cents
-    let totalAmount = basePrice + orderBumpPrice;
+    const basePrice = 1000; // R$ 10.00 in cents
+    let totalAmount = basePrice;
     let discountAmount = 0;
 
     if (discountCode === "VOLTA50") {
@@ -127,8 +109,8 @@ export default function Home() {
       email: "customer@example.com", // This would come from a form
       name: "Cliente",
       totalAmount,
-      hasOrderBump,
-      orderBumpAmount: orderBumpPrice,
+      hasOrderBump: false,
+      orderBumpAmount: 0,
       discountCode: discountCode || undefined,
       discountAmount
     });
@@ -137,11 +119,7 @@ export default function Home() {
   const handleExitOffer = () => {
     setDiscountCode("VOLTA50");
     // Update current price with discount
-    if (hasOrderBump) {
-      setCurrentPrice("R$ 18,45"); // (27 + 9.90) * 0.5
-    } else {
-      setCurrentPrice("R$ 13,50"); // 27 * 0.5
-    }
+    setCurrentPrice("R$ 5,00"); // 10 * 0.5
     
     toast({
       title: "Desconto aplicado!",
@@ -158,7 +136,7 @@ export default function Home() {
       <BenefitsSection />
       <TestimonialsSection />
       <OfferSection onPurchase={handlePurchase} />
-      <OrderBumpSection onToggleOrderBump={handleOrderBumpToggle} />
+
       <GuaranteeSection />
       <WhatsAppSection />
       <FooterSection />

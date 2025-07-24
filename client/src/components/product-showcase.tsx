@@ -37,7 +37,7 @@ export function ProductShowcase() {
     <section className="px-4 py-8 bg-white">
       <div className="max-w-sm mx-auto">
         <h3 className="font-fredoka text-2xl text-center text-text-dark mb-6">
-          📚 O que você vai receber:
+          📚 Conheça Nossos Livros Cristãos
         </h3>
         
         {/* Product preview grid */}

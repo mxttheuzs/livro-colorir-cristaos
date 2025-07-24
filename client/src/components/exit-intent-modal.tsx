@@ -29,7 +29,7 @@ export function ExitIntentModal({ open, onOpenChange, onAcceptOffer }: ExitInten
           </p>
           <div className="bg-red-50 rounded-xl p-3 mb-4">
             <p className="text-red-600 font-semibold">
-              De R$ 27,00 por apenas R$ 13,50
+              De R$ 10,00 por apenas R$ 5,00
             </p>
             <p className="text-xs text-red-500">Cupom: VOLTA50</p>
           </div>

@@ -91,7 +91,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const { hasOrderBump, discountCode } = req.body;
       
-      const basePrice = 2700; // R$ 27.00 in cents
+      const basePrice = 1000; // R$ 10.00 in cents
       const orderBumpPrice = 990; // R$ 9.90 in cents
       
       let totalAmount = basePrice;

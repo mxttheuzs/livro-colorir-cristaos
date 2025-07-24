@@ -21,9 +21,9 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
         
         {/* Price comparison */}
         <Card className="bg-white/20 rounded-xl p-4 mb-6 border-0">
-          <p className="text-sm opacity-90 mb-2">De R$ 97,00 por apenas:</p>
-          <p className="font-fredoka text-4xl mb-2">R$ 27,00</p>
-          <p className="text-sm opacity-90">35 livros completos + bônus</p>
+          <p className="text-sm opacity-90 mb-2">De R$ 35,00 por apenas:</p>
+          <p className="font-fredoka text-4xl mb-2">R$ 10,00</p>
+          <p className="text-sm opacity-90">35 livros completos</p>
         </Card>
         
         {/* Urgency timer */}
@@ -54,7 +54,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           className="w-full bg-white text-primary-pink hover:bg-gray-50 font-semibold py-4 px-6 rounded-2xl text-lg shadow-lg transition-colors mb-4 h-auto"
         >
           <ShoppingCart className="mr-2 h-5 w-5" />
-          COMPRAR AGORA - R$ 27,00
+          COMPRAR AGORA - R$ 10,00
         </Button>
         
         {/* Payment methods */}
