@@ -54,7 +54,7 @@ export function UsageCategories() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section className="px-3 py-12 bg-gradient-to-br from-slate-50 to-blue-50 pt-[19px] pb-[19px]">
       <div className="w-full max-w-xs mx-auto">
         <div className="text-center mb-8">
           <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">

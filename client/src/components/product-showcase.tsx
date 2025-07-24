@@ -159,9 +159,7 @@ export function ProductShowcase() {
           >
             QUERO VER AS OFERTAS
           </Button>
-          <p className="text-gray-600 text-sm mt-2">
-            Aproveite nossos preços especiais
-          </p>
+          
         </div>
         
       </div>
