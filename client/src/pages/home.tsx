@@ -11,6 +11,7 @@ import { TestimonialsSection } from "@/components/testimonials-section";
 import { OfferSection } from "@/components/offer-section";
 
 import { GuaranteeSection } from "@/components/guarantee-section";
+import { FaqSection } from "@/components/faq-section";
 import { WhatsAppSection } from "@/components/whatsapp-section";
 import { FooterSection } from "@/components/footer-section";
 
@@ -128,6 +129,7 @@ export default function Home() {
       <TestimonialsSection />
       <OfferSection onPurchase={handlePurchase} />
       <GuaranteeSection />
+      <FaqSection />
       <WhatsAppSection />
       <FooterSection />
     </div>

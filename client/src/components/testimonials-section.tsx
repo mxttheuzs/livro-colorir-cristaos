@@ -1,52 +1,86 @@
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import mariaPhoto from "@assets/c_1753391313706.webp";
+import pastorPhoto from "@assets/x_1753391316797.webp";
+import carolinaPhoto from "@assets/z_1753391318305.webp";
 
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Maria Silva",
-      initial: "M",
+      name: "Maria Fernanda",
+      photo: mariaPhoto,
+      role: "Mãe de 2 crianças",
       rating: 5,
-      text: "Meus filhos adoraram! Conseguimos passar horas colorindo e conversando sobre as histórias da Bíblia. Muito educativo!",
-      bgColor: "bg-secondary-yellow"
+      text: "Meus filhos adoraram! Conseguimos passar horas colorindo e conversando sobre as histórias da Bíblia. Muito educativo e de excelente qualidade!",
     },
     {
-      name: "Ana Santos", 
-      initial: "A",
+      name: "Pastor Roberto",
+      photo: pastorPhoto,
+      role: "Líder de Ministério Infantil",
       rating: 5,
-      text: "Excelente qualidade! Os desenhos são lindos e as crianças aprendem brincando. Recomendo para todas as mães!",
-      bgColor: "bg-secondary-light-blue"
+      text: "Utilizamos os livros em nossa escola dominical e o resultado foi incrível. As crianças ficam mais engajadas e aprendem brincando. Material de alta qualidade!",
+    },
+    {
+      name: "Carolina Santos",
+      photo: carolinaPhoto,
+      role: "Coordenadora de Célula",
+      rating: 5,
+      text: "Perfeito para nossas células familiares! Os desenhos são lindos e as histórias bíblicas são contadas de forma simples e educativa. Super recomendo!",
     }
   ];
 
   return (
-    <section className="px-4 py-8 bg-white">
-      <div className="max-w-sm mx-auto">
-        <h3 className="font-fredoka text-2xl text-center text-text-dark mb-6">
-          💝 O que as mamães dizem:
-        </h3>
+    <section className="px-3 py-12 bg-gradient-to-br from-purple-50 to-pink-50">
+      <div className="w-full max-w-xs mx-auto">
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl mb-4 shadow-lg">
+            <span className="text-xl sm:text-2xl">💝</span>
+          </div>
+          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+            O que nossos clientes dizem
+          </h3>
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
+            Depoimentos reais de famílias que já transformaram seus momentos
+          </p>
+        </div>
         
-        <div className="space-y-4">
+        <div className="space-y-6">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className={`${testimonial.bgColor} rounded-xl p-4 border-0 shadow-sm`}>
-              <div className="flex items-center mb-3">
-                <div className="w-10 h-10 bg-primary-pink rounded-full flex items-center justify-center mr-3">
-                  <span className="text-white font-semibold text-sm">{testimonial.initial}</span>
+            <Card key={index} className="bg-white rounded-2xl p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-start mb-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 shadow-md">
+                  <img 
+                    src={testimonial.photo} 
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div>
-                  <p className="font-semibold text-text-dark text-sm">{testimonial.name}</p>
-                  <div className="flex text-yellow-400 text-xs">
+                <div className="flex-1 min-w-0">
+                  <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{testimonial.name}</h4>
+                  <p className="text-gray-600 text-xs sm:text-sm mb-2">{testimonial.role}</p>
+                  <div className="flex text-yellow-400">
                     {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="h-3 w-3 fill-current" />
+                      <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-current" />
                     ))}
                   </div>
                 </div>
               </div>
-              <p className="text-sm text-text-medium leading-relaxed">
+              <blockquote className="text-gray-700 text-sm sm:text-base leading-relaxed italic">
                 "{testimonial.text}"
-              </p>
+              </blockquote>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <div className="bg-green-100 rounded-xl p-4">
+            <p className="text-green-800 font-semibold text-sm">
+              Mais de 1.500 famílias já transformaram seus momentos de fé
+            </p>
+            <p className="text-green-600 text-xs mt-1">
+              Junte-se a elas hoje mesmo!
+            </p>
+          </div>
         </div>
       </div>
     </section>

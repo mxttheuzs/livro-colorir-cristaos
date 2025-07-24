@@ -89,7 +89,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Basic CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-2xl text-sm sm:text-base shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
+            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-2xl text-sm sm:text-base shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto animate-pulse-slow"
           >
             QUERO O PACOTE BÁSICO
           </Button>
@@ -165,22 +165,53 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Premium CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold py-4 px-6 rounded-3xl text-lg shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
+            className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold py-4 px-6 rounded-3xl text-lg shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto animate-pulse-slow-orange"
           >
             QUERO O PACOTE PREMIUM
           </Button>
         </Card>
         
-        {/* Payment methods */}
-        <div className="bg-white rounded-3xl p-6 border border-gray-200 shadow-lg">
-          <p className="text-gray-600 text-sm mb-4 font-medium text-center">Pagamento 100% seguro:</p>
-          <div className="flex justify-center items-center space-x-4 text-gray-600">
-            <FaCcVisa className="h-8 w-8" />
-            <FaCcMastercard className="h-8 w-8" />
-            <FaCcPaypal className="h-8 w-8" />
-            <SiPix className="h-7 w-7" />
+        {/* Security & Trust Section */}
+        <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-lg">
+          <div className="text-center mb-4">
+            <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-full mb-3">
+              <span className="text-2xl">🔒</span>
+            </div>
+            <h4 className="font-bold text-gray-800 text-lg mb-2">Compra 100% Segura</h4>
           </div>
-          <p className="text-center text-xs text-gray-500 mt-3">SSL 256-bit • Dados protegidos</p>
+          
+          <div className="space-y-3 text-sm">
+            <div className="flex items-center text-gray-700">
+              <span className="text-green-500 mr-3">✓</span>
+              <span>Pagamento processado por plataforma segura</span>
+            </div>
+            <div className="flex items-center text-gray-700">
+              <span className="text-green-500 mr-3">✓</span>
+              <span>Criptografia SSL de 256 bits</span>
+            </div>
+            <div className="flex items-center text-gray-700">
+              <span className="text-green-500 mr-3">✓</span>
+              <span>Garantia de reembolso em 7 dias</span>
+            </div>
+            <div className="flex items-center text-gray-700">
+              <span className="text-green-500 mr-3">✓</span>
+              <span>Download imediato após confirmação</span>
+            </div>
+            <div className="flex items-center text-gray-700">
+              <span className="text-green-500 mr-3">✓</span>
+              <span>Suporte dedicado via WhatsApp</span>
+            </div>
+          </div>
+          
+          <div className="mt-4 pt-4 border-t border-gray-200">
+            <div className="flex justify-center items-center space-x-4 opacity-60">
+              <FaCcVisa className="h-6 w-6 text-gray-600" />
+              <FaCcMastercard className="h-6 w-6 text-gray-600" />
+              <FaCcPaypal className="h-6 w-6 text-gray-600" />
+              <SiPix className="h-5 w-5 text-gray-600" />
+            </div>
+            <p className="text-center text-xs text-gray-500 mt-2">Aceitos todos os cartões e PIX</p>
+          </div>
         </div>
       </div>
     </section>
