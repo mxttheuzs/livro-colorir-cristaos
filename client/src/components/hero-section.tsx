@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Gift, Download, Smartphone } from "lucide-react";
 import heroImage from "@assets/Ekudb9tLyf6p1rSpCtDzYLG20DMvZ0kVSu1DFct7_1753357726479.png";
+import logo from "@assets/515496816_122165020232481708_4631810946756284690_n_1753357778839.jpg";
 
 interface HeroSectionProps {
   onScrollToOffer: () => void;
@@ -10,13 +11,22 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
   return (
     <section className="bg-main-gradient px-4 py-12 text-center text-white min-h-screen flex items-center">
       <div className="max-w-sm mx-auto">
+        {/* Logo */}
+        <div className="mb-6">
+          <img 
+            src={logo} 
+            alt="Luz do Céu Kids"
+            className="w-24 h-24 mx-auto rounded-full shadow-xl bg-white/20 p-2 backdrop-blur-sm border border-white/30"
+          />
+        </div>
+        
         {/* Hero image */}
         <div className="mb-10">
-          <div className="w-52 h-44 mx-auto bg-white/25 rounded-3xl p-4 backdrop-blur-md border border-white/40 flex items-center justify-center overflow-hidden shadow-2xl">
+          <div className="w-72 h-52 mx-auto bg-white/10 rounded-3xl p-3 backdrop-blur-sm border border-white/20 overflow-hidden shadow-2xl">
             <img 
               src={heroImage} 
               alt="35 Livros de Colorir Cristãos"
-              className="w-full h-full object-cover rounded-xl shadow-xl transition-all duration-300 hover:scale-105"
+              className="w-full h-full object-cover rounded-2xl shadow-lg transition-all duration-300 hover:scale-105"
             />
           </div>
         </div>
