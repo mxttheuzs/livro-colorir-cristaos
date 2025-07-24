@@ -4,14 +4,15 @@ import { useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Import carousel images
-import arcaDeNoe from "@assets/image_1753356866387.png";
-import vidaDeJesus from "@assets/CAPA_1753356882910.png";
-import colorindoComJesus from "@assets/01-CAPA SEM BORDA_1753356895706.png";
-import daviEGolias from "@assets/CAPA (2)_1753356935185.jpg";
-import jonas from "@assets/CAPA (17)_1753356949274.jpg";
-import mariaMae from "@assets/2_1753356962176.png";
-import moises from "@assets/1 - CAPA_1753356980711.png";
+// Import new carousel images
+import arcaDeNoe from "@assets/image_1753360687579.png";
+import pascoa from "@assets/image1_1753360687579.png";
+import daviEGolias from "@assets/image2_1753360687580.png";
+import jonas from "@assets/image3_1753360687580.png";
+import adaoEEva from "@assets/image4_1753360687580.png";
+import moises from "@assets/image5_1753360687580.png";
+import pedroDiscipulo from "@assets/image6_1753360687581.png";
+import criacaoDoMundo from "@assets/image7_1753360687581.png";
 
 
 export function ProductShowcase() {
@@ -36,14 +37,9 @@ export function ProductShowcase() {
       description: "História bíblica de Noé e os animais"
     },
     {
-      title: "A Vida de Jesus",
-      image: vidaDeJesus,
-      description: "Conhecendo a vida de nosso Salvador"
-    },
-    {
-      title: "Colorindo com Jesus",
-      image: colorindoComJesus,
-      description: "Momentos especiais com Jesus"
+      title: "Páscoa Cristã",
+      image: pascoa,
+      description: "Celebrando a ressurreição de Jesus"
     },
     {
       title: "Davi e Golias",
@@ -51,19 +47,29 @@ export function ProductShowcase() {
       description: "A coragem do pequeno Davi"
     },
     {
-      title: "Jonas",
+      title: "Jonas e a Baleia",
       image: jonas,
       description: "A história de Jonas e a baleia"
     },
     {
-      title: "Maria Mãe de Jesus",
-      image: mariaMae,
-      description: "A história da mãe de Jesus"
+      title: "Adão e Eva",
+      image: adaoEEva,
+      description: "O primeiro casal criado por Deus"
     },
     {
       title: "Moisés",
       image: moises,
       description: "O libertador do povo de Deus"
+    },
+    {
+      title: "Pedro Discípulo",
+      image: pedroDiscipulo,
+      description: "O pescador que seguiu Jesus"
+    },
+    {
+      title: "A Criação do Mundo",
+      image: criacaoDoMundo,
+      description: "Como Deus criou todas as coisas"
     }
   ];
 
