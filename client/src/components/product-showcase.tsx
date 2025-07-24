@@ -143,6 +143,26 @@ export function ProductShowcase() {
           </Button>
         </div>
         
+        {/* Quero ver as ofertas section */}
+        <div className="mt-8 text-center">
+          <Button 
+            onClick={() => {
+              const offerElement = document.getElementById('offer');
+              if (offerElement) {
+                offerElement.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'center'
+                });
+              }
+            }}
+            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            🎯 Quero Ver as Ofertas!
+          </Button>
+          <p className="text-gray-600 text-sm mt-2">
+            Aproveite nossos preços especiais
+          </p>
+        </div>
         
       </div>
     </section>

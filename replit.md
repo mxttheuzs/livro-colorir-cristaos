@@ -25,6 +25,7 @@ Preferred communication style: Simple, everyday language.
 - Enhanced card layouts with better padding and subtle animations
 - Removed exit-intent modal offering 50% discount to simplify user experience
 - Removed floating CTA button for a cleaner, less intrusive user experience
+- Added "Quero Ver as Ofertas" button below the book carousel to improve conversion flow
 
 ## System Architecture
 
