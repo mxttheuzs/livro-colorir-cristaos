@@ -105,27 +105,20 @@ export function ProductShowcase() {
           </p>
         </div>
         
-        {/* Carousel container - similar to reference design */}
+        {/* Carousel container - larger images without text overlay */}
         <div className="relative mb-8">
           <div className="overflow-hidden rounded-xl" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_33.333%] min-w-0 px-1">
                   <div className="relative group">
-                    {/* Book image with rounded corners */}
-                    <div className="relative w-full h-32 sm:h-40 bg-white rounded-xl overflow-hidden shadow-lg">
+                    {/* Book image with rounded corners - larger size */}
+                    <div className="relative w-full h-48 sm:h-56 bg-white rounded-xl overflow-hidden shadow-lg">
                       <img 
                         src={book.image} 
                         alt={book.title}
                         className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
                       />
-                    </div>
-                    
-                    {/* Title overlay at bottom */}
-                    <div className="absolute bottom-2 left-2 right-2">
-                      <div className="bg-black/70 backdrop-blur-sm text-white px-2 py-1 rounded-lg">
-                        <p className="text-xs font-medium text-center leading-tight">{book.title}</p>
-                      </div>
                     </div>
                   </div>
                 </div>
