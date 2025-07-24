@@ -30,9 +30,9 @@ export function BenefitsSection() {
   ];
 
   return (
-    <section className="px-4 py-8 bg-white">
+    <section className="px-4 py-12 bg-white">
       <div className="max-w-sm mx-auto">
-        <h3 className="font-fredoka text-2xl text-center text-text-dark mb-6">
+        <h3 className="font-heading text-2xl font-bold text-center text-text-dark mb-6">
           ⭐ Por que escolher nossos livros?
         </h3>
         
@@ -40,12 +40,12 @@ export function BenefitsSection() {
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
-              <Card key={index} className="bg-white rounded-xl p-4 flex items-start space-x-3 shadow-sm border-0">
+              <Card key={index} className="bg-white rounded-xl p-5 flex items-start space-x-4 shadow-lg border-0 hover:shadow-xl transition-all duration-300">
                 <div className={`w-10 h-10 ${benefit.bgColor} rounded-full flex items-center justify-center flex-shrink-0`}>
                   <IconComponent className="text-white h-4 w-4" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-text-dark text-sm mb-1">{benefit.title}</h4>
+                  <h4 className="font-bold text-text-dark text-sm mb-1">{benefit.title}</h4>
                   <p className="text-xs text-text-medium leading-relaxed">{benefit.description}</p>
                 </div>
               </Card>

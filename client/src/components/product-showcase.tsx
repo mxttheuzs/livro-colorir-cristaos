@@ -67,9 +67,9 @@ export function ProductShowcase() {
   ];
 
   return (
-    <section className="px-4 py-8 bg-white">
+    <section className="px-4 py-12 bg-gray-50">
       <div className="max-w-sm mx-auto">
-        <h3 className="font-fredoka text-2xl text-center text-text-dark mb-6">
+        <h3 className="font-heading text-3xl font-bold text-center text-text-dark mb-8">
           📚 Conheça Nossos Livros Cristãos
         </h3>
         
@@ -79,7 +79,7 @@ export function ProductShowcase() {
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-2">
-                  <Card className="bg-white rounded-2xl p-4 text-center border-0 shadow-xl">
+                  <Card className="bg-white rounded-2xl p-6 text-center border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                     <div className="relative w-full h-48 mb-3 rounded-lg overflow-hidden">
                       <img 
                         src={book.image} 
@@ -87,7 +87,7 @@ export function ProductShowcase() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="text-sm font-semibold text-text-dark mb-1">{book.title}</h4>
+                    <h4 className="text-sm font-bold text-text-dark mb-1">{book.title}</h4>
                     <p className="text-xs text-text-medium">{book.description}</p>
                   </Card>
                 </div>
@@ -116,7 +116,7 @@ export function ProductShowcase() {
         
         {/* Total count */}
         <div className="bg-main-gradient text-white rounded-2xl p-6 text-center shadow-xl">
-          <p className="font-fredoka text-2xl mb-2">+ 28 Livros Adicionais!</p>
+          <p className="font-heading text-2xl font-bold mb-2">+ 28 Livros Adicionais!</p>
           <p className="text-lg font-semibold">Total: 35 Livros Completos</p>
         </div>
       </div>

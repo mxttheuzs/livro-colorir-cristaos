@@ -15,14 +15,14 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
   return (
     <section id="offer" className="px-4 py-8 bg-offer-gradient text-white">
       <div className="max-w-sm mx-auto text-center">
-        <h3 className="font-fredoka text-2xl mb-4">
+        <h3 className="font-heading text-2xl font-bold mb-4">
           🎉 Oferta Especial Limitada!
         </h3>
         
         {/* Price comparison */}
         <Card className="bg-white/20 rounded-xl p-4 mb-6 border-0">
           <p className="text-sm opacity-90 mb-2">De R$ 35,00 por apenas:</p>
-          <p className="font-fredoka text-4xl mb-2">R$ 10,00</p>
+          <p className="font-heading text-4xl font-bold mb-2">R$ 10,00</p>
           <p className="text-sm opacity-90">35 livros completos</p>
         </Card>
         
@@ -34,15 +34,15 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           </p>
           <div className="flex justify-center space-x-4 text-center">
             <div>
-              <span className="font-fredoka text-xl block">{hours.toString().padStart(2, '0')}</span>
+              <span className="font-heading text-xl font-bold block">{hours.toString().padStart(2, '0')}</span>
               <span className="text-xs">HORAS</span>
             </div>
             <div>
-              <span className="font-fredoka text-xl block">{minutes.toString().padStart(2, '0')}</span>
+              <span className="font-heading text-xl font-bold block">{minutes.toString().padStart(2, '0')}</span>
               <span className="text-xs">MIN</span>
             </div>
             <div>
-              <span className="font-fredoka text-xl block">{seconds.toString().padStart(2, '0')}</span>
+              <span className="font-heading text-xl font-bold block">{seconds.toString().padStart(2, '0')}</span>
               <span className="text-xs">SEG</span>
             </div>
           </div>
