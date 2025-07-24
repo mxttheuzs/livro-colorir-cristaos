@@ -57,9 +57,6 @@ export function UsageCategories() {
     <section className="px-3 py-12 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="w-full max-w-xs mx-auto">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-4 shadow-lg">
-            <span className="text-xl sm:text-2xl">🎯</span>
-          </div>
           <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
             Onde Usar Nossos Livros
           </h3>
@@ -80,13 +77,6 @@ export function UsageCategories() {
                   <div className="flex-1 min-w-0">
                     <h4 className="font-semibold text-gray-800 text-sm sm:text-base mb-2 group-hover:text-blue-600 transition-colors">{category.title}</h4>
                     <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3">{category.description}</p>
-                    <div className="flex flex-wrap gap-1">
-                      {category.benefits.map((benefit, benefitIndex) => (
-                        <span key={benefitIndex} className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded-full">
-                          {benefit}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
                 <div className={`h-1 ${category.bgColor} rounded-full mt-4 shadow-sm`}></div>
