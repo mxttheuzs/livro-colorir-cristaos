@@ -13,7 +13,7 @@ import { GuaranteeSection } from "@/components/guarantee-section";
 import { WhatsAppSection } from "@/components/whatsapp-section";
 import { FooterSection } from "@/components/footer-section";
 
-import { FloatingCTA } from "@/components/floating-cta";
+
 
 export default function Home() {
   const [currentPrice, setCurrentPrice] = useState("R$ 10,00");
@@ -132,7 +132,7 @@ export default function Home() {
       
 
       
-      <FloatingCTA onPurchase={handlePurchase} price={currentPrice} />
+
     </div>
   );
 }
