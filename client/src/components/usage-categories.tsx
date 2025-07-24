@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Users, Church, Home, BookOpen, Heart, Sparkles } from "lucide-react";
 
 export function UsageCategories() {
@@ -85,6 +86,23 @@ export function UsageCategories() {
           })}
         </div>
 
+        {/* Quero ver as ofertas section */}
+        <div className="mt-8 text-center">
+          <Button 
+            onClick={() => {
+              const offerElement = document.getElementById('offer');
+              if (offerElement) {
+                offerElement.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'center'
+                });
+              }
+            }}
+            className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-base uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            QUERO VER AS OFERTAS
+          </Button>
+        </div>
         
       </div>
     </section>
