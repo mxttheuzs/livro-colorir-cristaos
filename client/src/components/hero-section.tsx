@@ -20,16 +20,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           />
         </div>
         
-        {/* Hero image */}
-        <div className="mb-10">
-          <div className="w-72 h-52 mx-auto bg-white/10 rounded-3xl p-3 backdrop-blur-sm border border-white/20 overflow-hidden shadow-2xl">
-            <img 
-              src={heroImage} 
-              alt="35 Livros de Colorir Cristãos"
-              className="w-full h-full object-cover rounded-2xl shadow-lg transition-all duration-300 hover:scale-105"
-            />
-          </div>
-        </div>
+        
         
         {/* Main Headline */}
         <h1 className="font-heading text-4xl font-bold text-white mb-4 leading-tight">
