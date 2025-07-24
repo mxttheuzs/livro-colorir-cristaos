@@ -97,9 +97,6 @@ export function ProductShowcase() {
     <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="w-full max-w-xs mx-auto">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl mb-4 shadow-lg">
-            <span className="text-xl sm:text-2xl">📖</span>
-          </div>
           <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
             Conheça Nossos Livros Cristãos
           </h3>
