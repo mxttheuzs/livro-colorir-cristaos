@@ -165,7 +165,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Premium CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold py-4 px-6 rounded-3xl text-lg shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto animate-pulse-slow-orange"
+            className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-primary/90 w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold py-4 px-6 rounded-3xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto animate-pulse-slow-orange text-[16px]"
           >
             QUERO O PACOTE PREMIUM
           </Button>
