@@ -14,6 +14,11 @@ import moises from "@assets/image5_1753360687580.png";
 import pedroDiscipulo from "@assets/image6_1753360687581.png";
 import criacaoDoMundo from "@assets/image7_1753360687581.png";
 
+// Import additional carousel images
+import cristaoMenina from "@assets/1 (1)_1753391807468.webp";
+import cristaoMenino from "@assets/2_1753391811735.webp";
+import yeshua from "@assets/3_1753391813174.webp";
+
 
 export function ProductShowcase() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
@@ -70,6 +75,21 @@ export function ProductShowcase() {
       title: "A Criação do Mundo",
       image: criacaoDoMundo,
       description: "Como Deus criou todas as coisas"
+    },
+    {
+      title: "Cristão Menina",
+      image: cristaoMenina,
+      description: "Livros especiais para meninas cristãs"
+    },
+    {
+      title: "Cristão Menino",
+      image: cristaoMenino,
+      description: "Aventuras cristãs para meninos"
+    },
+    {
+      title: "Yeshua",
+      image: yeshua,
+      description: "Conhecendo Jesus através da arte"
     }
   ];
 
