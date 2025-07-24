@@ -126,37 +126,7 @@ export function ProductShowcase() {
           </Button>
         </div>
         
-        {/* Professional collection showcase */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-6 text-center shadow-xl border-0 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-purple-600/90"></div>
-          <div className="relative z-10">
-            <div className="inline-flex items-center justify-center w-10 h-10 bg-white/20 rounded-xl mb-3 shadow-md">
-              <span className="text-lg">🎨</span>
-            </div>
-            <h4 className="font-heading text-xl font-bold mb-2">35 Livros de Colorir Cristãos</h4>
-            <p className="text-sm opacity-90 mb-4">Transforme momentos especiais com sua família, célula e escola dominical</p>
-            
-            <div className="grid grid-cols-3 gap-2 mb-4">
-              <div className="bg-white/10 rounded-lg p-2 backdrop-blur-sm">
-                <div className="text-yellow-300 text-lg mb-1">⭐</div>
-                <div className="text-xs">Células</div>
-              </div>
-              <div className="bg-white/10 rounded-lg p-2 backdrop-blur-sm">
-                <div className="text-orange-300 text-lg mb-1">🏠</div>
-                <div className="text-xs">Escola Dominical</div>
-              </div>
-              <div className="bg-white/10 rounded-lg p-2 backdrop-blur-sm">
-                <div className="text-pink-300 text-lg mb-1">❤️</div>
-                <div className="text-xs">Devocional Familiar</div>
-              </div>
-            </div>
-            
-            <div className="flex justify-center items-center space-x-4 text-xs opacity-75">
-              <span>📥 Download Imediato</span>
-              <span>🖨️ PDF Pronto</span>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
