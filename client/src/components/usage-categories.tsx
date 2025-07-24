@@ -85,19 +85,7 @@ export function UsageCategories() {
           })}
         </div>
 
-        <div className="mt-8 bg-gradient-to-r from-white to-blue-50 rounded-xl p-6 text-center shadow-lg border border-blue-200">
-          <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-xl mb-3 shadow-md">
-            <span className="text-lg">✨</span>
-          </div>
-          <h4 className="font-bold text-gray-800 text-base mb-2">
-            Material Completo e Versátil
-          </h4>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            35 livros adaptáveis para qualquer contexto cristão.
-            <br />
-            <strong className="text-blue-600">Pronto para imprimir e usar imediatamente!</strong>
-          </p>
-        </div>
+        
       </div>
     </section>
   );
