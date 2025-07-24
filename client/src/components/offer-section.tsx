@@ -51,7 +51,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
         {/* Main CTA */}
         <Button 
           onClick={onPurchase}
-          className="w-full bg-white text-primary-pink hover:bg-gray-50 font-semibold py-4 px-6 rounded-2xl text-lg shadow-lg transition-colors mb-4 h-auto"
+          className="w-full bg-white text-primary-blue hover:bg-gray-50 font-semibold py-4 px-6 rounded-2xl text-lg shadow-lg transition-colors mb-4 h-auto"
         >
           <ShoppingCart className="mr-2 h-5 w-5" />
           COMPRAR AGORA - R$ 10,00

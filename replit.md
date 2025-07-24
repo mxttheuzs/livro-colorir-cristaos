@@ -15,6 +15,8 @@ Preferred communication style: Simple, everyday language.
 - Removed order bump functionality completely from the landing page
 - Changed product showcase title from "O que você vai receber" to "Conheça Nossos Livros Cristãos"
 - Updated exit intent modal pricing to reflect new base price (50% discount now R$ 5,00)
+- Redesigned with child-friendly and professional color palette: primary blue, light blue, purple, green, yellow, orange, and pink accents
+- Updated all components to use new color scheme for a more appealing look to children and parents
 
 ## System Architecture
 
@@ -23,7 +25,7 @@ The application follows a monorepo structure with clear separation between clien
 - **Frontend**: React with TypeScript, built with Vite
 - **Backend**: Express.js with TypeScript
 - **Database**: PostgreSQL with Drizzle ORM (configured for Neon Database)
-- **Styling**: Tailwind CSS with shadcn/ui components
+- **Styling**: Tailwind CSS with shadcn/ui components, child-friendly blue color scheme
 - **Build System**: Vite for frontend, esbuild for backend
 
 ## Key Components

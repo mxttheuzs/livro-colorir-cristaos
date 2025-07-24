@@ -79,7 +79,7 @@ export function ProductShowcase() {
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-2">
-                  <Card className="bg-gradient-to-br from-blue-50 to-pink-50 rounded-xl p-4 text-center border-0 shadow-lg">
+                  <Card className="bg-gradient-to-br from-primary-light-blue to-accent-yellow rounded-xl p-4 text-center border-0 shadow-lg">
                     <div className="relative w-full h-48 mb-3 rounded-lg overflow-hidden">
                       <img 
                         src={book.image} 

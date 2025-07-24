@@ -11,7 +11,7 @@ export function FloatingCTA({ onPurchase, price }: FloatingCTAProps) {
     <div className="fixed bottom-4 left-4 right-4 z-40">
       <Button 
         onClick={onPurchase}
-        className="w-full bg-primary-pink hover:bg-pink-600 text-white font-semibold py-4 px-6 rounded-2xl text-lg shadow-2xl transition-all transform hover:scale-105 h-auto animate-bounce-gentle"
+        className="w-full bg-primary-blue hover:bg-blue-600 text-white font-semibold py-4 px-6 rounded-2xl text-lg shadow-2xl transition-all transform hover:scale-105 h-auto animate-bounce-gentle"
       >
         <ShoppingCart className="mr-2 h-5 w-5" />
         Comprar por {price}

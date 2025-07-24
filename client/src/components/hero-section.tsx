@@ -18,7 +18,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
         {/* Main Headline */}
         <h2 className="font-fredoka text-3xl text-text-dark mb-4 leading-tight">
           35 Livros de Colorir<br/>
-          <span className="text-primary-pink">Cristão para Crianças</span>
+          <span className="text-secondary-purple">Cristão para Crianças</span>
         </h2>
         
         {/* Subheadline */}
@@ -30,7 +30,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
         {/* Hero CTA */}
         <Button 
           onClick={onScrollToOffer}
-          className="w-full bg-primary-pink hover:bg-pink-600 text-white font-semibold py-4 px-6 rounded-2xl text-lg shadow-lg transition-colors mb-4 h-auto"
+          className="w-full bg-primary-blue hover:bg-blue-600 text-white font-semibold py-4 px-6 rounded-2xl text-lg shadow-lg transition-colors mb-4 h-auto"
         >
           <Gift className="mr-2 h-5 w-5" />
           Quero os 35 Livros Agora!
@@ -39,7 +39,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
         {/* Trust indicators */}
         <div className="flex justify-center items-center space-x-4 text-sm text-text-medium">
           <span className="flex items-center">
-            <Download className="mr-1 h-4 w-4 text-accent-green" />
+            <Download className="mr-1 h-4 w-4 text-secondary-green" />
             Download Imediato
           </span>
           <span className="flex items-center">

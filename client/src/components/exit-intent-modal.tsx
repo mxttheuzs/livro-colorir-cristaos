@@ -27,16 +27,16 @@ export function ExitIntentModal({ open, onOpenChange, onAcceptOffer }: ExitInten
           <p className="text-sm text-text-medium mb-4">
             Que tal levar os 35 livros com <strong>50% de desconto?</strong>
           </p>
-          <div className="bg-red-50 rounded-xl p-3 mb-4">
-            <p className="text-red-600 font-semibold">
+          <div className="bg-primary-light-blue rounded-xl p-3 mb-4">
+            <p className="text-primary-blue font-semibold">
               De R$ 10,00 por apenas R$ 5,00
             </p>
-            <p className="text-xs text-red-500">Cupom: VOLTA50</p>
+            <p className="text-xs text-text-medium">Cupom: VOLTA50</p>
           </div>
           <div className="space-y-3">
             <Button 
               onClick={handleAcceptOffer}
-              className="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-4 rounded-xl h-auto"
+              className="w-full bg-primary-blue hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-xl h-auto"
             >
               Sim! Quero o Desconto
             </Button>

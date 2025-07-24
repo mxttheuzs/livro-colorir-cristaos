@@ -24,16 +24,17 @@
   --ring: hsl(222, 84%, 4.9%);
   --radius: 0.5rem;
   
-  /* Custom colors for Christian coloring book theme */
-  --primary-pink: hsl(337, 100%, 70%);
-  --primary-turquoise: hsl(174, 62%, 47%);
-  --primary-blue: hsl(207, 90%, 54%);
-  --secondary-yellow: hsl(45, 100%, 90%);
-  --secondary-light-blue: hsl(207, 89%, 96%);
-  --accent-coral: hsl(14, 100%, 70%);
-  --accent-green: hsl(122, 39%, 49%);
-  --text-dark: hsl(216, 28%, 17%);
-  --text-medium: hsl(0, 0%, 40%);
+  /* Custom colors for Christian coloring book theme - Child-friendly and professional */
+  --primary-blue: hsl(213, 90%, 65%);
+  --primary-light-blue: hsl(213, 100%, 85%);
+  --secondary-purple: hsl(262, 83%, 75%);
+  --secondary-green: hsl(142, 69%, 58%);
+  --accent-yellow: hsl(48, 100%, 82%);
+  --accent-orange: hsl(25, 95%, 70%);
+  --accent-pink: hsl(340, 82%, 80%);
+  --background-cream: hsl(48, 60%, 97%);
+  --text-dark: hsl(220, 26%, 25%);
+  --text-medium: hsl(220, 15%, 45%);
 }
 
 .dark {
@@ -69,52 +70,60 @@
 }
 
 /* Custom utility classes for the Christian coloring book theme */
-.bg-primary-pink {
-  background-color: var(--primary-pink);
-}
-
-.bg-primary-turquoise {
-  background-color: var(--primary-turquoise);
-}
-
 .bg-primary-blue {
   background-color: var(--primary-blue);
 }
 
-.bg-secondary-yellow {
-  background-color: var(--secondary-yellow);
+.bg-primary-light-blue {
+  background-color: var(--primary-light-blue);
 }
 
-.bg-secondary-light-blue {
-  background-color: var(--secondary-light-blue);
+.bg-secondary-purple {
+  background-color: var(--secondary-purple);
 }
 
-.bg-accent-coral {
-  background-color: var(--accent-coral);
+.bg-secondary-green {
+  background-color: var(--secondary-green);
 }
 
-.bg-accent-green {
-  background-color: var(--accent-green);
+.bg-accent-yellow {
+  background-color: var(--accent-yellow);
 }
 
-.text-primary-pink {
-  color: var(--primary-pink);
+.bg-accent-orange {
+  background-color: var(--accent-orange);
 }
 
-.text-primary-turquoise {
-  color: var(--primary-turquoise);
+.bg-accent-pink {
+  background-color: var(--accent-pink);
+}
+
+.bg-background-cream {
+  background-color: var(--background-cream);
 }
 
 .text-primary-blue {
   color: var(--primary-blue);
 }
 
-.text-accent-coral {
-  color: var(--accent-coral);
+.text-primary-light-blue {
+  color: var(--primary-light-blue);
 }
 
-.text-accent-green {
-  color: var(--accent-green);
+.text-secondary-purple {
+  color: var(--secondary-purple);
+}
+
+.text-secondary-green {
+  color: var(--secondary-green);
+}
+
+.text-accent-orange {
+  color: var(--accent-orange);
+}
+
+.text-accent-pink {
+  color: var(--accent-pink);
 }
 
 .text-text-dark {
@@ -127,11 +136,11 @@
 
 /* Custom gradient backgrounds */
 .bg-hero-gradient {
-  background: linear-gradient(135deg, var(--secondary-light-blue) 0%, var(--secondary-yellow) 50%, var(--primary-turquoise) 100%);
+  background: linear-gradient(135deg, var(--primary-light-blue) 0%, var(--accent-yellow) 50%, var(--background-cream) 100%);
 }
 
 .bg-offer-gradient {
-  background: linear-gradient(135deg, var(--primary-pink) 0%, var(--accent-coral) 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-purple) 100%);
 }
 
 /* Fredoka font fallback */

@@ -130,7 +130,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background-cream">
       <HeroSection onScrollToOffer={scrollToOffer} />
       <ProductShowcase />
       <BenefitsSection />
