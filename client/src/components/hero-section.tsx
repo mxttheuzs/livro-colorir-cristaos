@@ -68,7 +68,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-gray-800 font-bold py-4 sm:py-5 px-4 sm:px-6 rounded-2xl text-base sm:text-lg lg:text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-4 h-auto"
         >
           <Gift className="mr-2 h-5 w-5 sm:h-6 sm:w-6" />
-          QUERO AGORA - R$ 10,00
+          VER OFERTAS - R$ 10,00
         </Button>
         
         {/* Trust indicators - mobile responsive */}
