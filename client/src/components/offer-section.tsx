@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ShoppingCart, Clock } from "lucide-react";
-import { useCountdown } from "@/hooks/use-countdown";
+import { ShoppingCart } from "lucide-react";
 import { FaCcVisa, FaCcMastercard, FaCcPaypal } from "react-icons/fa";
 import { SiPix } from "react-icons/si";
 
@@ -10,7 +9,6 @@ interface OfferSectionProps {
 }
 
 export function OfferSection({ onPurchase }: OfferSectionProps) {
-  const { hours, minutes, seconds } = useCountdown();
   
   // Get current date and format it
   const getCurrentDate = () => {
@@ -89,36 +87,96 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           </div>
         </Card>
         
-        {/* Urgency timer */}
-        <Card className="bg-white rounded-3xl p-6 mb-8 border border-gray-200 shadow-lg">
-          <p className="text-gray-700 font-semibold mb-4 flex items-center justify-center text-lg">
-            <Clock className="mr-2 h-5 w-5 text-red-500" />
-            Oferta termina em:
-          </p>
-          <div className="flex justify-center space-x-4 text-center">
-            <div className="bg-red-500 text-white rounded-2xl p-3 min-w-[60px]">
-              <span className="font-heading text-2xl font-bold block">{hours.toString().padStart(2, '0')}</span>
-              <span className="text-xs opacity-90 font-medium">HORAS</span>
+        {/* Premium package */}
+        <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-8 mb-8 border-2 border-yellow-300 relative overflow-hidden">
+          {/* Premium badge */}
+          <div className="absolute -top-1 -right-1 bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-4 py-2 rounded-bl-2xl rounded-tr-3xl text-sm font-bold">
+            POPULAR
+          </div>
+          
+          {/* Crown icon */}
+          <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl mb-4 shadow-lg">
+            <span className="text-xl">👑</span>
+          </div>
+          
+          <h4 className="font-bold text-gray-800 text-xl mb-4">Pacote Premium</h4>
+          
+          {/* Current price */}
+          <div className="mb-4">
+            <span className="text-5xl font-bold text-green-600">R$ 17</span>
+            <span className="text-2xl text-green-600">,00</span>
+          </div>
+          
+          {/* Savings */}
+          <p className="text-gray-600 text-sm mb-6">Você economiza R$ 239,00</p>
+          
+          {/* Main package */}
+          <div className="bg-green-100 rounded-2xl p-4 mb-4">
+            <p className="font-bold text-gray-800 text-center">TUDO DO PACOTE BÁSICO +</p>
+          </div>
+          
+          {/* Bonuses */}
+          <div className="space-y-3 mb-6">
+            <div className="bg-yellow-100 rounded-xl p-3 flex items-center">
+              <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-sm">🎁</span>
+              </div>
+              <div>
+                <p className="font-bold text-gray-800 text-sm">BÔNUS 1: 2 Novos livros/mês</p>
+                <p className="text-gray-600 text-xs">R$ 59/ano</p>
+              </div>
             </div>
-            <div className="bg-red-500 text-white rounded-2xl p-3 min-w-[60px]">
-              <span className="font-heading text-2xl font-bold block">{minutes.toString().padStart(2, '0')}</span>
-              <span className="text-xs opacity-90 font-medium">MIN</span>
+            
+            <div className="bg-yellow-100 rounded-xl p-3 flex items-center">
+              <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-sm">🎁</span>
+              </div>
+              <div>
+                <p className="font-bold text-gray-800 text-sm">BÔNUS 2: Vídeos de Histórias Bíblicas</p>
+                <p className="text-gray-600 text-xs">R$ 27,00</p>
+              </div>
             </div>
-            <div className="bg-red-500 text-white rounded-2xl p-3 min-w-[60px]">
-              <span className="font-heading text-2xl font-bold block">{seconds.toString().padStart(2, '0')}</span>
-              <span className="text-xs opacity-90 font-medium">SEG</span>
+            
+            <div className="bg-yellow-100 rounded-xl p-3 flex items-center">
+              <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-sm">🎁</span>
+              </div>
+              <div>
+                <p className="font-bold text-gray-800 text-sm">BÔNUS 3: 15 Versículos Ilustrados</p>
+                <p className="text-gray-600 text-xs">R$ 19,00</p>
+              </div>
+            </div>
+            
+            <div className="bg-yellow-100 rounded-xl p-3 flex items-center">
+              <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center mr-3">
+                <span className="text-sm">🎁</span>
+              </div>
+              <div>
+                <p className="font-bold text-gray-800 text-sm">BÔNUS 4: Calendário Bíblico Semanal</p>
+                <p className="text-gray-600 text-xs">R$ 35,00</p>
+              </div>
             </div>
           </div>
         </Card>
         
-        {/* Main CTA */}
-        <Button 
-          onClick={onPurchase}
-          className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 px-8 rounded-3xl text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-6 h-auto"
-        >
-          <ShoppingCart className="mr-3 h-6 w-6" />
-          COMPRAR AGORA - R$ 10,00
-        </Button>
+        {/* CTA Buttons */}
+        <div className="space-y-4 mb-8">
+          <Button 
+            onClick={onPurchase}
+            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 px-8 rounded-3xl text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
+          >
+            <ShoppingCart className="mr-3 h-6 w-6" />
+            COMPRAR PACOTE BÁSICO - R$ 10,00
+          </Button>
+          
+          <Button 
+            onClick={onPurchase}
+            className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold py-6 px-8 rounded-3xl text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
+          >
+            <ShoppingCart className="mr-3 h-6 w-6" />
+            COMPRAR PACOTE PREMIUM - R$ 17,00
+          </Button>
+        </div>
         
         {/* Payment methods */}
         <div className="bg-white rounded-3xl p-6 border border-gray-200 shadow-lg">
