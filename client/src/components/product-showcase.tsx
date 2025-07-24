@@ -12,7 +12,7 @@ import daviEGolias from "@assets/CAPA (2)_1753356935185.jpg";
 import jonas from "@assets/CAPA (17)_1753356949274.jpg";
 import mariaMae from "@assets/2_1753356962176.png";
 import moises from "@assets/1 - CAPA_1753356980711.png";
-import newColoringBook from "@assets/image_1753358252594.png";
+import newColoringBook from "@assets/Ekudb9tLyf6p1rSpCtDzYLG20DMvZ0kVSu1DFct7_1753358437092.png";
 
 export function ProductShowcase() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
@@ -81,16 +81,16 @@ export function ProductShowcase() {
         
         {/* Carousel container */}
         <div className="relative mb-6">
-          <div className="overflow-hidden rounded-xl" ref={emblaRef}>
+          <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-2">
                   <div className="bg-white text-center">
-                    <div className="relative w-full h-80 mb-3 overflow-hidden">
+                    <div className="relative w-full h-96 mb-3">
                       <img 
                         src={book.image} 
                         alt={book.title}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain mx-auto"
                       />
                     </div>
                     <h4 className="text-sm font-bold text-text-dark mb-1">{book.title}</h4>
