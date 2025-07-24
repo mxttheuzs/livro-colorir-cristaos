@@ -12,6 +12,7 @@ import daviEGolias from "@assets/CAPA (2)_1753356935185.jpg";
 import jonas from "@assets/CAPA (17)_1753356949274.jpg";
 import mariaMae from "@assets/2_1753356962176.png";
 import moises from "@assets/1 - CAPA_1753356980711.png";
+import newColoringBook from "@assets/image_1753358252594.png";
 
 export function ProductShowcase() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
@@ -63,6 +64,11 @@ export function ProductShowcase() {
       title: "Moisés",
       image: moises,
       description: "O libertador do povo de Deus"
+    },
+    {
+      title: "Colorir com Devocional Infantil",
+      image: newColoringBook,
+      description: "Páginas para colorir com ensinamentos bíblicos"
     }
   ];
 
@@ -79,17 +85,17 @@ export function ProductShowcase() {
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-2">
-                  <Card className="bg-white rounded-2xl p-6 text-center border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="relative w-full h-48 mb-3 rounded-lg overflow-hidden">
+                  <div className="bg-white text-center">
+                    <div className="relative w-full h-80 mb-3 overflow-hidden">
                       <img 
                         src={book.image} 
                         alt={book.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                     <h4 className="text-sm font-bold text-text-dark mb-1">{book.title}</h4>
                     <p className="text-xs text-text-medium">{book.description}</p>
-                  </Card>
+                  </div>
                 </div>
               ))}
             </div>
