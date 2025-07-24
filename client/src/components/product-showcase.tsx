@@ -12,7 +12,7 @@ import daviEGolias from "@assets/CAPA (2)_1753356935185.jpg";
 import jonas from "@assets/CAPA (17)_1753356949274.jpg";
 import mariaMae from "@assets/2_1753356962176.png";
 import moises from "@assets/1 - CAPA_1753356980711.png";
-import newColoringBook from "@assets/Ekudb9tLyf6p1rSpCtDzYLG20DMvZ0kVSu1DFct7_1753358437092.png";
+
 
 export function ProductShowcase() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
@@ -64,11 +64,6 @@ export function ProductShowcase() {
       title: "Moisés",
       image: moises,
       description: "O libertador do povo de Deus"
-    },
-    {
-      title: "Colorir com Devocional Infantil",
-      image: newColoringBook,
-      description: "Páginas para colorir com ensinamentos bíblicos"
     }
   ];
 
