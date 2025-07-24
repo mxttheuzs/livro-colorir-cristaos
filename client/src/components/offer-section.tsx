@@ -89,7 +89,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Basic CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-2xl text-sm sm:text-base shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto animate-pulse-slow"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full text-sm sm:text-base uppercase tracking-wide shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
           >
             QUERO VER AS OFERTAS
           </Button>
@@ -165,7 +165,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Premium CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-primary/90 w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold py-4 px-6 rounded-3xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto animate-pulse-slow-orange text-[16px]"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto uppercase tracking-wide text-[16px]"
           >
             QUERO VER AS OFERTAS
           </Button>

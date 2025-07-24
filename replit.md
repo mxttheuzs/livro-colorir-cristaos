@@ -26,6 +26,7 @@ Preferred communication style: Simple, everyday language.
 - Removed exit-intent modal offering 50% discount to simplify user experience
 - Removed floating CTA button for a cleaner, less intrusive user experience
 - Added "Quero Ver as Ofertas" button below the book carousel to improve conversion flow
+- Updated all "QUERO VER AS OFERTAS" buttons to use consistent green rounded design across hero, product showcase, and offer sections
 
 ## System Architecture
 

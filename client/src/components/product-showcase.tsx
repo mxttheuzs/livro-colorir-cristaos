@@ -155,9 +155,9 @@ export function ProductShowcase() {
                 });
               }
             }}
-            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-base uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
-            🎯 Quero Ver as Ofertas!
+            QUERO VER AS OFERTAS
           </Button>
           <p className="text-gray-600 text-sm mt-2">
             Aproveite nossos preços especiais
