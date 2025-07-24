@@ -76,7 +76,7 @@ export function ProductShowcase() {
         
         {/* Carousel container */}
         <div className="relative mb-6">
-          <div className="overflow-hidden" ref={emblaRef}>
+          <div className="overflow-hidden rounded-3xl" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-1">
