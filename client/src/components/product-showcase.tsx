@@ -85,16 +85,14 @@ export function ProductShowcase() {
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-2">
-                  <div className="bg-white text-center">
-                    <div className="relative w-full h-96 mb-3">
+                  <div className="bg-white">
+                    <div className="relative w-full h-96">
                       <img 
                         src={book.image} 
                         alt={book.title}
                         className="w-full h-full object-contain mx-auto"
                       />
                     </div>
-                    <h4 className="text-sm font-bold text-text-dark mb-1">{book.title}</h4>
-                    <p className="text-xs text-text-medium">{book.description}</p>
                   </div>
                 </div>
               ))}
