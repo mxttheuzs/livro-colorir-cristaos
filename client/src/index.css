@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4.9%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 46.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4.9%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(222, 84%, 4.9%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for Christian coloring book theme */
+  --primary-pink: hsl(337, 100%, 70%);
+  --primary-turquoise: hsl(174, 62%, 47%);
+  --primary-blue: hsl(207, 90%, 54%);
+  --secondary-yellow: hsl(45, 100%, 90%);
+  --secondary-light-blue: hsl(207, 89%, 96%);
+  --accent-coral: hsl(14, 100%, 70%);
+  --accent-green: hsl(122, 39%, 49%);
+  --text-dark: hsl(216, 28%, 17%);
+  --text-medium: hsl(0, 0%, 40%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes for the Christian coloring book theme */
+.bg-primary-pink {
+  background-color: var(--primary-pink);
+}
+
+.bg-primary-turquoise {
+  background-color: var(--primary-turquoise);
+}
+
+.bg-primary-blue {
+  background-color: var(--primary-blue);
+}
+
+.bg-secondary-yellow {
+  background-color: var(--secondary-yellow);
+}
+
+.bg-secondary-light-blue {
+  background-color: var(--secondary-light-blue);
+}
+
+.bg-accent-coral {
+  background-color: var(--accent-coral);
+}
+
+.bg-accent-green {
+  background-color: var(--accent-green);
+}
+
+.text-primary-pink {
+  color: var(--primary-pink);
+}
+
+.text-primary-turquoise {
+  color: var(--primary-turquoise);
+}
+
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+
+.text-accent-coral {
+  color: var(--accent-coral);
+}
+
+.text-accent-green {
+  color: var(--accent-green);
+}
+
+.text-text-dark {
+  color: var(--text-dark);
+}
+
+.text-text-medium {
+  color: var(--text-medium);
+}
+
+/* Custom gradient backgrounds */
+.bg-hero-gradient {
+  background: linear-gradient(135deg, var(--secondary-light-blue) 0%, var(--secondary-yellow) 50%, var(--primary-turquoise) 100%);
+}
+
+.bg-offer-gradient {
+  background: linear-gradient(135deg, var(--primary-pink) 0%, var(--accent-coral) 100%);
+}
+
+/* Fredoka font fallback */
+.font-fredoka {
+  font-family: "Fredoka One", "Comic Sans MS", cursive;
+  font-weight: 400;
+}
+
+/* Smooth animations */
+@keyframes bounce-gentle {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    transform: translate3d(0, -6px, 0);
+  }
+  70% {
+    transform: translate3d(0, -3px, 0);
+  }
+  90% {
+    transform: translate3d(0, -1px, 0);
+  }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s infinite;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 480px) {
+  .font-fredoka {
+    line-height: 1.2;
+  }
+}
