@@ -102,7 +102,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                 HOJE
               </div>
             </div>
-            <p className="text-gray-600 text-xs mt-1">Oferta promocional especial</p>
+            <p className="text-red-600 text-xs font-bold mt-1">⚠️ Amanhã volta para R$ 97,00</p>
           </div>
           
           {/* Value Stack - Proof Element */}
