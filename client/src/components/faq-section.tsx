@@ -1,95 +1,74 @@
 import { useState } from "react";
-import { Card } from "@/components/ui/card";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 export function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
 
   const faqs = [
     {
-      question: "Como faço o download dos livros após a compra?",
-      answer: "Após a confirmação do pagamento, você receberá um email com o link para download imediato. Todos os 35 livros estarão disponíveis em formato PDF de alta qualidade."
-    },
-    {
-      question: "Os livros são adequados para que idade?",
-      answer: "Nossos livros são perfeitos para crianças de 3 a 12 anos. Cada história é cuidadosamente ilustrada com traços simples e grandes espaços para colorir, facilitando o manuseio pelos pequenos."
+      question: "Como recebo os livros?",
+      answer: "Após a confirmação do pagamento, você recebe imediatamente todos os 35 livros de colorir cristãos em formato PDF em seu email. Os arquivos estão em alta qualidade e prontos para impressão."
     },
     {
       question: "Posso imprimir quantas vezes quiser?",
-      answer: "Sim! Com a compra você tem acesso vitalício aos arquivos e pode imprimir quantas cópias precisar para uso pessoal, familiar, células e escola dominical."
+      answer: "Sim! Uma vez que você adquire os livros, pode imprimir quantas vezes desejar. Não há limite de impressões. Você pode usar em casa, na igreja, escola dominical ou compartilhar com sua família."
     },
     {
-      question: "Qual é a garantia oferecida?",
-      answer: "Oferecemos garantia incondicional de 7 dias. Se por qualquer motivo não ficar satisfeito, devolvemos 100% do seu dinheiro, sem perguntas."
+      question: "Qual a faixa etária recomendada?",
+      answer: "Os livros são recomendados para crianças de 3 a 12 anos de idade. Os desenhos têm diferentes níveis de complexidade, desde traços mais simples para os pequenos até desenhos mais detalhados para as crianças maiores."
     },
     {
-      question: "Como funciona o suporte?",
-      answer: "Nosso suporte é feito via WhatsApp para atendimento rápido e personalizado. Nossa equipe está pronta para ajudar com qualquer dúvida sobre download, impressão ou uso dos materiais."
-    },
-    {
-      question: "Preciso ter internet para usar os livros?",
-      answer: "Não! Após o download, todos os arquivos ficam salvos no seu dispositivo. Você pode acessar, visualizar e imprimir offline, sem precisar de conexão com a internet."
+      question: "Como funciona o bônus mensal?",
+      answer: "A cada mês, enviamos novos livros de colorir cristãos exclusivos para sua coleção, totalmente gratuitos. Você receberá por email sem custo adicional, expandindo continuamente sua biblioteca de atividades."
     }
   ];
 
-  const toggleFaq = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+  const toggleQuestion = (index: number) => {
+    setOpenQuestion(openQuestion === index ? null : index);
   };
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-4 shadow-lg">
-            <span className="text-xl sm:text-2xl">❓</span>
-          </div>
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
-            Perguntas Frequentes
-          </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
-            Esclareça suas dúvidas sobre nossos livros cristãos
-          </p>
-        </div>
-
-        <div className="space-y-4">
+    <section className="px-4 py-12 bg-gray-50">
+      <div className="max-w-sm mx-auto">
+        <div className="space-y-3">
           {faqs.map((faq, index) => (
-            <Card key={index} className="bg-white rounded-xl border-0 shadow-md overflow-hidden">
+            <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
               <button
-                onClick={() => toggleFaq(index)}
-                className="w-full px-4 py-3 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                onClick={() => toggleQuestion(index)}
+                className="w-full px-5 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
               >
-                <div className="flex justify-between items-center">
-                  <h4 className="font-semibold text-gray-800 text-sm sm:text-base pr-2">
-                    {faq.question}
-                  </h4>
-                  {openIndex === index ? (
-                    <ChevronUp className="h-5 w-5 text-gray-500 flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="h-5 w-5 text-gray-500 flex-shrink-0" />
-                  )}
-                </div>
+                <span className="font-medium text-gray-800 text-sm pr-3">
+                  {faq.question}
+                </span>
+                {openQuestion === index ? (
+                  <ChevronUp className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                ) : (
+                  <ChevronDown className="h-5 w-5 text-gray-500 flex-shrink-0" />
+                )}
               </button>
               
-              {openIndex === index && (
-                <div className="px-4 pb-4">
-                  <div className="pt-2 border-t border-gray-100">
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
+              {openQuestion === index && (
+                <div className="px-5 pb-4 border-t border-gray-100">
+                  <p className="text-gray-600 text-sm leading-relaxed pt-3">
+                    {faq.answer}
+                  </p>
                 </div>
               )}
-            </Card>
+            </div>
           ))}
         </div>
 
+        {/* CTA Button */}
         <div className="mt-8 text-center">
-          <p className="text-gray-600 text-sm mb-4">
-            Ainda tem dúvidas? Fale conosco!
-          </p>
-          <div className="inline-flex items-center justify-center w-10 h-10 bg-green-500 rounded-full">
-            <span className="text-white text-lg">💬</span>
-          </div>
+          <button 
+            onClick={() => {
+              const element = document.getElementById('offer-section');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            TIREI MINHAS DÚVIDAS, QUERO COMPRAR
+          </button>
         </div>
       </div>
     </section>
