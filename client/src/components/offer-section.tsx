@@ -174,7 +174,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                           <img 
                             src={versiculo.image} 
                             alt={`Versículo ${index + 1}`}
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-contain rounded-lg"
                           />
                           {versiculo.locked && (
                             <div className="absolute inset-0 bg-black/60 flex items-center justify-center backdrop-blur-sm">
