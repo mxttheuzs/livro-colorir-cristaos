@@ -4,47 +4,52 @@ import { ShoppingCart } from "lucide-react";
 export function SocialProofCounter() {
   const [currentNotification, setCurrentNotification] = useState<{
     name: string;
+    product: string;
     show: boolean;
-  }>({ name: "", show: false });
+  }>({ name: "", product: "", show: false });
 
-  const customerNames = [
-    "Maria da Silva",
-    "João Pereira", 
-    "Ana Beatriz",
-    "Carlos Eduardo",
-    "Fernanda Souza",
-    "Ricardo Santos",
-    "Juliana Oliveira",
-    "Marcos Vieira",
-    "Camila Rodrigues",
-    "Rafael Almeida",
-    "Beatriz Lima",
-    "Gabriel Costa",
-    "Patrícia Martins",
-    "Thiago Fernandes",
-    "Mariana Gomes",
-    "Bruno Silva",
-    "Larissa Barbosa",
-    "Diego Nascimento",
-    "Amanda Ribeiro",
-    "Lucas Andrade",
-    "Priscila Moreira",
-    "Gustavo Cardoso",
-    "Vanessa Freitas",
-    "André Carvalho",
-    "Renata Mendes"
+  const customers = [
+    { name: "Maria José", product: "35 Livros de Colorir" },
+    { name: "João Carlos", product: "Pacote Completo" }, 
+    { name: "Ana Paula", product: "35 Livros + Bônus" },
+    { name: "José Roberto", product: "Coleção Cristã" },
+    { name: "Francisca", product: "35 Livros de Colorir" },
+    { name: "Antônio Silva", product: "Pacote Premium" },
+    { name: "Rosana", product: "35 Livros + Bônus" },
+    { name: "Marcos Paulo", product: "Coleção Completa" },
+    { name: "Sônia Maria", product: "35 Livros de Colorir" },
+    { name: "Carlos Alberto", product: "Pacote Completo" },
+    { name: "Vera Lúcia", product: "35 Livros + Bônus" },
+    { name: "Luiz Fernando", product: "Coleção Cristã" },
+    { name: "Regina", product: "35 Livros de Colorir" },
+    { name: "Paulo Roberto", product: "Pacote Premium" },
+    { name: "Lúcia Helena", product: "35 Livros + Bônus" },
+    { name: "Jorge", product: "Coleção Completa" },
+    { name: "Neusa", product: "35 Livros de Colorir" },
+    { name: "Sebastião", product: "Pacote Completo" },
+    { name: "Ivone", product: "35 Livros + Bônus" },
+    { name: "Geraldo", product: "Coleção Cristã" },
+    { name: "Conceição", product: "35 Livros de Colorir" },
+    { name: "Mário", product: "Pacote Premium" },
+    { name: "Terezinha", product: "35 Livros + Bônus" },
+    { name: "Wilson", product: "Coleção Completa" },
+    { name: "Aparecida", product: "35 Livros de Colorir" }
   ];
 
   useEffect(() => {
     const showNotification = () => {
-      const randomName = customerNames[Math.floor(Math.random() * customerNames.length)];
+      const randomCustomer = customers[Math.floor(Math.random() * customers.length)];
       
-      setCurrentNotification({ name: randomName, show: true });
+      setCurrentNotification({ 
+        name: randomCustomer.name, 
+        product: randomCustomer.product,
+        show: true 
+      });
       
-      // Esconder após 4 segundos
+      // Esconder após 5 segundos
       setTimeout(() => {
         setCurrentNotification(prev => ({ ...prev, show: false }));
-      }, 4000);
+      }, 5000);
     };
 
     // Primeira notificação após 3 segundos
@@ -75,8 +80,8 @@ export function SocialProofCounter() {
             <p className="font-semibold text-gray-800 text-sm truncate">
               {currentNotification.name}
             </p>
-            <p className="text-xs text-gray-600">
-              comprou agora
+            <p className="text-xs text-gray-600 truncate">
+              comprou {currentNotification.product}
             </p>
           </div>
           <div className="flex space-x-1">
