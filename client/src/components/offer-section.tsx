@@ -104,6 +104,12 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           
           <h4 className="font-bold text-gray-800 text-xl mb-4">Pacote Premium</h4>
           
+          {/* Current price */}
+          <div className="mb-4 text-center">
+            <span className="text-5xl font-bold text-green-600">R$ 17</span>
+            <span className="text-2xl text-green-600">,00</span>
+          </div>
+          
           {/* Savings Header */}
           <p className="text-gray-600 text-sm mb-4 text-center">Você economiza R$ 239,00</p>
           
@@ -153,12 +159,6 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                 </div>
               </div>
             </div>
-          </div>
-          
-          {/* Current price */}
-          <div className="mb-4 text-center">
-            <span className="text-5xl font-bold text-green-600">R$ 17</span>
-            <span className="text-2xl text-green-600">,00</span>
           </div>
           
           {/* Premium CTA Button */}
