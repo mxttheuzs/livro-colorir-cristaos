@@ -120,17 +120,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
               <div className="flex items-center">
                 <span className="text-yellow-500 mr-3 text-lg">🎁</span>
                 <div>
-                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 1: 2 Novos livros/mês</p>
-                  <p className="text-red-500 text-xs line-through">R$ 89/mês</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-xl p-3 border border-gray-200 flex items-center justify-between">
-              <div className="flex items-center">
-                <span className="text-yellow-500 mr-3 text-lg">🎁</span>
-                <div>
-                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 2: Vídeos de Histórias Bíblicas</p>
+                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 1: Vídeos de Histórias Bíblicas</p>
                   <p className="text-red-500 text-xs line-through">R$ 97,00</p>
                 </div>
               </div>
@@ -140,7 +130,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
               <div className="flex items-center">
                 <span className="text-yellow-500 mr-3 text-lg">🎁</span>
                 <div>
-                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 3: 15 Versículos Ilustrados</p>
+                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 2: 15 Versículos Ilustrados</p>
                   <p className="text-red-500 text-xs line-through">R$ 39,00</p>
                 </div>
               </div>
@@ -150,7 +140,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
               <div className="flex items-center">
                 <span className="text-yellow-500 mr-3 text-lg">🎁</span>
                 <div>
-                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 4: Calendário Bíblico Semanal</p>
+                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 3: Calendário Bíblico Semanal</p>
                   <p className="text-red-500 text-xs line-through">R$ 35,00</p>
                 </div>
               </div>
