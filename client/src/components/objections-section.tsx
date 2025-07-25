@@ -84,64 +84,9 @@ export function ObjectionsSection({ onPurchase }: ObjectionsSectionProps) {
           })}
         </div>
 
-        {/* Final Emotional Push */}
-        <div className="bg-gradient-to-r from-red-100 to-pink-100 border-2 border-red-300 rounded-xl p-6 mb-6">
-          <div className="text-center">
-            <AlertTriangle className="text-red-500 h-12 w-12 mx-auto mb-4" />
-            <h4 className="font-bold text-red-600 text-lg mb-3">
-              💔 ÚLTIMA CHANCE REAL
-            </h4>
-            <div className="space-y-2 mb-4">
-              <p className="text-gray-800 text-sm font-bold">
-                ❌ Se você sair desta página sem comprar...
-              </p>
-              <p className="text-red-600 text-sm">
-                • Seus filhos continuarão sem valores cristãos
-              </p>
-              <p className="text-red-600 text-sm">
-                • Você pagará R$ 97,00 amanhã (SE ainda tiver)
-              </p>
-              <p className="text-red-600 text-sm">
-                • Outras famílias pegarão os últimos exemplares
-              </p>
-            </div>
-            
-            <div className="bg-green-100 border border-green-300 rounded-lg p-3 mb-4">
-              <p className="text-green-800 text-sm font-bold">
-                ✅ Mas se você agir AGORA...
-              </p>
-              <p className="text-green-600 text-xs mt-1">
-                Seus filhos começam a transformação em 5 minutos!
-              </p>
-            </div>
-            
-            {/* Countdown Timer Mock */}
-            <div className="bg-red-500 text-white rounded-lg p-3 mb-4">
-              <div className="flex items-center justify-center space-x-2">
-                <Clock className="h-4 w-4" />
-                <span className="font-bold text-sm">TEMPO RESTANTE: 2h 47min</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Final CTA */}
-        <Button 
-          onClick={onPurchase}
-          className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-5 px-6 rounded-full text-lg uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl border-2 border-red-400 h-auto"
-          style={{ animation: 'pulse-scale 1.5s ease-in-out infinite' }}
-        >
-          🚨 SIM! QUERO TRANSFORMAR MEUS FILHOS AGORA!
-        </Button>
         
-        <div className="text-center mt-4">
-          <p className="text-xs text-red-600 font-bold">
-            ⚠️ Clique agora ou perca para sempre esta oportunidade!
-          </p>
-          <p className="text-xs text-gray-500 mt-2">
-            ✅ Compra 100% segura • 🔒 Dados protegidos • ⚡ Acesso imediato
-          </p>
-        </div>
+
+        
       </div>
     </section>
   );
