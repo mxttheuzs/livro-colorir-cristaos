@@ -80,7 +80,6 @@ export function UsageCategories() {
                     <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3">{category.description}</p>
                   </div>
                 </div>
-                <div className={`h-1 ${category.bgColor} rounded-full mt-4 shadow-sm`}></div>
               </Card>
             );
           })}
