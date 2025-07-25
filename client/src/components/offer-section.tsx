@@ -162,7 +162,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
               </div>
               
               {/* Mini Carousel dos Versículos */}
-              <div className="relative">
+              <div className="relative ml-[-6px] mr-[-6px] pl-[-8px] pr-[-8px] pt-[0px] pb-[0px]">
                 <div className="overflow-hidden rounded-lg">
                   <div 
                     className="flex transition-transform duration-300 ease-in-out"
