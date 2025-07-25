@@ -155,7 +155,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                 <div className="flex items-center">
                   <span className="text-yellow-500 mr-3 text-lg">🎁</span>
                   <div>
-                    <p className="font-semibold text-gray-800 text-sm">BÔNUS 2: 15 Versículos Ilustrados</p>
+                    <p className="font-semibold text-gray-800 text-sm">BÔNUS 2: 18 Versículos Ilustrados</p>
                     <p className="text-red-500 text-xs line-through">R$ 39,00</p>
                   </div>
                 </div>
