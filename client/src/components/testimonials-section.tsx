@@ -1,10 +1,12 @@
 import { Card } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 import mariaPhoto from "@assets/c_1753391313706.webp";
 import pastorPhoto from "@assets/x_1753391316797.webp";
 import carolinaPhoto from "@assets/z_1753391318305.webp";
 
 export function TestimonialsSection() {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const testimonials = [
     {
       name: "Maria Fernanda",
@@ -50,32 +52,72 @@ export function TestimonialsSection() {
           </p>
         </div>
         
-        <div className="space-y-6">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-white rounded-2xl p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-start mb-4">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 shadow-md">
-                  <img 
-                    src={testimonial.photo} 
-                    alt={testimonial.name}
-                    className="w-full h-full object-cover"
-                  />
+        {/* Testimonials Carousel */}
+        <div className="relative">
+          <div className="overflow-hidden">
+            <div 
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="w-full flex-shrink-0">
+                  <Card className="bg-white rounded-2xl p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex items-start mb-4">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 shadow-md">
+                        <img 
+                          src={testimonial.photo} 
+                          alt={testimonial.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{testimonial.name}</h4>
+                        <p className="text-gray-600 text-xs sm:text-sm mb-2">{testimonial.role}</p>
+                        <div className="flex text-yellow-400">
+                          {Array.from({ length: testimonial.rating }).map((_, i) => (
+                            <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-current" />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    <blockquote className="text-gray-700 text-sm sm:text-base leading-relaxed italic">
+                      "{testimonial.text}"
+                    </blockquote>
+                  </Card>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{testimonial.name}</h4>
-                  <p className="text-gray-600 text-xs sm:text-sm mb-2">{testimonial.role}</p>
-                  <div className="flex text-yellow-400">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-current" />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <blockquote className="text-gray-700 text-sm sm:text-base leading-relaxed italic">
-                "{testimonial.text}"
-              </blockquote>
-            </Card>
-          ))}
+              ))}
+            </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <button
+            onClick={() => setCurrentTestimonial(prev => prev === 0 ? testimonials.length - 1 : prev - 1)}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300 z-10"
+          >
+            <ChevronLeft className="h-5 w-5 text-gray-600" />
+          </button>
+          
+          <button
+            onClick={() => setCurrentTestimonial(prev => (prev + 1) % testimonials.length)}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300 z-10"
+          >
+            <ChevronRight className="h-5 w-5 text-gray-600" />
+          </button>
+
+          {/* Carousel Indicators */}
+          <div className="flex justify-center mt-4 space-x-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentTestimonial(index)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === currentTestimonial 
+                    ? 'bg-blue-500 w-8' 
+                    : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+              />
+            ))}
+          </div>
         </div>
 
         <div className="mt-8 text-center">
