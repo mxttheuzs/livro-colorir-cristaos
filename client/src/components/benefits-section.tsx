@@ -5,67 +5,59 @@ export function BenefitsSection() {
   const benefits = [
     {
       icon: Heart,
-      title: "💔 Evite que Seus Filhos Cresçam Sem Fé",
-      description: "Enquanto outras crianças perdem valores cristãos, seus filhos aprenderão amor, perdão e bondade através de 35 histórias bíblicas transformadoras",
+      title: "Valores Cristãos Sólidos",
+      description: "Histórias bíblicas cuidadosamente adaptadas que ensinam amor, fé, perdão e bondade de forma natural e memorável para toda a família",
       bgColor: "bg-gradient-to-r from-red-400 to-pink-500",
-      statistic: "35 histórias bíblicas",
-      emotional: "MEDO DA PERDA"
+      statistic: "35 histórias bíblicas"
     },
     {
       icon: Brain,
-      title: "🧠 Desenvolvimento SUPERIOR às Outras Crianças", 
-      description: "Coordenação motora, concentração e criatividade MUITO acima da média. Seus filhos se destacarão na escola e na vida",
+      title: "Desenvolvimento Completo e Natural", 
+      description: "Estimula criatividade, coordenação motora fina, concentração e habilidades cognitivas essenciais para o crescimento saudável",
       bgColor: "bg-gradient-to-r from-purple-400 to-indigo-500",
-      statistic: "100% educativo",
-      emotional: "DESEJO DE SUPERIORIDADE"
+      statistic: "100% educativo"
     },
     {
       icon: Clock,
-      title: "⏰ Pare de Perder Momentos Preciosos",
-      description: "Cada dia sem conexão familiar é PERDIDO para sempre. Crie memórias eternas longe das telas viciantes",
+      title: "Momentos Especiais em Família",
+      description: "Oportunidade perfeita para criar memórias duradouras longe das telas, fortalecendo vínculos familiares de forma divertida",
       bgColor: "bg-gradient-to-r from-green-400 to-teal-500",
-      statistic: "Horas de conexão",
-      emotional: "URGÊNCIA TEMPORAL"
+      statistic: "Horas de qualidade"
     },
     {
       icon: Download,
-      title: "🚀 Transformação INSTANTÂNEA",
-      description: "Em 5 minutos você já estará imprimindo e transformando sua casa. Sem espera, sem correios, sem problemas",
+      title: "Acesso Imediato e Prático",
+      description: "Download instantâneo após a compra, imprima quando quiser, use offline, total praticidade para sua família",
       bgColor: "bg-gradient-to-r from-blue-400 to-cyan-500",
-      statistic: "Acesso imediato",
-      emotional: "GRATIFICAÇÃO INSTANTÂNEA"
+      statistic: "Acesso vitalício"
     },
     {
       icon: Shield,
-      title: "⚠️ Proteja Seus Filhos do Mundo Secular",
-      description: "Enquanto o mundo corrompe valores cristãos, seus filhos estarão PROTEGIDOS com conteúdo 100% aprovado por educadores cristãos",
+      title: "Conteúdo Seguro e Confiável",
+      description: "Material 100% cristão, livre de conteúdo inadequado, desenvolvido por educadores cristãos experientes e dedicados",
       bgColor: "bg-gradient-to-r from-yellow-400 to-orange-500",
-      statistic: "100% cristão",
-      emotional: "PROTEÇÃO FAMILIAR"
+      statistic: "Aprovação total"
     },
     {
       icon: Star,
-      title: "👑 Seus Filhos Merecem o MELHOR",
-      description: "Qualidade profissional que outras famílias pagam R$ 200+. Ilustrações de alta resolução que encantam e ensinam",
+      title: "Qualidade Premium Acessível",
+      description: "Ilustrações profissionais de alta resolução, formato otimizado para crianças, tudo com excelente custo-benefício",
       bgColor: "bg-gradient-to-r from-amber-400 to-yellow-500",
-      statistic: "Qualidade premium",
-      emotional: "VALOR SUPERIOR"
+      statistic: "Qualidade profissional"
     }
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-red-50 to-pink-50">
+    <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="w-full max-w-xs mx-auto">
         <div className="text-center mb-8">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-red-600 mb-4">
-            ⚠️ O QUE VOCÊ ESTÁ PERDENDO<br/>
-            <span className="text-gray-800">Enquanto Não Age HOJE</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-blue-600 mb-4">
+            Por que Famílias Escolhem<br/>
+            <span className="text-gray-800">Nossos Livros de Colorir</span>
           </h2>
-          <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-4">
-            <p className="text-gray-700 text-sm font-medium">
-              <strong>AVISO:</strong> Cada dia que passa sem estes livros é um dia perdido no desenvolvimento espiritual dos seus filhos
-            </p>
-          </div>
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
+            Benefícios únicos e comprovados para o desenvolvimento das crianças
+          </p>
         </div>
         
         <div className="grid gap-4">

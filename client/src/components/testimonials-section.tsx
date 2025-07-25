@@ -13,24 +13,24 @@ export function TestimonialsSection() {
       photo: mariaPhoto,
       role: "Mãe de 2 crianças - SP",
       rating: 5,
-      text: "💔 Eu estava DESESPERADA vendo meus filhos viciados no celular... Estes livros MUDARAM nossa casa! Agora eles pedem para colorir e fazem perguntas sobre Deus. Foi uma TRANSFORMAÇÃO total em apenas 3 dias!",
-      result: "Filhos transformados em 72h"
+      text: "Estava preocupada com o tempo que meus filhos passavam no celular. Estes livros trouxeram uma mudança muito positiva! Agora eles pedem para colorir e fazem perguntas sobre as histórias bíblicas. Estou muito satisfeita.",
+      result: "Mudança positiva na família"
     },
     {
       name: "Pastor Roberto M.",
       photo: pastorPhoto,
       role: "25 anos de Ministério Infantil - RJ",
       rating: 5,
-      text: "🔥 Em 25 anos nunca vi algo TÃO PODEROSO! As crianças que eram agitadas agora ficam CONCENTRADAS por horas. Pais me ligam chorando de gratidão. É sobrenatural o que acontece!",
-      result: "147 crianças transformadas"
+      text: "Em 25 anos de trabalho com crianças, estes livros são realmente especiais! As crianças ficam concentradas e engajadas. Muitos pais têm comentado sobre a diferença no comportamento dos filhos.",
+      result: "Excelente ferramenta educativa"
     },
     {
       name: "Carolina Santos",
       photo: carolinaPhoto,
       role: "Líder de Célula - MG",
       rating: 5,
-      text: "⭐ RESULTADO IMEDIATO! Usei na célula e as crianças que choravam e faziam bagunça ficaram QUIETINHAS colorindo. Os pais ficaram impressionados. Agora sou referência na igreja!",
-      result: "Célula mais procurada da igreja"
+      text: "Usei estes livros na célula e o resultado foi maravilhoso! As crianças se envolveram completamente com as atividades. Os pais ficaram impressionados com o conteúdo de qualidade.",
+      result: "Atividade de sucesso na igreja"
     }
   ];
 
@@ -38,19 +38,12 @@ export function TestimonialsSection() {
     <section className="px-3 py-12 bg-gradient-to-br from-green-50 to-blue-50">
       <div className="w-full max-w-xs mx-auto">
         <div className="text-center mb-8">
-          <h3 className="font-bold text-red-600 text-2xl mb-2">
-            🚨 ATENÇÃO: Veja os RESULTADOS
+          <h3 className="font-bold text-blue-600 text-2xl mb-2">
+            O que Nossas Famílias Dizem
           </h3>
-          <p className="text-gray-800 font-bold text-lg mb-4">
-            Que Estas Famílias Alcançaram
+          <p className="text-gray-600 text-base mb-4">
+            Experiências reais de quem já adquiriu nossos livros
           </p>
-          
-          {/* Emotional proof badge */}
-          <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-4">
-            <p className="text-yellow-800 text-sm font-bold">
-              ⚠️ CUIDADO: Estes depoimentos podem causar URGÊNCIA de compra!
-            </p>
-          </div>
           
           {/* Enhanced rating display */}
           <div className="bg-white rounded-lg p-4 shadow-lg mb-6">
@@ -60,7 +53,7 @@ export function TestimonialsSection() {
               ))}
             </div>
             <p className="text-green-600 text-lg font-bold mb-2">
-              4,9/5 ⭐ NOTA MÁXIMA
+              4,9/5 ⭐ Excelente Avaliação
             </p>
             <p className="text-gray-600 text-sm">
               Baseado em 2.847 famílias transformadas

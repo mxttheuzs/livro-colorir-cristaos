@@ -9,49 +9,43 @@ interface ObjectionsSectionProps {
 export function ObjectionsSection({ onPurchase }: ObjectionsSectionProps) {
   const objections = [
     {
-      icon: XCircle,
-      objection: "💭 'Meu filho não gosta de colorir...'",
-      answer: "🔥 ERRADO! Estes não são livros de colorir comuns. São HISTÓRIAS VIVAS que prendem atenção por horas. Mesmo crianças 'difíceis' ficam fascinadas!",
-      proof: "✅ 94% das crianças 'agitadas' se acalmam em 15 minutos",
-      emotion: "MEDO DO DESPERDÍCIO"
+      icon: CheckCircle,
+      objection: "Meu filho não tem muito interesse em colorir...",
+      answer: "Entendemos! Nossos livros são diferentes - contam histórias bíblicas envolventes que naturalmente despertam curiosidade. As ilustrações são projetadas para capturar a atenção das crianças.",
+      proof: "A maioria das crianças se engaja rapidamente com as histórias"
     },
     {
-      icon: XCircle,
-      objection: "💰 'R$ 10,00 é caro para livros digitais...'",
-      answer: "⚠️ PARE! Você gastaria R$ 50+ em um brinquedo que quebra em 1 semana. Estes livros educam PARA SEMPRE e custam menos que 2 refrigerantes!",
-      proof: "💡 Valor real: R$ 272,00 - Você economiza R$ 262,00",
-      emotion: "VALOR PERCEBIDO"
+      icon: CheckCircle,
+      objection: "Acho que R$ 10,00 é um pouco caro para livros digitais...",
+      answer: "Compreendemos sua preocupação com o orçamento. Por R$ 10,00 você recebe 35 livros profissionais, o que sai a menos de R$ 0,30 por livro - muito menos que qualquer material físico similar.",
+      proof: "Excelente custo-benefício comparado a livros individuais"
     },
     {
-      icon: XCircle,
-      objection: "⏰ 'Vou decidir depois...'",
-      answer: "🚨 CUIDADO! Amanhã custará R$ 97,00. Em 1 ano você pagará R$ 300+. Cada minuto que passa é dinheiro perdido!",
-      proof: "⚡ Apenas 47 exemplares restantes - Oferta expira à meia-noite",
-      emotion: "URGÊNCIA TEMPORAL"
+      icon: Clock,
+      objection: "Preciso pensar um pouco mais antes de decidir...",
+      answer: "É natural querer refletir sobre uma compra. Esta é uma oferta especial por tempo limitado, mas entendemos que cada família tem seu ritmo para decidir.",
+      proof: "Oferta promocional disponível por tempo limitado"
     },
     {
-      icon: XCircle,
-      objection: "🤔 'Não sei se funciona mesmo...'",
-      answer: "✅ GARANTIDO! 7 dias para testar. Se não funcionar, devolvemos 100% do valor. VOCÊ NÃO CORRE RISCO ALGUM!",
-      proof: "🛡️ Garantia incondicional de 7 dias + 2.847 famílias satisfeitas",
-      emotion: "REDUÇÃO DE RISCO"
+      icon: CheckCircle,
+      objection: "Não tenho certeza se vai funcionar para minha família...",
+      answer: "Sua preocupação é válida! Por isso oferecemos garantia de 7 dias. Se não ficar satisfeito, devolvemos seu dinheiro sem perguntas.",
+      proof: "Garantia de satisfação de 7 dias ou dinheiro de volta"
     }
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-red-50 to-orange-50">
+    <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="w-full max-w-xs mx-auto">
         
         {/* Header */}
         <div className="text-center mb-8">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-red-600 mb-4">
-            🛑 PARE DE INVENTAR DESCULPAS!
+          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-blue-600 mb-4">
+            Perguntas Frequentes
           </h3>
-          <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6">
-            <p className="text-yellow-800 text-sm font-bold">
-              ⚠️ Vou destruir TODAS as suas objeções agora mesmo...
-            </p>
-          </div>
+          <p className="text-gray-600 text-base">
+            Esclarecemos as principais dúvidas das famílias
+          </p>
         </div>
 
         {/* Objections List */}
@@ -59,11 +53,11 @@ export function ObjectionsSection({ onPurchase }: ObjectionsSectionProps) {
           {objections.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <Card key={index} className="bg-white border-2 border-red-200 rounded-xl p-4 shadow-lg">
+              <Card key={index} className="bg-white border-2 border-blue-200 rounded-xl p-4 shadow-lg">
                 
-                {/* Objection */}
+                {/* Question */}
                 <div className="flex items-start mb-3">
-                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <IconComponent className="text-white h-4 w-4" />
                   </div>
                   <p className="text-gray-700 font-medium text-sm leading-relaxed">

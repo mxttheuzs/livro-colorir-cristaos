@@ -29,22 +29,21 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           />
         </div>
         
-        {/* Main Headline - Emotional Hook */}
+        {/* Main Headline - Friendly Appeal */}
         <h1 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 leading-tight">
-          🚨 <span className="text-red-300">ÚLTIMA CHANCE!</span><br/>
-          35 Livros que Transformam<br/>
-          <span className="text-accent-yellow font-extrabold">Corações Infantis</span>
+          35 Livros Especiais que<br/>
+          <span className="text-accent-yellow font-extrabold">Encantam e Educam</span>
         </h1>
         
-        {/* Emotional Subheadline */}
+        {/* Value Proposition */}
         <p className="text-sm sm:text-base lg:text-lg font-medium text-text-light mb-4 leading-relaxed px-2">
-          <span className="text-accent-yellow font-bold">HOJE APENAS R$ 10,00</span><br/>
-          💔 <em>Não deixe seus filhos crescerem sem valores cristãos sólidos</em>
+          <span className="text-accent-yellow font-bold">Oferta especial: R$ 10,00</span><br/>
+          <em>Uma oportunidade única para educar com amor e fé</em>
         </p>
 
-        {/* Urgency Badge */}
-        <div className="bg-red-500 text-white px-4 py-2 rounded-full mb-6 shadow-xl animate-pulse">
-          <span className="text-xs font-bold">⏰ OFERTA EXPIRA EM POUCAS HORAS!</span>
+        {/* Gentle Urgency */}
+        <div className="bg-blue-500 text-white px-4 py-2 rounded-full mb-6 shadow-xl">
+          <span className="text-xs font-bold">Oferta por tempo limitado</span>
         </div>
         
         {/* Features list - mobile optimized */}
@@ -69,17 +68,17 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           </div>
         </div>
         
-        {/* Emotional CTA */}
+        {/* Friendly CTA */}
         <Button 
           onClick={onScrollToOffer}
-          className="w-full bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold py-4 sm:py-5 px-4 sm:px-6 rounded-full text-base sm:text-lg lg:text-xl shadow-2xl transition-all transform hover:scale-110 hover:shadow-3xl mb-4 h-auto uppercase tracking-wide animate-pulse"
+          className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 sm:py-5 px-4 sm:px-6 rounded-full text-base sm:text-lg lg:text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-4 h-auto uppercase tracking-wide"
         >
-          🔥 GARANTO MEU DESCONTO AGORA!
+          Ver Ofertas Especiais
         </Button>
         
-        {/* Social Proof Micro */}
+        {/* Gentle Social Proof */}
         <p className="text-xs text-text-light/80 mb-4">
-          ⭐ Mais de 2.847 famílias já transformaram seus lares
+          Mais de 2.800 famílias já escolheram nossos livros
         </p>
         
         {/* Trust indicators - mobile responsive */}

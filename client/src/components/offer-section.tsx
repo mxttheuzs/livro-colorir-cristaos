@@ -102,7 +102,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                 HOJE
               </div>
             </div>
-            <p className="text-red-600 text-xs font-bold mt-1">⚠️ Amanhã volta para R$ 97,00</p>
+            <p className="text-gray-600 text-xs mt-1">Oferta promocional especial</p>
           </div>
           
           {/* Value Stack - Proof Element */}
@@ -134,15 +134,14 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Emotional CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-4 px-6 rounded-full text-base uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto border-2 border-red-300"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full text-[16px] uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto"
             style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
           >
-            🚨 GARANTO AGORA POR R$ 10!
+            Quero o Pacote Básico
           </Button>
           
-          {/* Fear-based urgency */}
-          <p className="text-xs text-red-600 mt-3 font-medium">
-            ⚠️ Não perca esta chance única. Seu filho merece o melhor!
+          <p className="text-xs text-gray-600 mt-3 text-center">
+            Uma oportunidade especial para sua família
           </p>
         </Card>
         
