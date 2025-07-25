@@ -9,7 +9,7 @@ import { UsageCategories } from "@/components/usage-categories";
 import { BenefitsSection } from "@/components/benefits-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { OfferSection } from "@/components/offer-section";
-
+import { ObjectionsSection } from "@/components/objections-section";
 import { GuaranteeSection } from "@/components/guarantee-section";
 import { FaqSection } from "@/components/faq-section";
 import { WhatsAppSection } from "@/components/whatsapp-section";
@@ -128,6 +128,7 @@ export default function Home() {
       <BenefitsSection />
       <TestimonialsSection />
       <OfferSection onPurchase={handlePurchase} />
+      <ObjectionsSection onPurchase={handlePurchase} />
       <GuaranteeSection />
       <FaqSection />
       <WhatsAppSection />

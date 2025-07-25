@@ -42,73 +42,108 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
   return (
     <section id="offer" className="px-3 py-12 bg-gray-50">
       <div className="w-full max-w-xs mx-auto">
-        {/* Limited offer badge */}
-        <div className="bg-red-500 text-white rounded-full px-4 py-2 text-center mb-6 shadow-lg">
+        {/* Urgent Scarcity Badge */}
+        <div className="bg-gradient-to-r from-red-600 to-red-500 text-white rounded-full px-4 py-2 text-center mb-6 shadow-xl animate-pulse border-2 border-red-300">
           <div className="flex items-center justify-center space-x-2">
-            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-            <span className="font-bold text-xs sm:text-sm">OFERTA LIMITADA - Apenas no dia {getCurrentDate()}</span>
+            <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
+            <span className="font-bold text-xs sm:text-sm">🚨 APENAS 47 EXEMPLARES RESTANTES!</span>
           </div>
         </div>
         
-        {/* Main title */}
+        {/* Emotional Hook Title */}
         <div className="text-center mb-6">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
-            Escolha Sua Oferta Especial
+          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-red-600 mb-3">
+            💔 Última Chance de Transformar<br/>
+            <span className="text-gray-800">Seus Filhos HOJE</span>
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
-            Livros de qualidade profissional para enriquecer seus momentos de fé
-          </p>
+          <div className="bg-red-100 border border-red-300 rounded-lg p-4 mb-4">
+            <p className="text-red-700 text-sm font-bold">
+              ⚠️ AVISO: Após meia-noite, o preço volta para R$ 97,00
+            </p>
+            <p className="text-gray-600 text-xs mt-2">
+              Não seja mais um pai que lamenta não ter agido quando teve a chance
+            </p>
+          </div>
         </div>
         
-        {/* Basic Package */}
-        <Card className="bg-gray-100 rounded-2xl p-6 mb-6 border-0 text-center relative overflow-hidden">
+        {/* Basic Package - Emotional Appeal */}
+        <Card className="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-200 rounded-2xl p-6 mb-6 text-center relative overflow-hidden shadow-xl">
           
-          
-          <h4 className="font-bold text-gray-800 text-lg sm:text-xl mb-4">Pacote Básico</h4>
-          
-          {/* Original price */}
-          <p className="text-gray-500 line-through text-base sm:text-lg mb-2">R$ 47,00</p>
-          
-          {/* Discount badge */}
-          <div className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold mb-4">
-            -79%
+          {/* Fear-based headline */}
+          <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold mb-4 inline-block">
+            ⚠️ CHANCE ÚNICA
           </div>
           
-          {/* Current price */}
+          <h4 className="font-bold text-red-600 text-lg sm:text-xl mb-2">
+            💔 Não Deixe Seus Filhos Para Trás
+          </h4>
+          <p className="text-gray-600 text-sm mb-4">
+            <em>Enquanto outras crianças crescem sem valores...</em>
+          </p>
+          
+          {/* Massive contrast pricing */}
           <div className="mb-4">
-            <span className="text-4xl sm:text-5xl font-bold text-green-600">R$ 10</span>
-            <span className="text-xl sm:text-2xl text-green-600">,00</span>
+            <p className="text-red-500 line-through text-lg font-bold mb-1">R$ 97,00</p>
+            <p className="text-xs text-gray-500 mb-2">Preço normal que você pagaria amanhã</p>
           </div>
           
-          {/* Savings */}
-          <p className="text-gray-600 text-xs sm:text-sm mb-4">Você economiza R$ 37,00</p>
-          
-          {/* Features */}
-          <div className="space-y-2 mb-4 text-left">
-            <p className="text-gray-700 flex items-center text-sm sm:text-base">
-              <span className="text-green-500 mr-2">✓</span>
-              35 Livros de Colorir Completos
-            </p>
-            <p className="text-gray-700 flex items-center text-sm sm:text-base">
-              <span className="text-green-500 mr-2">✓</span>
-              Download Imediato
-            </p>
-            <p className="text-gray-700 flex items-center text-sm sm:text-base">
-              <span className="text-green-500 mr-2">✓</span>
-              Acesso Vitalício
-            </p>
-            <p className="text-gray-700 flex items-center text-sm sm:text-base">
-              <span className="text-green-500 mr-2">✓</span>
-              Garantia de 7 dias
-            </p>
+          {/* Massive discount badge */}
+          <div className="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 shadow-lg animate-pulse">
+            🔥 ECONOMIZE R$ 87,00 HOJE!
           </div>
           
-          {/* Basic CTA Button */}
+          {/* Emotional Pricing Display */}
+          <div className="mb-4 bg-white rounded-xl p-4 border-2 border-green-300 shadow-lg">
+            <p className="text-xs text-gray-500 mb-1">Apenas hoje por:</p>
+            <div className="flex items-center justify-center">
+              <span className="text-4xl sm:text-5xl font-bold text-green-600">R$ 10</span>
+              <span className="text-xl sm:text-2xl text-green-600">,00</span>
+              <div className="ml-2 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold animate-pulse">
+                HOJE
+              </div>
+            </div>
+            <p className="text-red-600 text-xs font-bold mt-1">⚠️ Amanhã volta para R$ 97,00</p>
+          </div>
+          
+          {/* Value Stack - Proof Element */}
+          <div className="space-y-2 mb-4 text-left bg-green-50 rounded-lg p-3">
+            <p className="text-green-700 flex items-center text-sm font-medium">
+              <span className="text-green-500 mr-2 font-bold">✓</span>
+              35 Livros Transformadores (Valor: R$ 175)
+            </p>
+            <p className="text-green-700 flex items-center text-sm font-medium">
+              <span className="text-green-500 mr-2 font-bold">✓</span>
+              Transformação Instantânea (Sem Espera)
+            </p>
+            <p className="text-green-700 flex items-center text-sm font-medium">
+              <span className="text-green-500 mr-2 font-bold">✓</span>
+              Acesso Para Sempre (Valor: R$ 97)
+            </p>
+            <p className="text-green-700 flex items-center text-sm font-medium">
+              <span className="text-green-500 mr-2 font-bold">✓</span>
+              Garantia Total de 7 dias
+            </p>
+            <div className="border-t pt-2 mt-2">
+              <p className="text-center text-green-800 font-bold text-sm">
+                💰 VALOR TOTAL: R$ 272,00<br/>
+                <span className="text-red-600">VOCÊ PAGA APENAS: R$ 10,00</span>
+              </p>
+            </div>
+          </div>
+          
+          {/* Emotional CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full sm:text-base text-[16px] uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto"
+            className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-4 px-6 rounded-full text-base uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto border-2 border-red-300"
             style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
-          >QUERO O PACOTE BÁSICO</Button>
+          >
+            🚨 GARANTO AGORA POR R$ 10!
+          </Button>
+          
+          {/* Fear-based urgency */}
+          <p className="text-xs text-red-600 mt-3 font-medium">
+            ⚠️ Não perca esta chance única. Seu filho merece o melhor!
+          </p>
         </Card>
         
         {/* Premium Package */}
