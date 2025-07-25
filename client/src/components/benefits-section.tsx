@@ -6,42 +6,42 @@ export function BenefitsSection() {
     {
       icon: Heart,
       title: "Valores Cristãos Sólidos",
-      description: "Histórias bíblicas cuidadosamente adaptadas que ensinam amor, fé, perdão e bondade de forma natural e memorável para toda a família",
+      description: "Histórias bíblicas cuidadosamente adaptadas que ensinam amor, fé, perdão e bondade de forma natural e memorável",
       bgColor: "bg-gradient-to-r from-red-400 to-pink-500",
       statistic: "35 histórias bíblicas"
     },
     {
       icon: Brain,
-      title: "Desenvolvimento Completo e Natural", 
-      description: "Estimula criatividade, coordenação motora fina, concentração e habilidades cognitivas essenciais para o crescimento saudável",
+      title: "Desenvolvimento Completo", 
+      description: "Estimula criatividade, coordenação motora fina, concentração e habilidades cognitivas essenciais para o crescimento",
       bgColor: "bg-gradient-to-r from-purple-400 to-indigo-500",
       statistic: "100% educativo"
     },
     {
       icon: Clock,
-      title: "Momentos Especiais em Família",
-      description: "Oportunidade perfeita para criar memórias duradouras longe das telas, fortalecendo vínculos familiares de forma divertida",
+      title: "Tempo de Qualidade",
+      description: "Momentos especiais em família longe das telas, fortalecendo vínculos e criando memórias duradouras",
       bgColor: "bg-gradient-to-r from-green-400 to-teal-500",
-      statistic: "Horas de qualidade"
+      statistic: "Horas de diversão"
     },
     {
       icon: Download,
-      title: "Acesso Imediato e Prático",
-      description: "Download instantâneo após a compra, imprima quando quiser, use offline, total praticidade para sua família",
+      title: "Acesso Vitalício",
+      description: "Download instantâneo após compra, imprima ilimitadamente, use offline, sem dependência de internet",
       bgColor: "bg-gradient-to-r from-blue-400 to-cyan-500",
-      statistic: "Acesso vitalício"
+      statistic: "Download imediato"
     },
     {
       icon: Shield,
-      title: "Conteúdo Seguro e Confiável",
-      description: "Material 100% cristão, livre de conteúdo inadequado, desenvolvido por educadores cristãos experientes e dedicados",
+      title: "Conteúdo Seguro",
+      description: "Material 100% cristão, livre de violência, desenvolvido por educadores cristãos experientes",
       bgColor: "bg-gradient-to-r from-yellow-400 to-orange-500",
-      statistic: "Aprovação total"
+      statistic: "Aprovação familiar"
     },
     {
       icon: Star,
-      title: "Qualidade Premium Acessível",
-      description: "Ilustrações profissionais de alta resolução, formato otimizado para crianças, tudo com excelente custo-benefício",
+      title: "Qualidade Premium",
+      description: "Ilustrações profissionais, alta resolução para impressão, papel e formato otimizados para crianças",
       bgColor: "bg-gradient-to-r from-amber-400 to-yellow-500",
       statistic: "Qualidade profissional"
     }
@@ -51,10 +51,6 @@ export function BenefitsSection() {
     <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="w-full max-w-xs mx-auto">
         <div className="text-center mb-8">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-blue-600 mb-4">
-            Por que Famílias Escolhem<br/>
-            <span className="text-gray-800">Nossos Livros de Colorir</span>
-          </h2>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
             Benefícios únicos e comprovados para o desenvolvimento das crianças
           </p>

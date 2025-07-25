@@ -29,22 +29,16 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           />
         </div>
         
-        {/* Main Headline - Friendly Appeal */}
+        {/* Main Headline - smaller on mobile */}
         <h1 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 leading-tight">
-          35 Livros Especiais que<br/>
-          <span className="text-accent-yellow font-extrabold">Encantam e Educam</span>
+          35 Livros de Colorir<br/>
+          <span className="text-accent-yellow font-extrabold">Cristãos</span>
         </h1>
         
-        {/* Value Proposition */}
-        <p className="text-sm sm:text-base lg:text-lg font-medium text-text-light mb-4 leading-relaxed px-2">
-          <span className="text-accent-yellow font-bold">Oferta especial: R$ 10,00</span><br/>
-          <em>Uma oportunidade única para educar com amor e fé</em>
+        {/* Subheadline - responsive text */}
+        <p className="text-sm sm:text-base lg:text-lg font-medium text-text-light mb-6 leading-relaxed px-2">
+          Transforme momentos especiais com sua família, célula e escola dominical
         </p>
-
-        {/* Gentle Urgency */}
-        <div className="bg-blue-500 text-white px-4 py-2 rounded-full mb-6 shadow-xl">
-          <span className="text-xs font-bold">Oferta por tempo limitado</span>
-        </div>
         
         {/* Features list - mobile optimized */}
         <div className="mb-6 space-y-3 text-left">
@@ -68,18 +62,13 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           </div>
         </div>
         
-        {/* Friendly CTA */}
+        {/* Hero CTA - mobile optimized */}
         <Button 
           onClick={onScrollToOffer}
           className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 sm:py-5 px-4 sm:px-6 rounded-full text-base sm:text-lg lg:text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-4 h-auto uppercase tracking-wide"
         >
-          Ver Ofertas Especiais
+          QUERO VER AS OFERTAS
         </Button>
-        
-        {/* Gentle Social Proof */}
-        <p className="text-xs text-text-light/80 mb-4">
-          Mais de 2.800 famílias já escolheram nossos livros
-        </p>
         
         {/* Trust indicators - mobile responsive */}
         <div className="flex justify-center items-center space-x-2 sm:space-x-4 text-xs sm:text-sm text-text-light">

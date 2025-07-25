@@ -11,13 +11,6 @@ Preferred communication style: Simple, everyday language.
 ## Recent Changes
 
 ### January 25, 2025
-- Refined copywriting to be persuasive but less aggressive per user feedback
-- Updated hero section with friendly appeal instead of urgent warnings
-- Changed benefits section to focus on positive aspects rather than fear-based messaging
-- Transformed testimonials to maintain authenticity while reducing aggressive language
-- Created new objections section as FAQ with respectful, understanding tone
-- Softened all CTAs to be inviting rather than pressuring
-- Maintained conversion optimization while adopting gentler, more respectful approach
 - Added custom pulse-scale animation to purchase buttons making them continuously scale in and out for better conversion
 - Fixed premium bonus text to correctly show "5 Vídeos de Histórias Bíblicas"
 - Created small carousel component below "15 Versículos Ilustrados" bonus showing preview images with locked overlays
