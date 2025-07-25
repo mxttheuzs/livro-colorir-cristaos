@@ -134,7 +134,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Emotional CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-4 px-6 rounded-full text-base uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto border-2 border-red-300"
+            className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-6 rounded-full text-base uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto border-2 border-green-300"
             style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
           >
             🚨 GARANTO AGORA POR R$ 10!
