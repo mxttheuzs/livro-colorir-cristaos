@@ -72,11 +72,8 @@ export function BenefitsSection() {
                     <IconComponent className="text-white h-5 w-5" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between mb-2">
+                    <div className="mb-2">
                       <h4 className="font-semibold text-gray-800 text-sm sm:text-base group-hover:text-blue-600 transition-colors">{benefit.title}</h4>
-                      <span className="text-xs text-blue-600 font-medium bg-blue-50 px-2 py-1 rounded-full ml-2 flex-shrink-0">
-                        {benefit.statistic}
-                      </span>
                     </div>
                     <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">{benefit.description}</p>
                   </div>
