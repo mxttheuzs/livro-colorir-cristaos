@@ -31,6 +31,12 @@ export function ObjectionsSection({ onPurchase }: ObjectionsSectionProps) {
       objection: "Não tenho certeza se vai funcionar para minha família...",
       answer: "Sua preocupação é válida! Por isso oferecemos garantia de 7 dias. Se não ficar satisfeito, devolvemos seu dinheiro sem perguntas.",
       proof: "Garantia de satisfação de 7 dias ou dinheiro de volta"
+    },
+    {
+      icon: Clock,
+      objection: "Como funciona o bônus mensal?",
+      answer: "O bônus mensal não existe mais. Agora você recebe todo o conteúdo de uma só vez no pacote premium: 5 vídeos de histórias bíblicas, 18 versículos ilustrados e calendário bíblico semanal.",
+      proof: "Acesso completo e imediato a todos os bônus"
     }
   ];
 
