@@ -109,7 +109,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Basic CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full text-sm sm:text-base uppercase tracking-wide shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full text-sm sm:text-base uppercase tracking-wide shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto animate-pulse"
           >QUERO O PACOTE BÁSICO</Button>
         </Card>
         
@@ -228,7 +228,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Premium CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto uppercase tracking-wide text-[16px]"
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto uppercase tracking-wide text-[16px] animate-pulse"
           >
             QUERO O PACOTE PREMIUM
           </Button>
