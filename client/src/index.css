@@ -66,6 +66,15 @@
   --ring: hsl(240, 4.9%, 83.9%);
 }
 
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
