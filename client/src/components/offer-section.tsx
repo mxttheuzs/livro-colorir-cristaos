@@ -109,7 +109,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Basic CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full text-sm sm:text-base uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full sm:text-base text-[16px] uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto"
             style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
           >QUERO O PACOTE BÁSICO</Button>
         </Card>
