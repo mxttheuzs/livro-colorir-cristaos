@@ -10,6 +10,15 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+### January 25, 2025
+- Added custom pulse-scale animation to purchase buttons making them continuously scale in and out for better conversion
+- Fixed premium bonus text to correctly show "5 Vídeos de Histórias Bíblicas"
+- Created small carousel component below "15 Versículos Ilustrados" bonus showing preview images with locked overlays
+- Applied padlock overlay to all carousel images to indicate premium locked content
+- Removed star icon from Basic Package for cleaner design
+- Adjusted button text sizes: Basic package button to text-[16px], Premium package button to text-[15px]
+- Prepared project for GitHub/Netlify deployment with netlify.toml configuration and README.md instructions
+
 ### January 24, 2025
 - Updated pricing: 35 Christian coloring books now priced at R$ 10,00 (down from R$ 27,00)
 - Removed order bump functionality completely from the landing page
