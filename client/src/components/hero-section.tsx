@@ -72,10 +72,6 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
         
         {/* Trust indicators - mobile responsive */}
         <div className="flex justify-center items-center space-x-2 sm:space-x-4 text-xs sm:text-sm text-text-light">
-          <span className="flex items-center">
-            <Smartphone className="mr-1 h-3 w-3 sm:h-4 sm:w-4" />
-            PDF Pronto
-          </span>
         </div>
       </div>
     </section>
