@@ -104,65 +104,69 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           
           <h4 className="font-bold text-gray-800 text-xl mb-4">Pacote Premium</h4>
           
-          {/* Original price */}
-          <p className="text-gray-500 line-through text-lg mb-2">R$ 256,00</p>
+          {/* Savings Header */}
+          <p className="text-gray-600 text-sm mb-4 text-center">Você economiza R$ 239,00</p>
           
-          {/* Discount badge */}
-          <div className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mb-4">
-            -93%
+          {/* Basic Package Section */}
+          <div className="bg-green-100 rounded-2xl p-4 mb-4">
+            <h5 className="font-bold text-green-800 text-center mb-3">TUDO DO PACOTE BÁSICO +</h5>
+          </div>
+          
+          {/* Bonus Items */}
+          <div className="space-y-3 mb-6">
+            <div className="bg-white rounded-xl p-3 border border-gray-200 flex items-center justify-between">
+              <div className="flex items-center">
+                <span className="text-yellow-500 mr-3 text-lg">🎁</span>
+                <div>
+                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 1: 2 Novos livros/mês</p>
+                  <p className="text-red-500 text-xs line-through">R$ 89/mês</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl p-3 border border-gray-200 flex items-center justify-between">
+              <div className="flex items-center">
+                <span className="text-yellow-500 mr-3 text-lg">🎁</span>
+                <div>
+                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 2: Vídeos de Histórias Bíblicas</p>
+                  <p className="text-red-500 text-xs line-through">R$ 97,00</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl p-3 border border-gray-200 flex items-center justify-between">
+              <div className="flex items-center">
+                <span className="text-yellow-500 mr-3 text-lg">🎁</span>
+                <div>
+                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 3: 15 Versículos Ilustrados</p>
+                  <p className="text-red-500 text-xs line-through">R$ 39,00</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl p-3 border border-gray-200 flex items-center justify-between">
+              <div className="flex items-center">
+                <span className="text-yellow-500 mr-3 text-lg">🎁</span>
+                <div>
+                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 4: Calendário Bíblico Semanal</p>
+                  <p className="text-red-500 text-xs line-through">R$ 35,00</p>
+                </div>
+              </div>
+            </div>
           </div>
           
           {/* Current price */}
-          <div className="mb-4">
+          <div className="mb-4 text-center">
             <span className="text-5xl font-bold text-green-600">R$ 17</span>
             <span className="text-2xl text-green-600">,00</span>
-          </div>
-          
-          {/* Savings */}
-          <p className="text-gray-600 text-sm mb-6">Você economiza R$ 239,00</p>
-          
-          {/* Features */}
-          <div className="space-y-2 mb-6 text-left">
-            <p className="text-gray-700 flex items-center">
-              <span className="text-green-500 mr-2">✓</span>
-              35 Livros de Colorir Completos
-            </p>
-            <p className="text-gray-700 flex items-center">
-              <span className="text-green-500 mr-2">✓</span>
-              Download Imediato
-            </p>
-            <p className="text-gray-700 flex items-center">
-              <span className="text-green-500 mr-2">✓</span>
-              Acesso Vitalício
-            </p>
-            <p className="text-gray-700 flex items-center">
-              <span className="text-green-500 mr-2">✓</span>
-              Garantia de 7 dias
-            </p>
-            <p className="text-gray-700 flex items-center">
-              <span className="text-orange-500 mr-2">🎁</span>
-              2 Novos livros/mês
-            </p>
-            <p className="text-gray-700 flex items-center">
-              <span className="text-orange-500 mr-2">🎁</span>
-              Vídeos de Histórias Bíblicas
-            </p>
-            <p className="text-gray-700 flex items-center">
-              <span className="text-orange-500 mr-2">🎁</span>
-              15 Versículos Ilustrados
-            </p>
-            <p className="text-gray-700 flex items-center">
-              <span className="text-orange-500 mr-2">🎁</span>
-              Calendário Bíblico Semanal
-            </p>
           </div>
           
           {/* Premium CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto uppercase tracking-wide text-[16px]"
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto uppercase tracking-wide text-[16px]"
           >
-            QUERO VER AS OFERTAS
+            QUERO O PACOTE PREMIUM
           </Button>
         </Card>
         
