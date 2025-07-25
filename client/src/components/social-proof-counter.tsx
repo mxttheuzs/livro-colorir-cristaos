@@ -8,26 +8,31 @@ export function SocialProofCounter() {
   }>({ name: "", show: false });
 
   const customerNames = [
-    "Maria Silva",
-    "João Santos", 
-    "Ana Costa",
-    "Pedro Oliveira",
-    "Lucia Ferreira",
-    "Carlos Mendes",
-    "Fernanda Lima",
-    "Ricardo Alves",
-    "Juliana Rocha",
-    "Marcos Pereira",
-    "Camila Souza",
-    "Rafael Castro",
-    "Beatriz Ramos",
-    "Gabriel Nunes",
-    "Patricia Dias",
-    "Thiago Barbosa",
-    "Mariana Cardoso",
-    "Bruno Martins",
-    "Larissa Gomes",
-    "Diego Ribeiro"
+    "Maria da Silva",
+    "João Pereira", 
+    "Ana Beatriz",
+    "Carlos Eduardo",
+    "Fernanda Souza",
+    "Ricardo Santos",
+    "Juliana Oliveira",
+    "Marcos Vieira",
+    "Camila Rodrigues",
+    "Rafael Almeida",
+    "Beatriz Lima",
+    "Gabriel Costa",
+    "Patrícia Martins",
+    "Thiago Fernandes",
+    "Mariana Gomes",
+    "Bruno Silva",
+    "Larissa Barbosa",
+    "Diego Nascimento",
+    "Amanda Ribeiro",
+    "Lucas Andrade",
+    "Priscila Moreira",
+    "Gustavo Cardoso",
+    "Vanessa Freitas",
+    "André Carvalho",
+    "Renata Mendes"
   ];
 
   useEffect(() => {
@@ -60,7 +65,7 @@ export function SocialProofCounter() {
   if (!currentNotification.show) return null;
 
   return (
-    <div className="fixed top-4 left-4 z-50 animate-slide-down">
+    <div className="fixed top-4 right-4 z-50 animate-slide-down">
       <div className="bg-white rounded-lg shadow-lg border border-gray-200 p-3 max-w-xs">
         <div className="flex items-center space-x-3">
           <div className="bg-green-100 rounded-full p-2 flex-shrink-0">
