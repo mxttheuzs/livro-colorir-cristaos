@@ -76,6 +76,7 @@ export function ExitIntentModal() {
               size="sm"
               onClick={() => setIsOpen(false)}
               className="h-6 w-6 p-0"
+              aria-label="Fechar modal"
             >
               <X className="h-4 w-4" />
             </Button>
