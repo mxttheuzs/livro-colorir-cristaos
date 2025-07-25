@@ -19,9 +19,9 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
   
   // Versículos data
   const versiculos = [
-    { image: versiculo1, locked: false },
-    { image: versiculo2, locked: false },
-    { image: versiculo3, locked: false },
+    { image: versiculo1, locked: true },
+    { image: versiculo2, locked: true },
+    { image: versiculo3, locked: true },
     { image: versiculo4, locked: true },
     { image: versiculo5, locked: true }
   ];
