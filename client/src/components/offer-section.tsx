@@ -1,18 +1,42 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Lock, ChevronLeft, ChevronRight } from "lucide-react";
 import { FaCcVisa, FaCcMastercard, FaCcPaypal } from "react-icons/fa";
 import { SiPix } from "react-icons/si";
+import { useState } from "react";
+import versiculo1 from "@assets/image_1753440167020.png";
+import versiculo2 from "@assets/image_1753440170263.png";
+import versiculo3 from "@assets/image_1753440173833.png";
+import versiculo4 from "@assets/image_1753440179181.png";
+import versiculo5 from "@assets/image_1753440190840.png";
 
 interface OfferSectionProps {
   onPurchase: () => void;
 }
 
 export function OfferSection({ onPurchase }: OfferSectionProps) {
+  const [currentSlide, setCurrentSlide] = useState(0);
   
+  // Versículos data
+  const versiculos = [
+    { image: versiculo1, locked: false },
+    { image: versiculo2, locked: false },
+    { image: versiculo3, locked: false },
+    { image: versiculo4, locked: true },
+    { image: versiculo5, locked: true }
+  ];
+
   // Get current date and format it
   const getCurrentDate = () => {
     return '25/07/25';
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % versiculos.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + versiculos.length) % versiculos.length);
   };
 
   return (
@@ -126,12 +150,68 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
               </div>
             </div>
             
-            <div className="bg-white rounded-xl p-3 border border-gray-200 flex items-center justify-between">
-              <div className="flex items-center">
-                <span className="text-yellow-500 mr-3 text-lg">🎁</span>
-                <div>
-                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 2: 15 Versículos Ilustrados</p>
-                  <p className="text-red-500 text-xs line-through">R$ 39,00</p>
+            <div className="bg-white rounded-xl p-3 border border-gray-200">
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center">
+                  <span className="text-yellow-500 mr-3 text-lg">🎁</span>
+                  <div>
+                    <p className="font-semibold text-gray-800 text-sm">BÔNUS 2: 15 Versículos Ilustrados</p>
+                    <p className="text-red-500 text-xs line-through">R$ 39,00</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Mini Carousel dos Versículos */}
+              <div className="relative">
+                <div className="overflow-hidden rounded-lg">
+                  <div 
+                    className="flex transition-transform duration-300 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                  >
+                    {versiculos.map((versiculo, index) => (
+                      <div key={index} className="w-full flex-shrink-0 relative">
+                        <div className="w-full h-16 bg-gray-100 rounded-lg overflow-hidden relative">
+                          <img 
+                            src={versiculo.image} 
+                            alt={`Versículo ${index + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                          {versiculo.locked && (
+                            <div className="absolute inset-0 bg-black/60 flex items-center justify-center backdrop-blur-sm">
+                              <Lock className="w-4 h-4 text-white" />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Navigation buttons */}
+                <button 
+                  onClick={prevSlide}
+                  className="absolute left-1 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1 shadow-sm transition-all"
+                >
+                  <ChevronLeft className="w-3 h-3 text-gray-600" />
+                </button>
+                <button 
+                  onClick={nextSlide}
+                  className="absolute right-1 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1 shadow-sm transition-all"
+                >
+                  <ChevronRight className="w-3 h-3 text-gray-600" />
+                </button>
+                
+                {/* Dots indicator */}
+                <div className="flex justify-center mt-2 space-x-1">
+                  {versiculos.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`w-1.5 h-1.5 rounded-full transition-all ${
+                        currentSlide === index ? 'bg-yellow-500' : 'bg-gray-300'
+                      }`}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
