@@ -97,14 +97,9 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
         
         {/* Premium Package */}
         <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-8 mb-8 border-2 border-yellow-300 relative overflow-hidden">
-          {/* Premium badge */}
+          {/* Most Sold badge */}
           <div className="absolute -top-1 -right-1 bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-4 py-2 rounded-bl-2xl rounded-tr-3xl text-sm font-bold">
-            POPULAR
-          </div>
-          
-          {/* Crown icon */}
-          <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl mb-4 shadow-lg">
-            <span className="text-xl">👑</span>
+            MAIS VENDIDO
           </div>
           
           <h4 className="font-bold text-gray-800 text-xl mb-4">Pacote Premium</h4>
