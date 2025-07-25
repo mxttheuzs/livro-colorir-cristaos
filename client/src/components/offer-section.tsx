@@ -170,15 +170,15 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                   >
                     {versiculos.map((versiculo, index) => (
                       <div key={index} className="w-full flex-shrink-0 relative">
-                        <div className="w-full h-16 bg-gray-100 rounded-lg overflow-hidden relative">
+                        <div className="w-full h-24 bg-gray-100 rounded-lg overflow-hidden relative">
                           <img 
                             src={versiculo.image} 
                             alt={`Versículo ${index + 1}`}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                           />
                           {versiculo.locked && (
                             <div className="absolute inset-0 bg-black/60 flex items-center justify-center backdrop-blur-sm">
-                              <Lock className="w-4 h-4 text-white" />
+                              <Lock className="w-5 h-5 text-white" />
                             </div>
                           )}
                         </div>
