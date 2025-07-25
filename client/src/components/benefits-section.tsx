@@ -51,9 +51,6 @@ export function BenefitsSection() {
     <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="w-full max-w-xs mx-auto">
         <div className="text-center mb-8">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
-            Por que escolher nossos livros?
-          </h3>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
             Benefícios únicos e comprovados para o desenvolvimento das crianças
           </p>
