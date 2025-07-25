@@ -134,14 +134,14 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Emotional CTA Button */}
           <Button 
             onClick={onPurchase}
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full text-[16px] uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto"
+            className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-4 px-6 rounded-full text-base uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto border-2 border-red-300"
             style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
           >
-            Quero o Pacote Básico
+            🚨 GARANTO AGORA POR R$ 10!
           </Button>
           
-          <p className="text-xs text-gray-600 mt-3 text-center">
-            Uma oportunidade especial para sua família
+          <p className="text-xs text-red-600 mt-3 font-medium">
+            ⚠️ Não perca esta chance única. Seu filho merece o melhor!
           </p>
         </Card>
         
