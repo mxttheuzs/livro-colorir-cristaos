@@ -120,7 +120,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
               <div className="flex items-center">
                 <span className="text-yellow-500 mr-3 text-lg">🎁</span>
                 <div>
-                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 1: Vídeos de Histórias Bíblicas</p>
+                  <p className="font-semibold text-gray-800 text-sm">BÔNUS 1: 5 Vídeos de Histórias Bíblicas</p>
                   <p className="text-red-500 text-xs line-through">R$ 97,00</p>
                 </div>
               </div>
