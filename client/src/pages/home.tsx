@@ -14,6 +14,8 @@ import { GuaranteeSection } from "@/components/guarantee-section";
 import { FaqSection } from "@/components/faq-section";
 import { WhatsAppSection } from "@/components/whatsapp-section";
 import { FooterSection } from "@/components/footer-section";
+import { SocialProofCounter } from "@/components/social-proof-counter";
+import { ExitIntentModal } from "@/components/exit-intent-modal";
 
 
 
@@ -132,6 +134,10 @@ export default function Home() {
       <FaqSection />
       <WhatsAppSection />
       <FooterSection />
+      
+      {/* Novos componentes de conversão */}
+      <SocialProofCounter />
+      <ExitIntentModal />
     </div>
   );
 }

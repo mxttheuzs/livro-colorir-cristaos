@@ -18,8 +18,32 @@ export function FaqSection() {
       answer: "Os livros são recomendados para crianças de 3 a 12 anos de idade. Os desenhos têm diferentes níveis de complexidade, desde traços mais simples para os pequenos até desenhos mais detalhados para as crianças maiores."
     },
     {
-      question: "Como funciona o bônus mensal?",
-      answer: "A cada mês, enviamos novos livros de colorir cristãos exclusivos para sua coleção, totalmente gratuitos. Você receberá por email sem custo adicional, expandindo continuamente sua biblioteca de atividades."
+      question: "Os arquivos funcionam em qualquer impressora?",
+      answer: "Sim! Os PDFs são compatíveis com qualquer impressora doméstica ou profissional. Recomendamos papel sulfite A4 comum ou papel mais grosso para melhor resultado. Também funciona perfeitamente em gráficas rápidas."
+    },
+    {
+      question: "Preciso de internet para usar os livros?",
+      answer: "Não! Após baixar os arquivos PDF, você pode usá-los offline quando quiser. Salve no seu computador, tablet ou celular e acesse a qualquer momento, mesmo sem internet."
+    },
+    {
+      question: "Como funciona a garantia de 7 dias?",
+      answer: "Se por qualquer motivo você não ficar satisfeito com os livros, oferecemos 100% do seu dinheiro de volta em até 7 dias. Sem perguntas, sem burocracia. Sua satisfação é nossa prioridade."
+    },
+    {
+      question: "Posso usar comercialmente (revender)?",
+      answer: "Não, os livros são para uso pessoal, familiar e ministerial apenas. Você pode usar em sua igreja, escola dominical, família, mas não pode revender ou distribuir comercialmente os arquivos."
+    },
+    {
+      question: "Que tipo de papel devo usar?",
+      answer: "Recomendamos papel sulfite A4 branco (75g a 90g) para uso doméstico. Para atividades em grupos ou eventos especiais, papel mais grosso (120g) oferece melhor experiência de colorir."
+    },
+    {
+      question: "Os livros têm versículos bíblicos?",
+      answer: "Sim! Cada livro contém versículos cuidadosamente selecionados relacionados ao tema dos desenhos. As crianças aprendem a Palavra de Deus enquanto se divertem colorindo."
+    },
+    {
+      question: "Quanto tempo demora para receber?",
+      answer: "O acesso é imediato! Assim que o pagamento é aprovado (geralmente em poucos minutos), você recebe os links de download por email. Não há tempo de espera ou frete."
     }
   ];
 
