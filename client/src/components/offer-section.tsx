@@ -110,9 +110,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           <Button 
             onClick={onPurchase}
             className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full text-sm sm:text-base uppercase tracking-wide shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl h-auto"
-          >
-            QUERO VER AS OFERTAS
-          </Button>
+          >QUERO O PACOTE BÁSICO</Button>
         </Card>
         
         {/* Premium Package */}
