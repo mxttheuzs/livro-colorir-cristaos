@@ -164,7 +164,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           <p className="text-gray-600 text-sm mb-4 text-center">Você economiza R$ 239,00</p>
           
           {/* Basic Package Section */}
-          <div className="bg-green-100 rounded-2xl p-4 mb-4">
+          <div className="bg-green-100 rounded-2xl p-4 mb-4 pt-[0px] pb-[0px]">
             <h5 className="font-bold text-green-800 text-center mb-3">TUDO DO PACOTE BÁSICO +</h5>
           </div>
           
