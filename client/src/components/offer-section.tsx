@@ -62,10 +62,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
         
         {/* Basic Package */}
         <Card className="bg-gray-100 rounded-2xl p-6 mb-6 border-0 text-center relative overflow-hidden">
-          {/* Star icon */}
-          <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-yellow-400 rounded-2xl mb-4 shadow-lg">
-            <span className="text-lg sm:text-xl">⭐</span>
-          </div>
+          
           
           <h4 className="font-bold text-gray-800 text-lg sm:text-xl mb-4">Pacote Básico</h4>
           
