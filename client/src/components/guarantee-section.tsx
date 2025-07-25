@@ -12,9 +12,7 @@ export function GuaranteeSection() {
           Garantia de 7 Dias
         </h3>
         <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
-          <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-xl mb-4 shadow-lg">
-            <span className="text-xl">🛡️</span>
-          </div>
+          
           <p className="text-lg leading-relaxed text-green-50">
             Se por qualquer motivo você não ficar 100% satisfeita com nossos livros de colorir, 
             <strong className="text-white"> devolvemos seu dinheiro sem perguntas!</strong>
