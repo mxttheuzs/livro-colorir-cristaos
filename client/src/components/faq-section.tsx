@@ -83,7 +83,7 @@ export function FaqSection() {
         <div className="mt-8 text-center">
           <button 
             onClick={() => {
-              const element = document.getElementById('offer-section');
+              const element = document.getElementById('offer');
               element?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
