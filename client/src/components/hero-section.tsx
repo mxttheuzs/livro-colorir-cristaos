@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Gift, Download, Smartphone } from "lucide-react";
-import heroImage from "@assets/image_1753553780767.png";
+import heroImage from "@assets/Ekudb9tLyf6p1rSpCtDzYLG20DMvZ0kVSu1DFct7_1753359381913.png";
 import logo from "@assets/515496816_122165020232481708_4631810946756284690_n_1753357778839.jpg";
 
 interface HeroSectionProps {
@@ -25,7 +25,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           <img 
             src={heroImage} 
             alt="35 Livros de Colorir Cristãos"
-            className="w-full max-w-[300px] object-contain rounded-3xl transition-transform duration-300 hover:scale-105"
+            className="w-full max-w-[240px] object-contain transition-transform duration-300 hover:scale-105"
           />
         </div>
         
