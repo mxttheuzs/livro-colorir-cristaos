@@ -16,7 +16,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           <img 
             src={logo} 
             alt="Luz do Céu Kids"
-            className="w-16 h-16 mx-auto rounded-full shadow-xl bg-white/20 p-2 backdrop-blur-sm border border-white/30"
+            className="w-20 h-20 mx-auto rounded-full shadow-xl bg-white/20 p-2 backdrop-blur-sm border border-white/30"
           />
         </div>
         
