@@ -49,7 +49,7 @@ export function FooterSection() {
         <div className="grid grid-cols-2 gap-3 mb-6">
           <button 
             onClick={scrollToOffer}
-            className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all transform hover:scale-105 shadow-lg"
+            className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all transform hover:scale-105 shadow-lg ml-[0px] mr-[0px]"
           >
             Ver Ofertas
           </button>
