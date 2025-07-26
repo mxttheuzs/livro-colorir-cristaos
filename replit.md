@@ -14,7 +14,8 @@ Preferred communication style: Simple, everyday language.
 - Removido completamente o componente ExitIntentModal que exibia popup de "50% OFF Exclusivo!"
 - Deletados arquivos exit-intent-modal.tsx e use-exit-intent.tsx
 - Limpas todas as importações e referências ao modal no home.tsx
-- Resolvidos problemas de push no GitHub relacionados a permissões de workflow
+- Resolvidos problemas de push no GitHub (branch errada + permissões de workflow)
+- Mudanças transferidas da branch final-popup-removal para main com force push
 - Site atualizado e funcionando em produção: https://35livrosdecolorircristaos.netlify.app
 - Deploy automático via Netlify ativo e funcionando corretamente
 - Popup removido com sucesso do site em produção
