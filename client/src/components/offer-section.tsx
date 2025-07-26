@@ -191,7 +191,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                 </button>
                 <button 
                   onClick={nextSlide}
-                  className="absolute right-1 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1 shadow-sm transition-all"
+                  className="absolute right-1 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1 shadow-sm transition-all pt-[-4px] pb-[-4px] pl-[17px] pr-[17px] mt-[0px] mb-[0px] ml-[0px] mr-[0px]"
                 >
                   <ChevronRight className="w-3 h-3 text-gray-600" />
                 </button>
