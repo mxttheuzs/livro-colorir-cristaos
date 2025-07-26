@@ -92,21 +92,7 @@ export function FooterSection() {
           </div>
         </div>
 
-        {/* Payment Methods */}
-        <div className="text-center mb-6">
-          <p className="text-xs text-gray-500 mb-2">Formas de Pagamento</p>
-          <div className="flex justify-center items-center space-x-3">
-            <div className="bg-gray-100 rounded px-3 py-2 border">
-              <span className="text-xs font-medium text-gray-700">VISA</span>
-            </div>
-            <div className="bg-gray-100 rounded px-3 py-2 border">
-              <span className="text-xs font-medium text-gray-700">MASTER</span>
-            </div>
-            <div className="bg-gray-100 rounded px-3 py-2 border">
-              <span className="text-xs font-medium text-gray-700">PIX</span>
-            </div>
-          </div>
-        </div>
+
 
         {/* Divider */}
         <div className="border-t border-gray-200 pt-4">
