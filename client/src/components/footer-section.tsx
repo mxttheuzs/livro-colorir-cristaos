@@ -33,7 +33,7 @@ export function FooterSection() {
           <img 
             src={logo} 
             alt="Luz do Céu Kids"
-            className="w-20 h-20 mx-auto mb-4 rounded-xl shadow-lg ml-[119px] mr-[119px]"
+            className="w-20 h-20 mx-auto mb-4 rounded-xl shadow-lg"
           />
           <h4 className="font-heading text-xl font-bold text-gray-800 mb-2">
             Luz do Céu Kids
@@ -42,28 +42,6 @@ export function FooterSection() {
             Educação cristã com amor e diversão para suas crianças
           </p>
         </div>
-
-
-
-        {/* Quick Action Buttons */}
-        <div className="grid grid-cols-2 gap-3 mb-6">
-          <button 
-            onClick={scrollToOffer}
-            className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all transform hover:scale-105 shadow-lg ml-[0px] mr-[0px]"
-          >
-            Ver Ofertas
-          </button>
-          <button 
-            onClick={handleWhatsAppClick}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all transform hover:scale-105 shadow-lg ml-[0px] mr-[0px]"
-          >
-            WhatsApp
-          </button>
-        </div>
-
-
-
-
 
         {/* Divider */}
         <div className="border-t border-gray-200 pt-4">
