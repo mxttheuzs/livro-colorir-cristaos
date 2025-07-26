@@ -1,0 +1,7 @@
+Execute este comando no Shell para fazer o push:
+
+git push https://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@github.com/mxttheuzs/livro-colorir-cristaos.git main
+
+Se der erro, use:
+
+git push -f https://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@github.com/mxttheuzs/livro-colorir-cristaos.git main
