@@ -30,11 +30,13 @@ export function FooterSection() {
       <div className="max-w-sm mx-auto">
         {/* Logo and Brand */}
         <div className="text-center mb-6">
-          <img 
-            src={logo} 
-            alt="Luz do Céu Kids"
-            className="w-20 h-20 mx-auto mb-4 rounded-xl shadow-lg"
-          />
+          <div className="flex justify-center">
+            <img 
+              src={logo} 
+              alt="Luz do Céu Kids"
+              className="w-20 h-20 mb-4 rounded-xl shadow-lg"
+            />
+          </div>
           <h4 className="font-heading text-xl font-bold text-gray-800 mb-2">
             Luz do Céu Kids
           </h4>
