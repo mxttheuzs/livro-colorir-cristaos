@@ -48,13 +48,13 @@ export function BenefitsSection() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
-      <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3 px-2">
+    <section className="px-4 py-8 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <div className="w-full max-w-sm mx-auto">
+        <div className="text-center mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-3 px-2">
             Benefícios Únicos e Comprovados
           </h2>
-          <p className="text-gray-600 text-sm sm:text-base px-2">
+          <p className="text-gray-600 text-sm px-2">
             Para o desenvolvimento das crianças
           </p>
         </div>

@@ -33,7 +33,7 @@ export function GuaranteeSection() {
   }, []);
 
   return (
-    <section className="px-4 py-16 bg-gradient-to-br from-green-500 to-emerald-600 text-white relative overflow-hidden">
+    <section className="px-4 py-8 bg-gradient-to-br from-green-500 to-emerald-600 text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-green-500/90 to-emerald-600/90 backdrop-blur-sm"></div>
       <div className="max-w-sm mx-auto text-center relative z-10">
         <div className="relative overflow-hidden">
@@ -48,11 +48,11 @@ export function GuaranteeSection() {
                   <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-3xl mb-6 shadow-xl backdrop-blur-sm border border-white/30">
                     <IconComponent className="text-white h-10 w-10" />
                   </div>
-                  <h3 className="font-heading text-3xl font-bold mb-4">
+                  <h3 className="font-heading text-2xl font-bold mb-4">
                     {guarantee.title}
                   </h3>
                   <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
-                    <p className="text-lg leading-relaxed text-green-50 mb-6">
+                    <p className="text-base leading-relaxed text-green-50 mb-6">
                       {guarantee.description}
                     </p>
                     <div className="bg-white/10 rounded-2xl p-4 border border-white/20">

@@ -11,8 +11,8 @@ export function WhatsAppSection() {
   };
 
   return (
-    <section className="px-3 py-6 bg-green-500 text-white">
-      <div className="w-full max-w-xs mx-auto">
+    <section className="px-4 py-6 bg-green-500 text-white">
+      <div className="w-full max-w-sm mx-auto">
         <Card className="bg-white/20 rounded-xl p-4 text-center border-0 backdrop-blur-sm">
           <h3 className="font-heading text-base sm:text-lg mb-3 font-semibold">
             💬 Dúvidas? Fale conosco!

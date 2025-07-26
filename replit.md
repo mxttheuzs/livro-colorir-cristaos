@@ -10,7 +10,25 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
-### January 26, 2025
+### January 26, 2025 - Otimização Completa para Mobile
+- Otimizada toda a aplicação exclusivamente para dispositivos móveis
+- Ajustadas todas as seções com padding px-4 e containers max-w-sm para melhor experiência
+- Reduzido py-12 para py-8 em todas as seções para espaçamento mais adequado ao mobile
+- Otimizados todos os títulos para tamanhos mobile-first (text-2xl ao invés de text-3xl)
+- Adicionados estilos CSS específicos para touch devices e pequenas telas
+- Configuradas animações pulse-slow nos botões principais para melhor conversão
+- Implementadas otimizações para dispositivos ultra pequenos (320px e 360px)
+- Adicionado touch-action: manipulation para melhor responsividade ao toque
+- Configurado font-size mínimo de 16px para prevenir zoom automático no iOS
+- Aplicadas otimizações de performance para scroll suave e touch scrolling
+- Removidos efeitos hover em dispositivos touch para melhor experiência
+- Todos os botões principais agora ocupam largura total (w-full) para facilitar toque
+- Hero section otimizada com imagem máxima de 300px e melhor hierarquia visual
+- Seção de ofertas completamente responsiva com carrossel de versículos móvel-friendly
+- Componentes de benefícios, categorias de uso e testemunhos adaptados para mobile
+- Footer e WhatsApp section com espaçamento reduzido e melhor usabilidade móvel
+
+### Janeiro 26, 2025 - Deploy
 - Configured complete deployment setup for multiple platforms
 - Created automated deployment scripts (upload-github.sh, build-deploy.sh)
 - Added GitHub Actions workflow for automatic GitHub Pages deployment

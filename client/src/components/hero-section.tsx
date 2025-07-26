@@ -9,8 +9,8 @@ interface HeroSectionProps {
 
 export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
   return (
-    <section className="bg-main-gradient px-3 py-8 text-center text-white min-h-screen flex items-center">
-      <div className="w-full max-w-xs mx-auto">
+    <section className="bg-main-gradient px-4 py-6 text-center text-white min-h-screen flex items-center">
+      <div className="w-full max-w-sm mx-auto">
         {/* Logo */}
         <div className="mb-4">
           <img 
@@ -20,17 +20,17 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           />
         </div>
         
-        {/* Hero image - constrained for mobile */}
+        {/* Hero image - optimized for mobile */}
         <div className="mb-6">
           <img 
             src={heroImage} 
             alt="35 Livros de Colorir Cristãos"
-            className="w-full max-w-[280px] sm:max-w-sm mx-auto object-contain rounded-2xl transition-transform duration-300 hover:scale-105"
+            className="w-full max-w-[300px] mx-auto object-contain rounded-2xl transition-transform duration-300 hover:scale-105 shadow-xl"
           />
         </div>
         
-        {/* Main Headline - smaller on mobile */}
-        <h1 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 leading-tight">
+        {/* Main Headline - mobile optimized */}
+        <h1 className="font-heading text-3xl font-bold text-white mb-3 leading-tight">
           35 Livros de Colorir<br/>
           <span className="text-accent-yellow font-extrabold">Cristãos</span>
         </h1>
@@ -65,7 +65,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
         {/* Hero CTA - mobile optimized */}
         <Button 
           onClick={onScrollToOffer}
-          className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 sm:py-5 px-4 sm:px-6 rounded-full text-base sm:text-lg lg:text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-4 h-auto uppercase tracking-wide"
+          className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-5 px-6 rounded-full text-lg shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-4 h-auto uppercase tracking-wide animate-pulse-slow"
         >
           QUERO VER AS OFERTAS
         </Button>

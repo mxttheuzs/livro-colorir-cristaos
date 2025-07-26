@@ -94,24 +94,24 @@ export function ProductShowcase() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+    <section className="px-4 py-8 bg-gradient-to-br from-blue-50 to-purple-50">
+      <div className="w-full max-w-sm mx-auto">
+        <div className="text-center mb-6">
+          <h3 className="font-heading text-2xl font-bold text-gray-800 mb-3">
             Conheça Nossos Livros Cristãos
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
+          <p className="text-gray-600 text-sm leading-relaxed px-2">
             Histórias bíblicas cuidadosamente ilustradas para ensinar valores cristãos de forma lúdica e educativa
           </p>
         </div>
         
         {/* Carousel container - mobile optimized */}
         <div className="relative mb-6">
-          <div className="overflow-hidden rounded-2xl shadow-2xl bg-white/50 backdrop-blur-sm p-2 sm:p-3" ref={emblaRef}>
+          <div className="overflow-hidden rounded-2xl shadow-2xl bg-white/50 backdrop-blur-sm p-3" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-1">
-                  <div className="relative w-full h-60 sm:h-72 bg-white rounded-xl shadow-lg overflow-hidden group">
+                  <div className="relative w-full h-64 bg-white rounded-xl shadow-lg overflow-hidden group">
                     <img 
                       src={book.image} 
                       alt={book.title}

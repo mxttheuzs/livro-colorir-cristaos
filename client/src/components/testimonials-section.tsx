@@ -32,9 +32,9 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gray-100">
-      <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
+    <section className="px-4 py-8 bg-gray-100">
+      <div className="w-full max-w-sm mx-auto">
+        <div className="text-center mb-6">
           <h3 className="font-bold text-gray-800 text-xl mb-4">
             O que nossos clientes dizem
           </h3>

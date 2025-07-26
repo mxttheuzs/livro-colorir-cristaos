@@ -1,8 +1,8 @@
 export function FooterSection() {
   return (
-    <footer className="px-4 py-8 bg-text-dark text-white">
+    <footer className="px-4 py-6 bg-text-dark text-white">
       <div className="max-w-sm mx-auto text-center">
-        <h4 className="font-fredoka text-lg text-primary-turquoise mb-3">
+        <h4 className="font-heading text-lg text-blue-400 mb-3">
           Luz do Céu Kids
         </h4>
         <p className="text-sm opacity-75 mb-4">

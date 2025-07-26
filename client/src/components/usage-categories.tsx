@@ -55,13 +55,13 @@ export function UsageCategories() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-slate-50 to-blue-50 pt-[19px] pb-[19px]">
-      <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+    <section className="px-4 py-8 bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="w-full max-w-sm mx-auto">
+        <div className="text-center mb-6">
+          <h3 className="font-heading text-2xl font-bold text-gray-800 mb-3">
             Onde Usar Nossos Livros
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
+          <p className="text-gray-600 text-sm leading-relaxed px-2">
             Versatilidade comprovada em diversos contextos cristãos
           </p>
         </div>
@@ -86,7 +86,7 @@ export function UsageCategories() {
         </div>
 
         {/* Quero ver as ofertas section */}
-        <div className="mt-8 text-center">
+        <div className="mt-6 text-center">
           <Button 
             onClick={() => {
               const offerElement = document.getElementById('offer');
@@ -97,7 +97,7 @@ export function UsageCategories() {
                 });
               }
             }}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-base uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full text-base uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-pulse-slow"
           >
             QUERO VER AS OFERTAS
           </Button>

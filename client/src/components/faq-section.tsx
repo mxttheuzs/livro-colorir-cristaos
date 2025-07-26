@@ -52,7 +52,7 @@ export function FaqSection() {
   };
 
   return (
-    <section className="px-4 py-12 bg-gray-50">
+    <section className="px-4 py-8 bg-gray-50">
       <div className="max-w-sm mx-auto">
         <div className="space-y-3">
           {faqs.map((faq, index) => (

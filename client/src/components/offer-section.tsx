@@ -40,8 +40,8 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
   };
 
   return (
-    <section id="offer" className="px-3 py-12 bg-gray-50">
-      <div className="w-full max-w-xs mx-auto">
+    <section id="offer" className="px-4 py-8 bg-gray-50">
+      <div className="w-full max-w-sm mx-auto">
         {/* Limited offer badge */}
         <div className="bg-red-500 text-white rounded-full px-4 py-2 text-center mb-6 shadow-lg">
           <div className="flex items-center justify-center space-x-2">
@@ -52,10 +52,10 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
         
         {/* Main title */}
         <div className="text-center mb-6">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+          <h3 className="font-heading text-2xl font-bold text-gray-800 mb-3">
             Escolha Sua Oferta Especial
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
+          <p className="text-gray-600 text-sm leading-relaxed px-2">
             Livros de qualidade profissional para enriquecer seus momentos de fé
           </p>
         </div>
@@ -106,8 +106,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Basic CTA Button */}
           <Button 
             onClick={() => window.open('https://pay.cakto.com.br/tphvtpv_494627', '_blank')}
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full sm:text-base text-[16px] uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto"
-            style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full text-base uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto animate-pulse-slow"
           >QUERO O PACOTE BÁSICO</Button>
         </Card>
         
@@ -226,8 +225,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Premium CTA Button */}
           <Button 
             onClick={() => window.open('https://pay.cakto.com.br/khjx23a_497223', '_blank')}
-            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-all hover:shadow-3xl h-auto uppercase tracking-wide text-[15px]"
-            style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-all hover:shadow-3xl h-auto uppercase tracking-wide text-base animate-pulse-slow-orange"
           >
             QUERO O PACOTE PREMIUM
           </Button>
