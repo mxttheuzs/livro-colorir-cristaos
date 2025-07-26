@@ -24,20 +24,7 @@ export function FooterSection() {
           </p>
         </div>
 
-        {/* Links section */}
-        <div className="border-t border-gray-200 pt-4 mb-4">
-          <div className="flex flex-col space-y-2 text-center text-sm">
-            <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors duration-200">
-              Política de Privacidade
-            </a>
-            <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors duration-200">
-              Termos de Uso
-            </a>
-            <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors duration-200">
-              Suporte ao Cliente
-            </a>
-          </div>
-        </div>
+
 
         {/* Copyright section */}
         <div className="border-t border-gray-200 pt-4 text-center">
