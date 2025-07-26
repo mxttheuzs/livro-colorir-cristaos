@@ -33,7 +33,7 @@ export function FooterSection() {
           <img 
             src={logo} 
             alt="Luz do Céu Kids"
-            className="w-20 h-20 mx-auto mb-4 rounded-xl shadow-lg ml-[115px] mr-[115px]"
+            className="w-20 h-20 mx-auto mb-4 rounded-xl shadow-lg ml-[119px] mr-[119px]"
           />
           <h4 className="font-heading text-xl font-bold text-gray-800 mb-2">
             Luz do Céu Kids
