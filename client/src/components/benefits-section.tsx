@@ -80,17 +80,7 @@ export function BenefitsSection() {
           })}
         </div>
 
-        <div className="mt-8 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 text-center border border-green-200">
-          <div className="inline-flex items-center justify-center w-10 h-10 bg-green-500 rounded-full mb-3">
-            <span className="text-white text-lg">✓</span>
-          </div>
-          <h4 className="font-bold text-gray-800 text-base mb-2">
-            Garantia de Satisfação
-          </h4>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Mais de 1.500 famílias satisfeitas. Garantia de 7 dias ou seu dinheiro de volta.
-          </p>
-        </div>
+        
       </div>
     </section>
   );

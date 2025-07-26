@@ -28,7 +28,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
 
   // Get current date and format it
   const getCurrentDate = () => {
-    return '25/07/25';
+    return '27/07/25';
   };
 
   const nextSlide = () => {
