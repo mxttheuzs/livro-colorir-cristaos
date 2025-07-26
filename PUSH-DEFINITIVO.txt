@@ -1,0 +1,15 @@
+Execute estes comandos no Shell UM POR VEZ:
+
+1. Criar nova branch:
+git checkout -b final-popup-removal
+
+2. Push da nova branch:
+git push https://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@github.com/mxttheuzs/livro-colorir-cristaos.git final-popup-removal
+
+3. Se funcionar, fazer merge no GitHub:
+- Vá em https://github.com/mxttheuzs/livro-colorir-cristaos/pulls
+- Crie um Pull Request de final-popup-removal para main
+- Faça o merge
+
+OU tente este comando direto:
+git push https://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@github.com/mxttheuzs/livro-colorir-cristaos.git main:main --force-with-lease
