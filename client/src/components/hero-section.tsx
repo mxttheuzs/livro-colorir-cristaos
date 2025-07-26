@@ -43,20 +43,20 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
         {/* Features list - mobile optimized */}
         <div className="mb-6 space-y-3 text-left">
           <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-yellow rounded-full flex items-center justify-center shadow-md">
-              <span className="text-base sm:text-lg">⭐</span>
+            <div className="w-6 h-6 bg-accent-yellow rounded-full flex items-center justify-center shadow-md">
+              <span className="text-sm">⭐</span>
             </div>
             <span className="text-text-light font-medium text-sm sm:text-base">Células</span>
           </div>
           <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-orange rounded-full flex items-center justify-center shadow-md">
-              <span className="text-base sm:text-lg">🏠</span>
+            <div className="w-6 h-6 bg-accent-orange rounded-full flex items-center justify-center shadow-md">
+              <span className="text-sm">🏠</span>
             </div>
             <span className="text-text-light font-medium text-sm sm:text-base">Escola Dominical</span>
           </div>
           <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-pink rounded-full flex items-center justify-center shadow-md">
-              <span className="text-base sm:text-lg">❤️</span>
+            <div className="w-6 h-6 bg-accent-pink rounded-full flex items-center justify-center shadow-md">
+              <span className="text-sm">❤️</span>
             </div>
             <span className="text-text-light font-medium text-sm sm:text-base">Devocional Familiar</span>
           </div>
