@@ -55,7 +55,7 @@ export function FooterSection() {
           </button>
           <button 
             onClick={handleWhatsAppClick}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all transform hover:scale-105 shadow-lg"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all transform hover:scale-105 shadow-lg ml-[0px] mr-[0px]"
           >
             WhatsApp
           </button>
