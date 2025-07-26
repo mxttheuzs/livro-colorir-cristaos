@@ -40,65 +40,65 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
   };
 
   return (
-    <section id="offer" className="px-3 py-12 bg-gray-50">
+    <section id="offer" className="px-3 py-6 bg-gray-50">
       <div className="w-full max-w-xs mx-auto">
         {/* Limited offer badge */}
-        <div className="bg-red-500 text-white rounded-full px-4 py-2 text-center mb-6 shadow-lg">
-          <div className="flex items-center justify-center space-x-2">
-            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-            <span className="font-bold text-xs sm:text-sm">OFERTA LIMITADA - Apenas no dia {getCurrentDate()}</span>
+        <div className="bg-red-500 text-white rounded-full px-3 py-1 text-center mb-3 shadow-md">
+          <div className="flex items-center justify-center space-x-1">
+            <div className="w-1 h-1 bg-white rounded-full animate-pulse"></div>
+            <span className="font-bold text-xs">OFERTA LIMITADA - Apenas no dia {getCurrentDate()}</span>
           </div>
         </div>
         
         {/* Main title */}
-        <div className="text-center mb-6">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+        <div className="text-center mb-3">
+          <h3 className="font-heading text-lg font-bold text-gray-800 mb-2">
             Escolha Sua Oferta Especial
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
+          <p className="text-gray-600 text-xs leading-relaxed px-2">
             Livros de qualidade profissional para enriquecer seus momentos de fé
           </p>
         </div>
         
         {/* Basic Package */}
-        <Card className="bg-gray-100 rounded-2xl p-6 mb-6 border-0 text-center relative overflow-hidden">
+        <Card className="bg-gray-100 rounded-lg p-3 mb-3 border-0 text-center relative overflow-hidden">
           
           
-          <h4 className="font-bold text-gray-800 text-lg sm:text-xl mb-4">Pacote Básico</h4>
+          <h4 className="font-bold text-gray-800 text-sm mb-2">Pacote Básico</h4>
           
           {/* Original price */}
-          <p className="text-gray-500 line-through text-base sm:text-lg mb-2">R$ 47,00</p>
+          <p className="text-gray-500 line-through text-xs mb-1">R$ 47,00</p>
           
           {/* Discount badge */}
-          <div className="inline-block bg-green-500 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold mb-4">
+          <div className="inline-block bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold mb-2">
             -79%
           </div>
           
           {/* Current price */}
-          <div className="mb-4">
-            <span className="text-4xl sm:text-5xl font-bold text-green-600">R$ 10</span>
-            <span className="text-xl sm:text-2xl text-green-600">,00</span>
+          <div className="mb-2">
+            <span className="text-2xl font-bold text-green-600">R$ 10</span>
+            <span className="text-lg text-green-600">,00</span>
           </div>
           
           {/* Savings */}
-          <p className="text-gray-600 text-xs sm:text-sm mb-4">Você economiza R$ 37,00</p>
+          <p className="text-gray-600 text-xs mb-2">Você economiza R$ 37,00</p>
           
           {/* Features */}
-          <div className="space-y-2 mb-4 text-left">
-            <p className="text-gray-700 flex items-center text-sm sm:text-base">
-              <span className="text-green-500 mr-2">✓</span>
+          <div className="space-y-1 mb-2 text-left">
+            <p className="text-gray-700 flex items-center text-xs">
+              <span className="text-green-500 mr-1">✓</span>
               35 Livros de Colorir Completos
             </p>
-            <p className="text-gray-700 flex items-center text-sm sm:text-base">
-              <span className="text-green-500 mr-2">✓</span>
+            <p className="text-gray-700 flex items-center text-xs">
+              <span className="text-green-500 mr-1">✓</span>
               Download Imediato
             </p>
-            <p className="text-gray-700 flex items-center text-sm sm:text-base">
-              <span className="text-green-500 mr-2">✓</span>
+            <p className="text-gray-700 flex items-center text-xs">
+              <span className="text-green-500 mr-1">✓</span>
               Acesso Vitalício
             </p>
-            <p className="text-gray-700 flex items-center text-sm sm:text-base">
-              <span className="text-green-500 mr-2">✓</span>
+            <p className="text-gray-700 flex items-center text-xs">
+              <span className="text-green-500 mr-1">✓</span>
               Garantia de 7 dias
             </p>
           </div>
@@ -106,7 +106,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           {/* Basic CTA Button */}
           <Button 
             onClick={() => window.open('https://pay.cakto.com.br/tphvtpv_494627', '_blank')}
-            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full sm:text-base text-[16px] uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-3 rounded-full text-xs uppercase tracking-wide shadow-lg transition-all h-auto"
             style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
           >QUERO O PACOTE BÁSICO</Button>
         </Card>

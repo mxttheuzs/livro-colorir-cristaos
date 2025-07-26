@@ -55,29 +55,29 @@ export function UsageCategories() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-slate-50 to-blue-50 pt-[19px] pb-[19px]">
+    <section className="px-3 py-6 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+        <div className="text-center mb-4">
+          <h3 className="font-heading text-lg font-bold text-gray-800 mb-2">
             Onde Usar Nossos Livros
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
+          <p className="text-gray-600 text-xs leading-relaxed px-2">
             Versatilidade comprovada em diversos contextos cristãos
           </p>
         </div>
         
-        <div className="grid gap-4">
+        <div className="grid gap-2">
           {categories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <Card key={index} className="bg-white rounded-xl p-4 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-                <div className="flex items-start space-x-4">
-                  <div className={`w-12 h-12 ${category.iconBg} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105`}>
-                    <IconComponent className="text-white h-5 w-5" />
+              <Card key={index} className="bg-white rounded-lg p-3 border-0 shadow-md group">
+                <div className="flex items-start space-x-3">
+                  <div className={`w-8 h-8 ${category.iconBg} rounded-lg flex items-center justify-center flex-shrink-0`}>
+                    <IconComponent className="text-white h-4 w-4" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h4 className="font-semibold text-gray-800 text-sm sm:text-base mb-2 group-hover:text-blue-600 transition-colors">{category.title}</h4>
-                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3">{category.description}</p>
+                    <h4 className="font-semibold text-gray-800 text-xs mb-1">{category.title}</h4>
+                    <p className="text-gray-600 text-xs leading-tight">{category.description}</p>
                   </div>
                 </div>
               </Card>
@@ -86,7 +86,7 @@ export function UsageCategories() {
         </div>
 
         {/* Quero ver as ofertas section */}
-        <div className="mt-8 text-center">
+        <div className="mt-4 text-center">
           <Button 
             onClick={() => {
               const offerElement = document.getElementById('offer');
@@ -97,7 +97,7 @@ export function UsageCategories() {
                 });
               }
             }}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-base uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full text-sm uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             QUERO VER AS OFERTAS
           </Button>

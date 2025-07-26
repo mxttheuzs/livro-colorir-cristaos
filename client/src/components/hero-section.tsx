@@ -20,17 +20,17 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           />
         </div>
         
-        {/* Hero image - constrained for mobile */}
-        <div className="mb-6">
+        {/* Hero image - mobile optimized */}
+        <div className="mb-4">
           <img 
             src={heroImage} 
             alt="35 Livros de Colorir Cristãos"
-            className="w-full max-w-[280px] sm:max-w-sm mx-auto object-contain rounded-2xl transition-transform duration-300 hover:scale-105"
+            className="w-full max-w-[200px] mx-auto object-contain rounded-xl"
           />
         </div>
         
         {/* Main Headline - mobile optimized */}
-        <h1 className="text-2xl font-bold text-white mb-3 leading-tight">
+        <h1 className="text-xl font-bold text-white mb-2 leading-tight">
           35 Livros de Colorir<br/>
           <span className="text-yellow-300 font-extrabold">Cristãos</span>
         </h1>
@@ -40,32 +40,32 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           Transforme momentos especiais com sua família, célula e escola dominical
         </p>
         
-        {/* Features list - simplified for mobile */}
-        <div className="mb-6 space-y-2 text-left">
-          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
-            <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-sm">⭐</span>
+        {/* Features list - compact for mobile */}
+        <div className="mb-4 space-y-1 text-left">
+          <div className="flex items-center space-x-2 bg-white/10 rounded-lg p-2 backdrop-blur-sm">
+            <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+              <span className="text-xs">⭐</span>
             </div>
-            <span className="text-blue-100 font-medium text-sm">Células</span>
+            <span className="text-blue-100 font-medium text-xs">Células</span>
           </div>
-          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
-            <div className="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-sm">🏠</span>
+          <div className="flex items-center space-x-2 bg-white/10 rounded-lg p-2 backdrop-blur-sm">
+            <div className="w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
+              <span className="text-xs">🏠</span>
             </div>
-            <span className="text-blue-100 font-medium text-sm">Escola Dominical</span>
+            <span className="text-blue-100 font-medium text-xs">Escola Dominical</span>
           </div>
-          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
-            <div className="w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-sm">❤️</span>
+          <div className="flex items-center space-x-2 bg-white/10 rounded-lg p-2 backdrop-blur-sm">
+            <div className="w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center">
+              <span className="text-xs">❤️</span>
             </div>
-            <span className="text-blue-100 font-medium text-sm">Devocional Familiar</span>
+            <span className="text-blue-100 font-medium text-xs">Devocional Familiar</span>
           </div>
         </div>
         
         {/* Hero CTA - mobile only */}
         <Button 
           onClick={onScrollToOffer}
-          className="w-full bg-green-500 active:bg-green-600 text-white font-bold py-4 px-4 rounded-full text-base shadow-2xl mb-4 h-auto uppercase tracking-wide touch-manipulation"
+          className="w-full bg-green-500 active:bg-green-600 text-white font-bold py-3 px-4 rounded-full text-sm shadow-lg mb-3 h-auto uppercase tracking-wide touch-manipulation"
         >
           QUERO VER AS OFERTAS
         </Button>

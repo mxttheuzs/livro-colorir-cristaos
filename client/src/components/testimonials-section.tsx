@@ -32,22 +32,22 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gray-100">
+    <section className="px-3 py-6 bg-gray-100">
       <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
-          <h3 className="font-bold text-gray-800 text-xl mb-4">
+        <div className="text-center mb-4">
+          <h3 className="font-bold text-gray-800 text-lg mb-2">
             O que nossos clientes dizem
           </h3>
           
           {/* 5 Star Rating */}
-          <div className="flex justify-center mb-2">
+          <div className="flex justify-center mb-1">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
+              <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
             ))}
           </div>
           
           {/* Rating Text */}
-          <p className="text-gray-600 text-base font-medium mb-6">
+          <p className="text-gray-600 text-xs font-medium mb-3">
             4,9/5 - 347 avaliações
           </p>
         </div>
@@ -61,9 +61,9 @@ export function TestimonialsSection() {
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0">
-                  <Card className="bg-white rounded-2xl p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="flex items-start mb-4">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 shadow-md">
+                  <Card className="bg-white rounded-lg p-3 border-0 shadow-md">
+                    <div className="flex items-start mb-2">
+                      <div className="w-8 h-8 rounded-full overflow-hidden mr-3 flex-shrink-0">
                         <img 
                           src={testimonial.photo} 
                           alt={testimonial.name}
@@ -71,16 +71,16 @@ export function TestimonialsSection() {
                         />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h4 className="font-semibold text-gray-800 text-sm sm:text-base">{testimonial.name}</h4>
-                        <p className="text-gray-600 text-xs sm:text-sm mb-2">{testimonial.role}</p>
+                        <h4 className="font-semibold text-gray-800 text-xs">{testimonial.name}</h4>
+                        <p className="text-gray-600 text-xs mb-1">{testimonial.role}</p>
                         <div className="flex text-yellow-400">
                           {Array.from({ length: testimonial.rating }).map((_, i) => (
-                            <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-current" />
+                            <Star key={i} className="h-3 w-3 fill-current" />
                           ))}
                         </div>
                       </div>
                     </div>
-                    <blockquote className="text-gray-700 text-sm sm:text-base leading-relaxed italic">
+                    <blockquote className="text-gray-700 text-xs leading-tight italic">
                       "{testimonial.text}"
                     </blockquote>
                   </Card>
@@ -92,16 +92,16 @@ export function TestimonialsSection() {
           {/* Navigation Arrows */}
           <button
             onClick={() => setCurrentTestimonial(prev => prev === 0 ? testimonials.length - 1 : prev - 1)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300 z-10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 bg-white rounded-full p-1 shadow-md z-10"
           >
-            <ChevronLeft className="h-5 w-5 text-gray-600" />
+            <ChevronLeft className="h-4 w-4 text-gray-600" />
           </button>
           
           <button
             onClick={() => setCurrentTestimonial(prev => (prev + 1) % testimonials.length)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300 z-10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 bg-white rounded-full p-1 shadow-md z-10"
           >
-            <ChevronRight className="h-5 w-5 text-gray-600" />
+            <ChevronRight className="h-4 w-4 text-gray-600" />
           </button>
 
           {/* Carousel Indicators */}

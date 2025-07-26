@@ -48,31 +48,31 @@ export function BenefitsSection() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <section className="px-3 py-6 bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3 px-2">
+        <div className="text-center mb-4">
+          <h2 className="text-lg font-bold text-gray-800 mb-2 px-2">
             Benefícios Únicos e Comprovados
           </h2>
-          <p className="text-gray-600 text-sm sm:text-base px-2">
+          <p className="text-gray-600 text-xs px-2">
             Para o desenvolvimento das crianças
           </p>
         </div>
         
-        <div className="grid gap-4">
+        <div className="grid gap-2">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
-              <Card key={index} className="bg-white rounded-xl p-4 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-                <div className="flex items-start space-x-4">
-                  <div className={`w-12 h-12 ${benefit.bgColor} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105`}>
-                    <IconComponent className="text-white h-5 w-5" />
+              <Card key={index} className="bg-white rounded-lg p-3 border-0 shadow-md group">
+                <div className="flex items-start space-x-3">
+                  <div className={`w-8 h-8 ${benefit.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}>
+                    <IconComponent className="text-white h-4 w-4" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="mb-2">
-                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base group-hover:text-blue-600 transition-colors">{benefit.title}</h4>
+                    <div className="mb-1">
+                      <h4 className="font-semibold text-gray-800 text-xs">{benefit.title}</h4>
                     </div>
-                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">{benefit.description}</p>
+                    <p className="text-gray-600 text-xs leading-tight">{benefit.description}</p>
                   </div>
                 </div>
               </Card>
