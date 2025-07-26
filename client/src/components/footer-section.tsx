@@ -1,85 +1,129 @@
+import logo from "@assets/515496816_122165020232481708_4631810946756284690_n_1753548414055.jpg";
+
 export function FooterSection() {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "5513996116102";
+    const message = "Olá! Vi os 35 Livros de Colorir Cristãos e gostaria de falar com o suporte.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
+  const scrollToOffer = () => {
+    const offerElement = document.getElementById('offer');
+    if (offerElement) {
+      offerElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ 
+      top: 0, 
+      behavior: 'smooth' 
+    });
+  };
+
   return (
-    <footer className="px-4 py-8 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <footer className="px-4 py-8 bg-white border-t border-gray-200">
       <div className="max-w-sm mx-auto">
         {/* Logo and Brand */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-4 shadow-lg">
-            <span className="text-2xl">✨</span>
-          </div>
-          <h4 className="font-heading text-xl font-bold text-white mb-2">
+          <img 
+            src={logo} 
+            alt="Luz do Céu Kids"
+            className="w-20 h-20 mx-auto mb-4 rounded-xl shadow-lg"
+          />
+          <h4 className="font-heading text-xl font-bold text-gray-800 mb-2">
             Luz do Céu Kids
           </h4>
-          <p className="text-sm text-gray-300 leading-relaxed">
+          <p className="text-sm text-gray-600 leading-relaxed">
             Educação cristã com amor e diversão para suas crianças
           </p>
         </div>
 
         {/* Social Proof */}
-        <div className="bg-white/10 rounded-xl p-4 mb-6 backdrop-blur-sm border border-white/20">
+        <div className="bg-blue-50 rounded-xl p-4 mb-6 border border-blue-100">
           <div className="text-center">
             <div className="flex justify-center items-center space-x-1 mb-2">
               {Array.from({ length: 5 }).map((_, i) => (
-                <span key={i} className="text-yellow-400 text-lg">⭐</span>
+                <span key={i} className="text-yellow-500 text-lg">⭐</span>
               ))}
             </div>
-            <p className="text-sm font-medium text-white mb-1">Mais de 2.000 famílias satisfeitas</p>
-            <p className="text-xs text-gray-300">35 livros cristãos de alta qualidade</p>
+            <p className="text-sm font-medium text-gray-800 mb-1">Mais de 2.000 famílias satisfeitas</p>
+            <p className="text-xs text-gray-600">35 livros cristãos de alta qualidade</p>
           </div>
+        </div>
+
+        {/* Quick Action Buttons */}
+        <div className="grid grid-cols-2 gap-3 mb-6">
+          <button 
+            onClick={scrollToOffer}
+            className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all transform hover:scale-105 shadow-lg"
+          >
+            Ver Ofertas
+          </button>
+          <button 
+            onClick={handleWhatsAppClick}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-xl text-sm transition-all transform hover:scale-105 shadow-lg"
+          >
+            WhatsApp
+          </button>
         </div>
 
         {/* Quick Links */}
         <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
           <div>
-            <h5 className="font-semibold text-white mb-2">Produto</h5>
-            <ul className="space-y-1 text-gray-300">
-              <li>35 Livros de Colorir</li>
-              <li>Download Imediato</li>
-              <li>Garantia de 7 dias</li>
+            <h5 className="font-semibold text-gray-800 mb-2">Produto</h5>
+            <ul className="space-y-1 text-gray-600">
+              <li className="cursor-pointer hover:text-blue-600" onClick={scrollToOffer}>35 Livros de Colorir</li>
+              <li className="cursor-pointer hover:text-blue-600" onClick={scrollToOffer}>Download Imediato</li>
+              <li className="cursor-pointer hover:text-blue-600" onClick={scrollToOffer}>Garantia de 7 dias</li>
             </ul>
           </div>
           <div>
-            <h5 className="font-semibold text-white mb-2">Suporte</h5>
-            <ul className="space-y-1 text-gray-300">
-              <li>WhatsApp</li>
-              <li>Email</li>
-              <li>FAQ</li>
+            <h5 className="font-semibold text-gray-800 mb-2">Suporte</h5>
+            <ul className="space-y-1 text-gray-600">
+              <li className="cursor-pointer hover:text-blue-600" onClick={handleWhatsAppClick}>WhatsApp</li>
+              <li className="cursor-pointer hover:text-blue-600" onClick={handleWhatsAppClick}>Atendimento</li>
+              <li className="cursor-pointer hover:text-blue-600" onClick={scrollToTop}>FAQ</li>
             </ul>
           </div>
         </div>
 
         {/* Payment Methods */}
         <div className="text-center mb-6">
-          <p className="text-xs text-gray-400 mb-2">Formas de Pagamento</p>
-          <div className="flex justify-center items-center space-x-3 opacity-60">
-            <div className="bg-white/20 rounded px-2 py-1">
-              <span className="text-xs font-medium">VISA</span>
+          <p className="text-xs text-gray-500 mb-2">Formas de Pagamento</p>
+          <div className="flex justify-center items-center space-x-3">
+            <div className="bg-gray-100 rounded px-3 py-2 border">
+              <span className="text-xs font-medium text-gray-700">VISA</span>
             </div>
-            <div className="bg-white/20 rounded px-2 py-1">
-              <span className="text-xs font-medium">MASTER</span>
+            <div className="bg-gray-100 rounded px-3 py-2 border">
+              <span className="text-xs font-medium text-gray-700">MASTER</span>
             </div>
-            <div className="bg-white/20 rounded px-2 py-1">
-              <span className="text-xs font-medium">PIX</span>
+            <div className="bg-gray-100 rounded px-3 py-2 border">
+              <span className="text-xs font-medium text-gray-700">PIX</span>
             </div>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/20 pt-4">
+        <div className="border-t border-gray-200 pt-4">
           {/* Legal Links */}
-          <div className="flex justify-center space-x-4 text-xs text-gray-400 mb-4">
-            <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
+          <div className="flex justify-center space-x-4 text-xs text-gray-500 mb-4">
+            <button className="hover:text-blue-600 transition-colors">Política de Privacidade</button>
             <span>•</span>
-            <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
+            <button className="hover:text-blue-600 transition-colors">Termos de Uso</button>
           </div>
           
           {/* Copyright */}
           <div className="text-center">
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-500">
               © 2025 Luz do Céu Kids. Todos os direitos reservados.
             </p>
-            <p className="text-xs text-gray-500 mt-1">
-              CNPJ: 00.000.000/0001-00 • Desenvolvido com ❤️ para famílias cristãs
+            <p className="text-xs text-gray-400 mt-1">
+              Desenvolvido com ❤️ para famílias cristãs
             </p>
           </div>
         </div>
