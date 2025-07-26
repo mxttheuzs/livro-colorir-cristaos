@@ -234,7 +234,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
         {/* Security & Trust Section */}
         <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-lg">
           <div className="text-center mb-4">
-            <div className="inline-flex items-center justify-center w-8 h-8 bg-green-100 rounded-full mb-3">
+            <div className="inline-flex items-center justify-center w-6 h-6 bg-green-100 rounded-full mb-3">
               <span className="text-lg">🔒</span>
             </div>
             <h4 className="font-bold text-gray-800 text-lg mb-2">Compra 100% Segura</h4>
