@@ -61,25 +61,7 @@ export function FooterSection() {
           </button>
         </div>
 
-        {/* Quick Links */}
-        <div className="grid grid-cols-2 gap-4 mb-6 text-sm">
-          <div>
-            <h5 className="font-semibold text-gray-800 mb-2">Produto</h5>
-            <ul className="space-y-1 text-gray-600">
-              <li className="cursor-pointer hover:text-blue-600" onClick={scrollToOffer}>35 Livros de Colorir</li>
-              <li className="cursor-pointer hover:text-blue-600" onClick={scrollToOffer}>Download Imediato</li>
-              <li className="cursor-pointer hover:text-blue-600" onClick={scrollToOffer}>Garantia de 7 dias</li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-semibold text-gray-800 mb-2">Suporte</h5>
-            <ul className="space-y-1 text-gray-600">
-              <li className="cursor-pointer hover:text-blue-600" onClick={handleWhatsAppClick}>WhatsApp</li>
-              <li className="cursor-pointer hover:text-blue-600" onClick={handleWhatsAppClick}>Atendimento</li>
-              <li className="cursor-pointer hover:text-blue-600" onClick={scrollToTop}>FAQ</li>
-            </ul>
-          </div>
-        </div>
+
 
 
 
