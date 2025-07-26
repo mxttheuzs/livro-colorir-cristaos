@@ -1,0 +1,37 @@
+[build]
+  # Diretório onde rodar os comandos de build
+  base = "."
+  
+  # Comando para fazer o build
+  command = "npm ci && npm run build"
+  
+  # Diretório com os arquivos prontos para publicação
+  publish = "dist/public"
+
+[build.environment]
+  # Versão do Node.js
+  NODE_VERSION = "20"
+  
+  # Variáveis de ambiente para o build
+  NODE_ENV = "production"
+
+# Configuração de redirecionamentos para SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers de segurança
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache para assets estáticos
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
