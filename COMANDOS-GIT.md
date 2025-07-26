@@ -4,7 +4,7 @@
 
 ## 1. Atualizar o remote com o novo token:
 ```
-git remote set-url origin https://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@github.com/mxttheuzs/livros-colorir-cristaos.git
+git remote set-url origin https://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@github.com/mxttheuzs/livro-colorir-cristaos.git
 ```
 
 ## 2. Adicionar as mudanças:
