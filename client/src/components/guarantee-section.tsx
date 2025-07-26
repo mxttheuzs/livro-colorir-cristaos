@@ -69,20 +69,7 @@ export function GuaranteeSection() {
           </div>
         </div>
 
-        {/* Carousel Indicators */}
-        <div className="flex justify-center mt-6 space-x-2">
-          {guarantees.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentSlide 
-                  ? 'bg-white w-8' 
-                  : 'bg-white/50 hover:bg-white/70'
-              }`}
-            />
-          ))}
-        </div>
+        
       </div>
     </section>
   );
