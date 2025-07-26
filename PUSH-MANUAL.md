@@ -1,29 +1,34 @@
-# 🚀 Push Manual com Novo Token
+# 🚀 Push Manual - Passo a Passo
 
-Como o Git está travado, execute estes comandos **um por vez** no Shell do Replit:
+Execute estes comandos **um por vez** no Shell do Replit:
 
-## 1. Resetar o Git (se necessário)
-```bash
-git reset --hard HEAD
-```
+## 1. Primeiro, obtenha um novo token do GitHub:
+- Vá em: https://github.com/settings/tokens
+- Clique em "Generate new token (classic)"
+- Marque apenas a opção **"repo"**
+- Copie o token que será gerado
 
-## 2. Configurar novo remote
+## 2. Limpar configuração anterior
 ```bash
 git remote rm origin
-git remote add origin https://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@github.com/mxttheuzs/livros-colorir-cristaos.git
 ```
 
-## 3. Adicionar mudanças
+## 3. Configurar novo remote (SUBSTITUA SEU_TOKEN_AQUI pelo token copiado)
+```bash
+git remote add origin https://SEU_TOKEN_AQUI@github.com/mxttheuzs/livros-colorir-cristaos.git
+```
+
+## 4. Adicionar mudanças
 ```bash
 git add .
 ```
 
-## 4. Fazer commit
+## 5. Fazer commit
 ```bash
-git commit -m "Atualizações da landing page com melhorias de conversão"
+git commit -m "Removido popup de oferta e melhorias no site"
 ```
 
-## 5. Push para GitHub
+## 6. Push para GitHub
 ```bash
 git push -u origin main
 ```
