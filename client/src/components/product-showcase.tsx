@@ -96,54 +96,55 @@ export function ProductShowcase() {
   return (
     <section className="px-4 py-8 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="w-full max-w-sm mx-auto">
-        <div className="text-center mb-4">
-          <h3 className="text-lg font-bold text-gray-800 mb-2">
+        <div className="text-center mb-6">
+          <h3 className="font-heading text-2xl font-bold text-gray-800 mb-3">
             Conheça Nossos Livros Cristãos
           </h3>
-          <p className="text-gray-600 text-xs leading-relaxed px-2">
+          <p className="text-gray-600 text-sm leading-relaxed px-2">
             Histórias bíblicas cuidadosamente ilustradas para ensinar valores cristãos de forma lúdica e educativa
           </p>
         </div>
         
-        {/* Carousel container - mobile only */}
-        <div className="relative mb-4">
-          <div className="overflow-hidden rounded-xl shadow-lg bg-white/50 backdrop-blur-sm p-2" ref={emblaRef}>
+        {/* Carousel container - mobile optimized */}
+        <div className="relative mb-6">
+          <div className="overflow-hidden rounded-2xl shadow-2xl bg-white/50 backdrop-blur-sm p-3" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-1">
-                  <div className="relative w-full h-40 bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="relative w-full h-64 bg-white rounded-xl shadow-lg overflow-hidden group">
                     <img 
                       src={book.image} 
                       alt={book.title}
-                      className="w-full h-full object-cover cursor-pointer rounded-lg"
+                      className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer rounded-xl"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
           
-          {/* Navigation buttons - mobile only */}
+          {/* Navigation buttons - mobile optimized */}
           <Button
             variant="outline"
             size="sm"
-            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-lg bg-white/90 active:bg-white border-0 shadow-lg touch-manipulation"
+            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
             onClick={scrollPrev}
           >
-            <ChevronLeft className="h-4 w-4 text-gray-700" />
+            <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
           </Button>
           <Button
             variant="outline"
             size="sm"
-            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-lg bg-white/90 active:bg-white border-0 shadow-lg touch-manipulation"
+            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
             onClick={scrollNext}
           >
-            <ChevronRight className="h-4 w-4 text-gray-700" />
+            <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
           </Button>
         </div>
         
         {/* Quero ver as ofertas section */}
-        <div className="mt-4 text-center">
+        <div className="mt-8 text-center">
           <Button 
             onClick={() => {
               const offerElement = document.getElementById('offer');
@@ -154,7 +155,7 @@ export function ProductShowcase() {
                 });
               }
             }}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full text-sm uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-base uppercase tracking-wide shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             QUERO VER AS OFERTAS
           </Button>

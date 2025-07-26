@@ -29,7 +29,10 @@ export function FaqSection() {
       question: "Como funciona a garantia de 7 dias?",
       answer: "Se por qualquer motivo você não ficar satisfeito com os livros, oferecemos 100% do seu dinheiro de volta em até 7 dias. Sem perguntas, sem burocracia. Sua satisfação é nossa prioridade."
     },
-
+    {
+      question: "Posso usar comercialmente (revender)?",
+      answer: "Não, os livros são para uso pessoal, familiar e ministerial apenas. Você pode usar em sua igreja, escola dominical, família, mas não pode revender ou distribuir comercialmente os arquivos."
+    },
     {
       question: "Que tipo de papel devo usar?",
       answer: "Recomendamos papel sulfite A4 branco (75g a 90g) para uso doméstico. Para atividades em grupos ou eventos especiais, papel mais grosso (120g) oferece melhor experiência de colorir."
@@ -49,7 +52,7 @@ export function FaqSection() {
   };
 
   return (
-    <section className="px-4 py-12 bg-gray-50">
+    <section className="px-4 py-8 bg-gray-50">
       <div className="max-w-sm mx-auto">
         <div className="space-y-3">
           {faqs.map((faq, index) => (
@@ -83,7 +86,7 @@ export function FaqSection() {
         <div className="mt-8 text-center">
           <button 
             onClick={() => {
-              const element = document.getElementById('offer');
+              const element = document.getElementById('offer-section');
               element?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"

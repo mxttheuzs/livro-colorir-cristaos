@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
   return (
-    <section className="bg-gradient-to-br from-blue-600 to-blue-800 px-4 py-8 text-center text-white min-h-screen flex items-center">
+    <section className="bg-main-gradient px-4 py-6 text-center text-white min-h-screen flex items-center">
       <div className="w-full max-w-sm mx-auto">
         {/* Logo */}
         <div className="mb-4">
@@ -20,52 +20,52 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           />
         </div>
         
-        {/* Hero image - mobile optimized */}
-        <div className="mb-4">
+        {/* Hero image - optimized for mobile */}
+        <div className="mb-6">
           <img 
             src={heroImage} 
             alt="35 Livros de Colorir Cristãos"
-            className="w-full max-w-[200px] mx-auto object-contain rounded-xl"
+            className="w-full max-w-[300px] mx-auto object-contain rounded-2xl transition-transform duration-300 hover:scale-105 shadow-xl"
           />
         </div>
         
         {/* Main Headline - mobile optimized */}
-        <h1 className="text-xl font-bold text-white mb-2 leading-tight">
+        <h1 className="font-heading text-3xl font-bold text-white mb-3 leading-tight">
           35 Livros de Colorir<br/>
-          <span className="text-yellow-300 font-extrabold">Cristãos</span>
+          <span className="text-accent-yellow font-extrabold">Cristãos</span>
         </h1>
         
-        {/* Subheadline - mobile optimized */}
-        <p className="text-sm font-medium text-blue-100 mb-6 leading-relaxed px-2">
+        {/* Subheadline - responsive text */}
+        <p className="text-sm sm:text-base lg:text-lg font-medium text-text-light mb-6 leading-relaxed px-2">
           Transforme momentos especiais com sua família, célula e escola dominical
         </p>
         
-        {/* Features list - compact for mobile */}
-        <div className="mb-4 space-y-1 text-left">
-          <div className="flex items-center space-x-2 bg-white/10 rounded-lg p-2 backdrop-blur-sm">
-            <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-              <span className="text-xs">⭐</span>
+        {/* Features list - mobile optimized */}
+        <div className="mb-6 space-y-3 text-left">
+          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-yellow rounded-full flex items-center justify-center shadow-md">
+              <span className="text-base sm:text-lg">⭐</span>
             </div>
-            <span className="text-blue-100 font-medium text-xs">Células</span>
+            <span className="text-text-light font-medium text-sm sm:text-base">Células</span>
           </div>
-          <div className="flex items-center space-x-2 bg-white/10 rounded-lg p-2 backdrop-blur-sm">
-            <div className="w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
-              <span className="text-xs">🏠</span>
+          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-orange rounded-full flex items-center justify-center shadow-md">
+              <span className="text-base sm:text-lg">🏠</span>
             </div>
-            <span className="text-blue-100 font-medium text-xs">Escola Dominical</span>
+            <span className="text-text-light font-medium text-sm sm:text-base">Escola Dominical</span>
           </div>
-          <div className="flex items-center space-x-2 bg-white/10 rounded-lg p-2 backdrop-blur-sm">
-            <div className="w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center">
-              <span className="text-xs">❤️</span>
+          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-pink rounded-full flex items-center justify-center shadow-md">
+              <span className="text-base sm:text-lg">❤️</span>
             </div>
-            <span className="text-blue-100 font-medium text-xs">Devocional Familiar</span>
+            <span className="text-text-light font-medium text-sm sm:text-base">Devocional Familiar</span>
           </div>
         </div>
         
-        {/* Hero CTA - mobile only */}
+        {/* Hero CTA - mobile optimized */}
         <Button 
           onClick={onScrollToOffer}
-          className="w-full bg-green-500 active:bg-green-600 text-white font-bold py-3 px-4 rounded-full text-sm shadow-lg mb-3 h-auto uppercase tracking-wide touch-manipulation"
+          className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-5 px-6 rounded-full text-lg shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-4 h-auto uppercase tracking-wide animate-pulse-slow"
         >
           QUERO VER AS OFERTAS
         </Button>
