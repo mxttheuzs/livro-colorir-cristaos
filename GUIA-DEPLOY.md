@@ -23,18 +23,14 @@ Seu site está **100% funcional** e otimizado para mobile. Todas as funcionalida
    ./upload-github.sh
    ```
 
-2. **Crie um repositório no GitHub:**
-   - Vá para github.com
-   - Clique em "New repository"
-   - Nome sugerido: `luz-do-ceu-kids`
-   - Deixe público
-   - NÃO adicione README, .gitignore ou license
+2. **Repositório já conectado:**
+   - Nome: `livro-colorir-cristaos`
+   - Netlify já configurado
+   - Pronto para receber o código
 
-3. **Conecte e envie o código:**
+3. **Envie o código:**
    ```bash
-   git remote add origin https://github.com/SEU_USUARIO/luz-do-ceu-kids.git
-   git branch -M main
-   git push -u origin main
+   git push origin main
    ```
 
 4. **Ative o GitHub Pages:**
