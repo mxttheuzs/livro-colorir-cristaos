@@ -51,8 +51,11 @@ export function BenefitsSection() {
     <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="w-full max-w-xs mx-auto">
         <div className="text-center mb-8">
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
-            Benefícios únicos e comprovados para o desenvolvimento das crianças
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3 px-2">
+            Benefícios Únicos e Comprovados
+          </h2>
+          <p className="text-gray-600 text-sm sm:text-base px-2">
+            Para o desenvolvimento das crianças
           </p>
         </div>
         
@@ -77,17 +80,7 @@ export function BenefitsSection() {
           })}
         </div>
 
-        <div className="mt-8 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 text-center border border-green-200">
-          <div className="inline-flex items-center justify-center w-10 h-10 bg-green-500 rounded-full mb-3">
-            <span className="text-white text-lg">✓</span>
-          </div>
-          <h4 className="font-bold text-gray-800 text-base mb-2">
-            Garantia de Satisfação
-          </h4>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Mais de 1.500 famílias satisfeitas. Garantia de 7 dias ou seu dinheiro de volta.
-          </p>
-        </div>
+        
       </div>
     </section>
   );
