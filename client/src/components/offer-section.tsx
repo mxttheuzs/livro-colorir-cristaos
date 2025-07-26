@@ -185,7 +185,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                 {/* Navigation buttons */}
                 <button 
                   onClick={prevSlide}
-                  className="absolute left-1 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1 shadow-sm transition-all"
+                  className="absolute left-1 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1 shadow-sm transition-all pl-[14px] pr-[14px]"
                 >
                   <ChevronLeft className="w-3 h-3 text-gray-600" />
                 </button>
