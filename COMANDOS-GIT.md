@@ -1,35 +1,40 @@
-# ✅ COMANDOS FINAIS - Execute estes no Shell
+# 🔥 COMANDOS CORRETOS - Limpar e Reconfigurar
 
-**Já vi que existe um remote configurado. Execute estes comandos UM POR VEZ:**
+**Vamos limpar os remotes antigos e configurar tudo do zero com seu novo token:**
 
-## 1. Atualizar o remote com o novo token:
+## 1. Remover o remote antigo:
 ```
-git remote set-url origin https://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@github.com/mxttheuzs/livro-colorir-cristaos.git
+git remote remove origin
 ```
 
-## 2. Adicionar as mudanças:
+## 2. Adicionar o novo remote com token correto:
+```
+git remote add origin https://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@github.com/mxttheuzs/livro-colorir-cristaos.git
+```
+
+## 3. Adicionar as mudanças:
 ```
 git add .
 ```
 
-## 3. Fazer o commit:
+## 4. Fazer o commit:
 ```
 git commit -m "Removido popup de oferta e melhorias no site"
 ```
 
-## 4. Fazer o push:
+## 5. Fazer o push:
 ```
-git push origin main
+git push -u origin main
 ```
 
-## Se der erro no passo 4, use este:
+## Se der erro no push, use:
 ```
 git push -f origin main
 ```
 
 ---
 
-**Execute um comando por vez e me avise se der algum erro!**
+**Execute um comando por vez. Estes comandos vão limpar a configuração antiga e usar seu token novo!**
 
 ---
 
