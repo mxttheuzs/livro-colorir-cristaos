@@ -43,18 +43,7 @@ export function FooterSection() {
           </p>
         </div>
 
-        {/* Social Proof */}
-        <div className="bg-blue-50 rounded-xl p-4 mb-6 border border-blue-100">
-          <div className="text-center">
-            <div className="flex justify-center items-center space-x-1 mb-2">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <span key={i} className="text-yellow-500 text-lg">⭐</span>
-              ))}
-            </div>
-            <p className="text-sm font-medium text-gray-800 mb-1">Mais de 2.000 famílias satisfeitas</p>
-            <p className="text-xs text-gray-600">35 livros cristãos de alta qualidade</p>
-          </div>
-        </div>
+
 
         {/* Quick Action Buttons */}
         <div className="grid grid-cols-2 gap-3 mb-6">
