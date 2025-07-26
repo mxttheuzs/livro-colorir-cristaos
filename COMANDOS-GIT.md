@@ -1,28 +1,36 @@
-# 🚀 Comandos para Executar no Shell
+# 🚀 Comandos para Executar no Shell - VERSÃO CORRIGIDA
 
-**Copie e cole estes comandos UM POR VEZ no Shell do Replit:**
+**Como deu erro na configuração, vamos tentar uma abordagem diferente:**
 
-## 1. Primeiro comando:
+## Opção 1: Verificar se já existe repositório remoto
+```
+git remote -v
+```
+
+## Opção 2: Se mostrar um remote, use este comando para atualizar:
 ```
 git remote set-url origin https://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@github.com/mxttheuzs/livros-colorir-cristaos.git
 ```
 
-## 2. Segundo comando:
+## Opção 3: Se não mostrar nenhum remote, adicione um novo:
+```
+git remote add origin https://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@github.com/mxttheuzs/livros-colorir-cristaos.git
+```
+
+## Depois de configurar o remote, continue com:
 ```
 git add .
 ```
 
-## 3. Terceiro comando:
 ```
 git commit -m "Removido popup de oferta e melhorias no site"
 ```
 
-## 4. Quarto comando:
 ```
 git push -u origin main
 ```
 
-## Se der erro no push, use este comando:
+## Se der erro no push:
 ```
 git push -f origin main
 ```
