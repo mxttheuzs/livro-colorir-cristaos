@@ -10,6 +10,18 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+### January 26, 2025 - Deploy Ready - Projeto Finalizado
+- Site completamente funcional e pronto para deploy
+- Criados scripts automáticos de upload (upload-github.sh)
+- Adicionado GitHub Actions workflow para deploy automático
+- Guia completo de deploy criado (GUIA-DEPLOY.md)
+- Botões do carrossel otimizados (maiores e touch-friendly)
+- Pergunta sobre uso comercial removida do FAQ
+- Botão "TIREI MINHAS DÚVIDAS" corrigido para scroll correto
+- Fotos dos depoimentos aumentadas para melhor visibilidade
+- Footer reformulado com logo, fundo branco e links removidos
+- Projeto 100% otimizado para conversão e mobile-first
+
 ### January 26, 2025 - Otimização Completa para Mobile
 - Otimizada toda a aplicação exclusivamente para dispositivos móveis
 - Ajustadas todas as seções com padding px-4 e containers max-w-sm para melhor experiência

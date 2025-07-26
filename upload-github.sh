@@ -1,71 +1,63 @@
 #!/bin/bash
 
-echo "🚀 Script para upload automático para GitHub"
-echo "================================================"
+# Script para fazer upload do projeto para GitHub
+# Execute este script para subir o projeto
 
-# Configurar Git (se necessário)
-if [ -z "$(git config --global user.name)" ]; then
-    git config --global user.name "mxttheuzs"
-    git config --global user.email "mxttheuzs@gmail.com"
-    echo "✅ Configuração do Git realizada"
+echo "🚀 Iniciando upload para GitHub..."
+
+# Verificar se git está configurado
+if ! git config user.name > /dev/null; then
+    echo "❌ Git não configurado. Configure primeiro:"
+    echo "git config --global user.name \"Seu Nome\""
+    echo "git config --global user.email \"seu@email.com\""
+    exit 1
 fi
 
-echo "📋 Preparando arquivos..."
-
-# Remover arquivos desnecessários mas manter dist se já foi criado
-rm -rf node_modules
-rm -rf .config
-
-# Criar .gitignore se não existir
-if [ ! -f .gitignore ]; then
-    echo "node_modules/
-.config/
-.replit
-.env
-.env.local
-*.log
-dist/
-.DS_Store" > .gitignore
-    echo "✅ .gitignore criado"
-fi
-
-# Verificar se git está inicializado
-if [ ! -d .git ]; then
+# Inicializar repositório se necessário
+if [ ! -d ".git" ]; then
+    echo "📦 Inicializando repositório Git..."
     git init
-    echo "✅ Repositório Git inicializado"
 fi
 
-# Verificar status
-echo "📊 Status atual do Git:"
-git status
-
-echo "📦 Adicionando arquivos..."
+# Adicionar todos os arquivos
+echo "📁 Adicionando arquivos..."
 git add .
 
+# Fazer commit
 echo "💾 Fazendo commit..."
-if git diff --staged --quiet; then
-    echo "⚠️  Nenhuma mudança para commit"
-else
-    git commit -m "Atualização da landing page - livros de colorir cristãos $(date +%Y-%m-%d)"
-fi
+git commit -m "Deploy: Luz do Céu Kids - Landing Page Completa
 
-echo "🔄 Configurando remote..."
-# Verificar se já existe remote
-if git remote get-url origin 2>/dev/null; then
-    echo "✅ Remote já configurado"
-    read -p "Quer atualizar o token? (s/n): " UPDATE_TOKEN
-    if [ "$UPDATE_TOKEN" = "s" ]; then
-        read -p "Cole seu token do GitHub aqui: " TOKEN
-        git remote set-url origin https://$TOKEN@github.com/mxttheuzs/livros-colorir-cristaos.git
-    fi
-else
-    read -p "Cole seu token do GitHub aqui: " TOKEN
-    git remote add origin https://$TOKEN@github.com/mxttheuzs/livros-colorir-cristaos.git
-fi
+✨ Features implementadas:
+- Landing page mobile-first otimizada
+- Carrossel de livros cristãos
+- Seção de depoimentos com fotos
+- FAQ interativo
+- Seção de ofertas com countdown
+- Footer profissional com logo
+- Otimizações de conversão
 
-echo "🚀 Fazendo upload..."
-git push -u origin main
+🎨 Design:
+- Cores cristãs child-friendly
+- Animações suaves
+- Botões touch-friendly
+- Responsivo para todos dispositivos
 
-echo "✅ Upload concluído!"
-echo "🌐 Veja seu repositório em: https://github.com/mxttheuzs/livros-colorir-cristaos"
-echo "📱 Para publicar no GitHub Pages, vá em Settings > Pages > Source: Deploy from a branch > Branch: main"ttheuzs/livros-colorir-cristaos"
+📱 Mobile Optimizado:
+- Padding e espaçamento mobile-first
+- Botões maiores para touch
+- Carrossel otimizado
+- Performance melhorada"
+
+echo "✅ Projeto pronto para GitHub!"
+echo ""
+echo "🔗 Próximos passos:"
+echo "1. Crie um repositório no GitHub"
+echo "2. Execute: git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git"
+echo "3. Execute: git branch -M main"
+echo "4. Execute: git push -u origin main"
+echo ""
+echo "🌐 Para deploy automático no GitHub Pages:"
+echo "1. Vá nas Settings do repositório"
+echo "2. Clique em Pages"
+echo "3. Selecione 'GitHub Actions' como source"
+echo "4. O site será publicado automaticamente!"

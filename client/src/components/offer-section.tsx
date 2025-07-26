@@ -126,7 +126,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           </div>
           
           {/* Savings Header */}
-          <p className="text-gray-600 text-sm mb-4 text-center">Você economiza R$ 239,00</p>
+          <p className="text-gray-600 text-sm mb-4 text-center">Você economiza R$ 171,00</p>
           
           {/* Basic Package Section */}
           <div className="bg-green-100 rounded-2xl p-4 mb-4">
