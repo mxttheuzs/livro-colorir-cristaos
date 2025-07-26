@@ -105,7 +105,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           
           {/* Basic CTA Button */}
           <Button 
-            onClick={onPurchase}
+            onClick={() => window.open('https://pay.cakto.com.br/tphvtpv_494627', '_blank')}
             className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-full sm:text-base text-[16px] uppercase tracking-wide shadow-2xl transition-all hover:shadow-3xl h-auto"
             style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
           >QUERO O PACOTE BÁSICO</Button>
@@ -225,7 +225,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
           
           {/* Premium CTA Button */}
           <Button 
-            onClick={onPurchase}
+            onClick={() => window.open('https://pay.cakto.com.br/khjx23a_497223', '_blank')}
             className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-all hover:shadow-3xl h-auto uppercase tracking-wide text-[15px]"
             style={{ animation: 'pulse-scale 2s ease-in-out infinite' }}
           >

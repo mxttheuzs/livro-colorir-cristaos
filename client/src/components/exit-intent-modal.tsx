@@ -55,8 +55,8 @@ export function ExitIntentModal() {
   };
 
   const handlePurchase = () => {
-    // Aqui você vai colocar seu link de checkout com desconto
-    window.open('https://seu-link-de-checkout-com-desconto.com', '_blank');
+    // Link para pacote básico com desconto de 50%
+    window.open('https://pay.cakto.com.br/tphvtpv_494627', '_blank');
     setIsOpen(false);
   };
 
