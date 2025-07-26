@@ -65,7 +65,7 @@ export function BenefitsSection() {
             return (
               <Card key={index} className="text-card-foreground bg-white rounded-xl p-4 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group ml-[-11px] mr-[-11px] mt-[0px] mb-[0px]">
                 <div className="flex items-start space-x-4">
-                  <div className={`w-12 h-12 ${benefit.bgColor} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105`}>
+                  <div className={`w-8 h-8 ${benefit.bgColor} rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105`}>
                     <IconComponent className="text-white h-5 w-5" />
                   </div>
                   <div className="flex-1 min-w-0">
