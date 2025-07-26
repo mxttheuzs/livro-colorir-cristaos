@@ -25,7 +25,7 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           <img 
             src={heroImage} 
             alt="35 Livros de Colorir Cristãos"
-            className="w-full max-w-[300px] mx-auto object-contain rounded-2xl transition-transform duration-300 hover:scale-105 shadow-xl"
+            className="w-full max-w-[240px] mx-auto object-contain rounded-2xl transition-transform duration-300 hover:scale-105 shadow-xl"
           />
         </div>
         
