@@ -196,18 +196,7 @@ export function OfferSection({ onPurchase }: OfferSectionProps) {
                   <ChevronRight className="w-3 h-3 text-gray-600" />
                 </button>
                 
-                {/* Dots indicator */}
-                <div className="flex justify-center mt-2 space-x-1">
-                  {versiculos.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentSlide(index)}
-                      className={`w-1.5 h-1.5 rounded-full transition-all ${
-                        currentSlide === index ? 'bg-yellow-500' : 'bg-gray-300'
-                      }`}
-                    />
-                  ))}
-                </div>
+                
               </div>
             </div>
             

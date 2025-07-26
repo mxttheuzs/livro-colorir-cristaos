@@ -104,20 +104,7 @@ export function TestimonialsSection() {
             <ChevronRight className="h-5 w-5 text-gray-600" />
           </button>
 
-          {/* Carousel Indicators */}
-          <div className="flex justify-center mt-4 space-x-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentTestimonial(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentTestimonial 
-                    ? 'bg-blue-500 w-3' 
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-              />
-            ))}
-          </div>
+          
         </div>
 
         <div className="mt-8 text-center">
