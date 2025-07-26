@@ -10,10 +10,12 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
-### January 26, 2025 - Remoção do Popup de Oferta Especial ✅ CONCLUÍDO
+### January 26, 2025 - Otimização Completa para Mobile-Only ✅ EM ANDAMENTO
 - Removido completamente o componente ExitIntentModal que exibia popup de "50% OFF Exclusivo!"
 - Deletados arquivos exit-intent-modal.tsx e use-exit-intent.tsx
-- Limpas todas as importações e referências ao modal no home.tsx
+- Removida pergunta sobre uso comercial do FAQ
+- Corrigido botão "TIREI MINHAS DÚVIDAS" para navegar corretamente
+- Site agora otimizado exclusivamente para dispositivos móveis
 - Resolvidos problemas de push no GitHub (branch errada + permissões de workflow)
 - Mudanças transferidas da branch final-popup-removal para main com force push
 - Site atualizado e funcionando em produção: https://35livrosdecolorircristaos.netlify.app

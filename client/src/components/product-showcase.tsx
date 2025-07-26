@@ -94,52 +94,51 @@ export function ProductShowcase() {
   ];
 
   return (
-    <section className="px-3 py-12 bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="w-full max-w-xs mx-auto">
-        <div className="text-center mb-8">
-          <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-800 mb-3">
+    <section className="px-4 py-8 bg-gradient-to-br from-blue-50 to-purple-50">
+      <div className="w-full max-w-sm mx-auto">
+        <div className="text-center mb-6">
+          <h3 className="text-2xl font-bold text-gray-800 mb-3">
             Conheça Nossos Livros Cristãos
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2">
+          <p className="text-gray-600 text-sm leading-relaxed px-2">
             Histórias bíblicas cuidadosamente ilustradas para ensinar valores cristãos de forma lúdica e educativa
           </p>
         </div>
         
-        {/* Carousel container - mobile optimized */}
+        {/* Carousel container - mobile only */}
         <div className="relative mb-6">
-          <div className="overflow-hidden rounded-2xl shadow-2xl bg-white/50 backdrop-blur-sm p-2 sm:p-3" ref={emblaRef}>
+          <div className="overflow-hidden rounded-2xl shadow-2xl bg-white/50 backdrop-blur-sm p-3" ref={emblaRef}>
             <div className="flex">
               {carouselBooks.map((book, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-1">
-                  <div className="relative w-full h-60 sm:h-72 bg-white rounded-xl shadow-lg overflow-hidden group">
+                  <div className="relative w-full h-64 bg-white rounded-xl shadow-lg overflow-hidden">
                     <img 
                       src={book.image} 
                       alt={book.title}
-                      className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer rounded-xl"
+                      className="w-full h-full object-cover cursor-pointer rounded-xl"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
           
-          {/* Navigation buttons - mobile optimized */}
+          {/* Navigation buttons - mobile only */}
           <Button
             variant="outline"
             size="sm"
-            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
+            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-xl bg-white/90 active:bg-white border-0 shadow-xl touch-manipulation"
             onClick={scrollPrev}
           >
-            <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
+            <ChevronLeft className="h-5 w-5 text-gray-700" />
           </Button>
           <Button
             variant="outline"
             size="sm"
-            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
+            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-xl bg-white/90 active:bg-white border-0 shadow-xl touch-manipulation"
             onClick={scrollNext}
           >
-            <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
+            <ChevronRight className="h-5 w-5 text-gray-700" />
           </Button>
         </div>
         

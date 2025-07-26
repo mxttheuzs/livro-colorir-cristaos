@@ -9,8 +9,8 @@ interface HeroSectionProps {
 
 export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
   return (
-    <section className="bg-main-gradient px-3 py-8 text-center text-white min-h-screen flex items-center">
-      <div className="w-full max-w-xs mx-auto">
+    <section className="bg-gradient-to-br from-blue-600 to-blue-800 px-4 py-8 text-center text-white min-h-screen flex items-center">
+      <div className="w-full max-w-sm mx-auto">
         {/* Logo */}
         <div className="mb-4">
           <img 
@@ -29,43 +29,43 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
           />
         </div>
         
-        {/* Main Headline - smaller on mobile */}
-        <h1 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 leading-tight">
+        {/* Main Headline - mobile optimized */}
+        <h1 className="text-2xl font-bold text-white mb-3 leading-tight">
           35 Livros de Colorir<br/>
-          <span className="text-accent-yellow font-extrabold">Cristãos</span>
+          <span className="text-yellow-300 font-extrabold">Cristãos</span>
         </h1>
         
-        {/* Subheadline - responsive text */}
-        <p className="text-sm sm:text-base lg:text-lg font-medium text-text-light mb-6 leading-relaxed px-2">
+        {/* Subheadline - mobile optimized */}
+        <p className="text-sm font-medium text-blue-100 mb-6 leading-relaxed px-2">
           Transforme momentos especiais com sua família, célula e escola dominical
         </p>
         
-        {/* Features list - mobile optimized */}
-        <div className="mb-6 space-y-3 text-left">
-          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-yellow rounded-full flex items-center justify-center shadow-md">
-              <span className="text-base sm:text-lg">⭐</span>
+        {/* Features list - simplified for mobile */}
+        <div className="mb-6 space-y-2 text-left">
+          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+            <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-sm">⭐</span>
             </div>
-            <span className="text-text-light font-medium text-sm sm:text-base">Células</span>
+            <span className="text-blue-100 font-medium text-sm">Células</span>
           </div>
-          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-orange rounded-full flex items-center justify-center shadow-md">
-              <span className="text-base sm:text-lg">🏠</span>
+          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+            <div className="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-sm">🏠</span>
             </div>
-            <span className="text-text-light font-medium text-sm sm:text-base">Escola Dominical</span>
+            <span className="text-blue-100 font-medium text-sm">Escola Dominical</span>
           </div>
-          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent-pink rounded-full flex items-center justify-center shadow-md">
-              <span className="text-base sm:text-lg">❤️</span>
+          <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+            <div className="w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-sm">❤️</span>
             </div>
-            <span className="text-text-light font-medium text-sm sm:text-base">Devocional Familiar</span>
+            <span className="text-blue-100 font-medium text-sm">Devocional Familiar</span>
           </div>
         </div>
         
-        {/* Hero CTA - mobile optimized */}
+        {/* Hero CTA - mobile only */}
         <Button 
           onClick={onScrollToOffer}
-          className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 sm:py-5 px-4 sm:px-6 rounded-full text-base sm:text-lg lg:text-xl shadow-2xl transition-all transform hover:scale-105 hover:shadow-3xl mb-4 h-auto uppercase tracking-wide"
+          className="w-full bg-green-500 active:bg-green-600 text-white font-bold py-4 px-4 rounded-full text-base shadow-2xl mb-4 h-auto uppercase tracking-wide touch-manipulation"
         >
           QUERO VER AS OFERTAS
         </Button>

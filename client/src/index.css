@@ -4,14 +4,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Performance optimizations */
+/* Mobile-first optimizations */
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  font-size: 16px; /* Prevent iOS zoom on input focus */
+  -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+/* Mobile touch optimizations */
+button, .clickable {
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
+}
+
+/* Mobile-optimized images */
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+/* Remove hover effects on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  *:hover {
+    background-color: initial !important;
+    transform: initial !important;
+  }
 }
 
 /* Custom animations for social proof */
