@@ -3,8 +3,6 @@ import { Gift, Download, Smartphone } from "lucide-react";
 import heroImage from "@assets/image_1753553780767.png";
 import logo from "@assets/515496816_122165020232481708_4631810946756284690_n_1753357778839.jpg";
 
-import Ekudb9tLyf6p1rSpCtDzYLG20DMvZ0kVSu1DFct7 from "@assets/Ekudb9tLyf6p1rSpCtDzYLG20DMvZ0kVSu1DFct7.png";
-
 interface HeroSectionProps {
   onScrollToOffer: () => void;
 }
@@ -25,9 +23,9 @@ export function HeroSection({ onScrollToOffer }: HeroSectionProps) {
         {/* Hero image - optimized for mobile */}
         <div className="mb-6 flex justify-center">
           <img 
-            src={Ekudb9tLyf6p1rSpCtDzYLG20DMvZ0kVSu1DFct7} 
+            src={heroImage} 
             alt="35 Livros de Colorir Cristãos"
-            className="w-full max-w-[240px] object-contain transition-transform duration-300 hover:scale-105"
+            className="w-full max-w-[280px] object-contain rounded-3xl transition-transform duration-300 hover:scale-105 shadow-lg"
           />
         </div>
         
