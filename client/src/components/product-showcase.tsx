@@ -128,7 +128,7 @@ export function ProductShowcase() {
           <Button
             variant="outline"
             size="sm"
-            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
+            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-6 h-6 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
             onClick={scrollPrev}
           >
             <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
@@ -136,7 +136,7 @@ export function ProductShowcase() {
           <Button
             variant="outline"
             size="sm"
-            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
+            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-6 h-6 rounded-xl bg-white/90 hover:bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
             onClick={scrollNext}
           >
             <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />

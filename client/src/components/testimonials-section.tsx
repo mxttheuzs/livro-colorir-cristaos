@@ -63,7 +63,7 @@ export function TestimonialsSection() {
                 <div key={index} className="w-full flex-shrink-0">
                   <Card className="bg-white rounded-2xl p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <div className="flex items-start mb-4">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 shadow-md">
+                      <div className="w-8 h-8 rounded-full overflow-hidden mr-4 flex-shrink-0 shadow-md">
                         <img 
                           src={testimonial.photo} 
                           alt={testimonial.name}
